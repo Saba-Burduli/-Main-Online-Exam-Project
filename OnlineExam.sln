@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineExam.API", "OnlineExam.API\OnlineExam.API.csproj", "{32825716-6BC4-44E2-B7B3-4E5A243E1C85}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineExam.SERVICE", "OnlineExam.SERVICE\OnlineExam.SERVICE.csproj", "{396A2FA6-9CF3-477D-B65B-F4453A357277}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineExam.DAL", "OnlineExam.DAL\OnlineExam.DAL.csproj", "{97A52A89-B2AA-4D09-9058-77F7D6263A94}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineExam.DATA", "OnlineExam.DATA\OnlineExam.DATA.csproj", "{9AE27EBE-BDF1-4948-AD86-6214C185EAAD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{32825716-6BC4-44E2-B7B3-4E5A243E1C85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32825716-6BC4-44E2-B7B3-4E5A243E1C85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32825716-6BC4-44E2-B7B3-4E5A243E1C85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32825716-6BC4-44E2-B7B3-4E5A243E1C85}.Release|Any CPU.Build.0 = Release|Any CPU
+		{396A2FA6-9CF3-477D-B65B-F4453A357277}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{396A2FA6-9CF3-477D-B65B-F4453A357277}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{396A2FA6-9CF3-477D-B65B-F4453A357277}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{396A2FA6-9CF3-477D-B65B-F4453A357277}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97A52A89-B2AA-4D09-9058-77F7D6263A94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97A52A89-B2AA-4D09-9058-77F7D6263A94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97A52A89-B2AA-4D09-9058-77F7D6263A94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97A52A89-B2AA-4D09-9058-77F7D6263A94}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9AE27EBE-BDF1-4948-AD86-6214C185EAAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9AE27EBE-BDF1-4948-AD86-6214C185EAAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9AE27EBE-BDF1-4948-AD86-6214C185EAAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9AE27EBE-BDF1-4948-AD86-6214C185EAAD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
