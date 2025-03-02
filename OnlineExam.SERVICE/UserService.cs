@@ -40,7 +40,12 @@ public class UserService : IUserService
         };
         return new ResponseModel{Success = true ,Massage = "User registered successfully"};
     }
-
+    //[POST METHOD] Login User
+    /*
+    If your login request is via a user supplying a username and password then a POST is 
+    preferable, as details will be sent in the HTTP messages body rather than the URL.
+    Although it will still be sent plain text, unless you're encrypting via https
+     */
     public async Task<User> LoginUserAsync(string username, string password)
     {
         var user = await _userRepository.GetUserByEmailAsync(username);
@@ -52,7 +57,7 @@ public class UserService : IUserService
         return user;
     }
 
-   
+    //[GET METHOD] GetProfile
     public async Task<User> GetProfileAsync(int userId) // ???????
     {
         var user = await _userRepository.GetUserByIdAsync(userId);
@@ -67,7 +72,7 @@ public class UserService : IUserService
             Email = user.Email
         };
     }
-
+    //[PUT METHOD] Update Profile 
     public async Task<ResponseModel> UpdateProfileAsync(int userId,UpdateProfileModel model)
     {
         var user = await _userRepository.GetUserByIdAsync(userId);
@@ -88,6 +93,7 @@ public class UserService : IUserService
         return new ResponseModel { Success = true, Massage = "User Profile Updated" };
     }
 
+    //[DELATE METHOD] Delete User Profile
     public async Task<ResponseModel>DeleteUserProfileAsync(int userId)
     {
         var user = await _userRepository.GetUserByIdAsync(userId);
@@ -97,31 +103,25 @@ public class UserService : IUserService
         await _userRepository.DeleteAsync(user.UserId);
         return new ResponseModel { Success = true, Massage = "User was delated" };
     }
-
+    //[POST METHOD] Registrate On Exam
     public async Task<bool> RegistrateOnExam(int examId, int userId) // i add userId .. for check also user
     {
-        var exam = _userRepository.Exa;
-        if (exam == null)
+        try
         {
-            return new ResponseModel { Success = false, Massage = "Exam not Found" };
+            return await _userRepository.RegisterUserForExam(userId,examId);
         }
-        var user = await _userRepository.GetUserByIdAsync(examId);
-        if (user == null)
+        catch (ArgumentException ex)
         {
-            return new ResponseModel { Success = false, Massage = "User not Found" };
+
+            throw new ApplicationException("Invalid input :" + ex.Message);
         }
-
-        new Exam
+        catch(InvalidOperationException ex)
         {
-            ExamId = user.UserId,
-
-        };
-
-        return new ResponseModel { Success = true, Massage = "We Found !" };
-     
+            throw new ApplicationException("An error occurred while registering the user for the exam.", ex);
+        }
     }
-
-    public async Task<ResponseModel> LogoutUser(int userId)
+    //[POST METHOD]
+    public async Task<ResponseModel> LogoutUserAsync(int userId)
     {
         var user = await _userRepository.GetByIdAsync(userId);
         if (user==null)

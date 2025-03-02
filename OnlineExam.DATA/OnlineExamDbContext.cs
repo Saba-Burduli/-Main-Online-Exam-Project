@@ -13,6 +13,8 @@ namespace OnlineExam.DATA
         public DbSet<Result>? Results { get; set; }
         public DbSet<Role>? Roles { get; set; }
         public DbSet<User>? Users { get; set; }
+        public DbSet<ExamParticpant>? ExamParticpants { get; set; }
+
 
         public OnlineExamDbContext()
         {
@@ -60,6 +62,7 @@ namespace OnlineExam.DATA
             modelBuilder.ApplyConfiguration(new ResultConfiguration());
             modelBuilder.ApplyConfiguration(new RoleConfiguration());
             modelBuilder.ApplyConfiguration(new UserConfigurations());
+            modelBuilder.ApplyConfiguration(new ExamParticpantConfiguration());
         }
         
     }

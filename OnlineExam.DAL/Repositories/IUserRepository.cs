@@ -2,6 +2,7 @@ using Microsoft.EntityFrameworkCore;
 using OnlineExam.DATA;
 using OnlineExam.DATA.Entites;
 using OnlineExam.DATA.Infrastructures;
+using System.Threading.Tasks;
 
 namespace OnlineExam.DAL.Repositories;
 
@@ -11,7 +12,7 @@ public interface IUserRepository : IBaseRepository<User>
     Task<User> GetUserByIdAsync(int userId);
     Task<User> GetUserWithRolesByIdAsync(int userId);
     Task<User> AssignRoleUserAsync(int userId, List<int> roleIds);
-    bool RegisterUserForExam(int userId, int examId);
+    Task<bool> RegisterUserForExam(int userId, int examId); //should i delate this ?? first version is this : <bool> RegisterUserForExam(int userId, int examId);
 }
 
 public class UserRepository : BaseRepository<User>, IUserRepository
@@ -67,8 +68,39 @@ public class UserRepository : BaseRepository<User>, IUserRepository
         return user;
     }
 
-    public bool RegisterUserForExam(int userId, int examId)
+    public async Task<bool> RegisterUserForExam(int userId, int examId) 
     {
-        throw new NotImplementedException(); // ADD THIS ONE
+        //this one checking if user and exam exists..
+
+        var user = await _context.Users.FindAsync(userId);
+
+        var exam = await _context.Users.FindAsync(examId);
+
+        if (exam==null || user==null)
+        {
+            return false;
+        };
+
+        //now check if  user is already registered for the exam
+
+        var existingRegistartion =  _context.ExamParticpants //should i add await ???
+            .FirstOrDefault(ep => ep.UserId == userId && ep.ExamId == examId);
+        if (existingRegistartion != null)
+        {
+            return false; //User already exists
+        }
+
+        // register  user for the exam
+        var examParticipant = new ExamParticpant
+        {
+            UserId =userId,
+            ExamId=examId,
+            //(i can add also  RegistrationDate = DateTime.UtcNow ) ..
+            //but first im gonna add this property in ExamParticpant entity as a property .. 
+        };
+        _context.ExamParticpants.Add(examParticipant);
+        await _context.SaveChangesAsync();
+        return true;
+
     }
 }
