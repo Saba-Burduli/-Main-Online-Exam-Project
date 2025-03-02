@@ -3,6 +3,7 @@ using OnlineExam.DAL.Repositories;
 using OnlineExam.DATA.Entites;
 using OnlineExam.SERVICE.DTOs.UserModels;
 using OnlineExam.SERVICE.InterFaces;
+using System.Threading.Tasks;
 
 namespace OnlineExam.SERVICE;
 
@@ -19,6 +20,7 @@ public class UserService : IUserService
         _roleRepository = roleRepository;
         
     }
+    //[POST METHOD] User registration
     public async Task<ResponseModel> UserRegistrationAsync(UserRegisterModel model)
     { 
         var existingUser = await _userRepository.GetUserByEmailAsync(model.Email);
@@ -50,14 +52,40 @@ public class UserService : IUserService
         return user;
     }
 
-    public User GetProfileAsync(int userId) // ???????
+   
+    public async Task<User> GetProfileAsync(int userId) // ???????
     {
-        throw new NotImplementedException();
+        var user = await _userRepository.GetByIdAsync(userId);
+        if (user==null)
+        {
+            return null;
+        }
+        return new User
+        {
+            UserId = user.UserId,
+            UserName = user.UserName,
+            Email = user.Email
+        };
     }
 
-    public void UpdateProfileAsync(UpdateProfileModel model)
+    public async Task<ResponseModel> UpdateProfileAsync(int userId,UpdateProfileModel model)
     {
-        throw new NotImplementedException();
+        var user = await _userRepository.GetByIdAsync(userId);
+        if (user==null) 
+        {
+            return new ResponseModel { Success = false, Massage = "Something wrong !!" };
+        }
+        if (!string.IsNullOrWhiteSpace(model.UserName))
+        {
+            user.UserName = model.UserName;
+        }
+        if (!string.IsNullOrEmpty(model.Password))
+        {
+            user.PasswordHash = await _passwordHasher.HashPassword(model.Password);
+        }
+        await _userRepository.UpdateAsync(user);
+
+        return new ResponseModel { Success = true, Massage = "User Profile Updated" };
     }
 
     public void DeleteUserProfileAsync(int userId)

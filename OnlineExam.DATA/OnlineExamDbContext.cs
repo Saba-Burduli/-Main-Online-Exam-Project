@@ -4,7 +4,7 @@ using OnlineExam.DATA.Entites;
 
 namespace OnlineExam.DATA
 {
-    public class OnineExamDbContext : DbContext
+    public class OnlineExamDbContext : DbContext
     {
         public DbSet<Exam>? Exams { get; set; }
         public DbSet<Option>? Options { get; set; }
@@ -14,13 +14,13 @@ namespace OnlineExam.DATA
         public DbSet<Role>? Roles { get; set; }
         public DbSet<User>? Users { get; set; }
 
-        public OnineExamDbContext()
+        public OnlineExamDbContext()
         {
             
         }
         
         
-        public OnineExamDbContext(DbContextOptions<OnineExamDbContext>context):base(context)
+        public OnlineExamDbContext(DbContextOptions<OnlineExamDbContext>context):base(context)
         {
             
         }
