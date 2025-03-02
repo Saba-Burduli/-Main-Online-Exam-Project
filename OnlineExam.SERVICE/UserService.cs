@@ -55,7 +55,7 @@ public class UserService : IUserService
    
     public async Task<User> GetProfileAsync(int userId) // ???????
     {
-        var user = await _userRepository.GetByIdAsync(userId);
+        var user = await _userRepository.GetUserByIdAsync(userId);
         if (user==null)
         {
             return null;
@@ -70,7 +70,7 @@ public class UserService : IUserService
 
     public async Task<ResponseModel> UpdateProfileAsync(int userId,UpdateProfileModel model)
     {
-        var user = await _userRepository.GetByIdAsync(userId);
+        var user = await _userRepository.GetUserByIdAsync(userId);
         if (user==null) 
         {
             return new ResponseModel { Success = false, Massage = "Something wrong !!" };
@@ -90,7 +90,7 @@ public class UserService : IUserService
 
     public async Task<ResponseModel>DeleteUserProfileAsync(int userId)
     {
-        var user = await _userRepository.GetByIdAsync(userId);
+        var user = await _userRepository.GetUserByIdAsync(userId);
         if (user==null) 
             return new ResponseModel { Success = false, Massage = "User not Found" };
 
@@ -98,9 +98,23 @@ public class UserService : IUserService
         return new ResponseModel { Success = true, Massage = "User was delated" };
     }
 
-    public void RegistrateOnExam(int examId)
+    public async Task<ResponseModel> RegistrateOnExam(int examId, int userId) // i add userId .. for check also user
     {
-        throw new NotImplementedException();
+        var exam = await _userRepository.GetByIdAsync(examId);
+        if (exam == null)
+        {
+            return new ResponseModel { Success = false, Massage = "Exam not Found" };
+        }
+        var user = await _userRepository.GetUserByIdAsync(examId);
+        if (user == null)
+        {
+            return new ResponseModel { Success = false, Massage = "User not Found" };
+        }
+
+        return new ResponseModel { Success = true, Massage = "We Found !" };
+     
+
+
     }
 
     public async Task<ResponseModel> LogoutUser(int userId)
@@ -114,10 +128,12 @@ public class UserService : IUserService
         {
             return new ResponseModel { Success = false, Massage = "Username is Empty or Null " };
         }
+        new Exam
+        {
+
+        }
         return new ResponseModel { Success = true, Massage = "user loggout succsessfully" };
+       
+        //should i added in there object for add maping ??????
     }
-
-
-    //We also can add some GET methods .... there is ...(bellow)
- 
 }

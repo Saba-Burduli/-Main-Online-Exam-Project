@@ -10,6 +10,6 @@ public interface IUserService
     User GetProfileAsync(int userId);//what is this method ??//+
     Task<ResponseModel> UpdateProfileAsync(UpdateProfileModel model); //+     //what is this method ?? // i change void UpdateProfileAsync to Task<ResponseModel>
     Task<ResponseModel> DeleteUserProfileAsync(int userId); //+
-    Task<ResponseModel> RegistrateOnExam(int examId);//-
+    Task<ResponseModel> RegistrateOnExam(int examId,int userId);//-
     Task<ResponseModel> LogoutUserAsync(int userId);//+
 }
