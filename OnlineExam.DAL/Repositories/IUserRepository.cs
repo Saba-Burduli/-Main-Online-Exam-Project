@@ -11,7 +11,7 @@ public interface IUserRepository : IBaseRepository<User>
     Task<User> GetUserByIdAsync(int userId);
     Task<User> GetUserWithRolesByIdAsync(int userId);
     Task<User> AssignRoleUserAsync(int userId, List<int> roleIds);
-    
+    bool RegisterUserForExam(int userId, int examId);
 }
 
 public class UserRepository : BaseRepository<User>, IUserRepository
@@ -66,6 +66,9 @@ public class UserRepository : BaseRepository<User>, IUserRepository
         await _context.SaveChangesAsync();
         return user;
     }
-    
-    
+
+    public bool RegisterUserForExam(int userId, int examId)
+    {
+        throw new NotImplementedException(); // ADD THIS ONE
+    }
 }

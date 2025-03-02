@@ -98,9 +98,9 @@ public class UserService : IUserService
         return new ResponseModel { Success = true, Massage = "User was delated" };
     }
 
-    public async Task<ResponseModel> RegistrateOnExam(int examId, int userId) // i add userId .. for check also user
+    public async Task<bool> RegistrateOnExam(int examId, int userId) // i add userId .. for check also user
     {
-        var exam = await _userRepository.GetByIdAsync(examId);
+        var exam = _userRepository.Exa;
         if (exam == null)
         {
             return new ResponseModel { Success = false, Massage = "Exam not Found" };
@@ -111,10 +111,14 @@ public class UserService : IUserService
             return new ResponseModel { Success = false, Massage = "User not Found" };
         }
 
+        new Exam
+        {
+            ExamId = user.UserId,
+
+        };
+
         return new ResponseModel { Success = true, Massage = "We Found !" };
      
-
-
     }
 
     public async Task<ResponseModel> LogoutUser(int userId)
@@ -128,12 +132,8 @@ public class UserService : IUserService
         {
             return new ResponseModel { Success = false, Massage = "Username is Empty or Null " };
         }
-        new Exam
-        {
-
-        }
+       
         return new ResponseModel { Success = true, Massage = "user loggout succsessfully" };
        
-        //should i added in there object for add maping ??????
     }
 }
