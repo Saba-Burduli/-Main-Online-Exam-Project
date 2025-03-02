@@ -103,27 +103,21 @@ public class UserService : IUserService
         throw new NotImplementedException();
     }
 
-    public void LogoutUserAsync()
+    public async Task<ResponseModel> LogoutUser(int userId)
     {
-        throw new NotImplementedException();
+        var user = await _userRepository.GetByIdAsync(userId);
+        if (user==null)
+        {
+            return new ResponseModel { Success = false, Massage = "User not Found" };
+        }
+        if (!string.IsNullOrEmpty(user.UserName))
+        {
+            return new ResponseModel { Success = false, Massage = "Username is Empty or Null " };
+        }
+        return new ResponseModel { Success = true, Massage = "user loggout succsessfully" };
     }
 
 
     //We also can add some GET methods .... there is ...(bellow)
-    User IUserService.GetProfileAsync(int userId)
-    {
-        throw new NotImplementedException();
-    }
-
-    public void UpdateProfileAsync(UpdateProfileModel model)
-    {
-        throw new NotImplementedException();
-    }
-
-    void IUserService.DeleteUserProfileAsync(int userId)
-    {
-        throw new NotImplementedException();
-    }
-
-
+ 
 }
