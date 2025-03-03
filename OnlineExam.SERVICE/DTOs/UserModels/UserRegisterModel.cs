@@ -1,3 +1,5 @@
+using OnlineExam.DATA.Entites;
+
 namespace OnlineExam.SERVICE.DTOs.UserModels;
 
 public class UserRegisterModel
@@ -7,4 +9,5 @@ public class UserRegisterModel
     public string? Email { get; set; }
     public DateTime RegistrationDate { get; set; } = DateTime.Now;
     public int RoleId { get; set; }
+    public Person? Person { get; set; }
 }

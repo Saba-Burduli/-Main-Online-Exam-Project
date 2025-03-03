@@ -1,43 +1,94 @@
+using Microsoft.EntityFrameworkCore;
+using OnlineExam.DAL.Repositories;
 using OnlineExam.DATA.Entites;
 using OnlineExam.SERVICE.DTOs.UserModels;
 using OnlineExam.SERVICE.InterFaces;
+using System.Threading.Tasks;
 
 namespace OnlineExam.SERVICE;
 
 public class AdminService : IAdminService
 {
-    public List<User> GetUsGetAllStudentsers()
+
+    private readonly IPasswordHasher _passwordHasher;
+    private readonly IUserRepository _userRepository;
+
+    public AdminService(IPasswordHasher passwordHasher, IUserRepository userRepository)
     {
-        throw new NotImplementedException();
+        _passwordHasher = passwordHasher;
+        _userRepository = userRepository;
+    }
+    
+    public async Task<IEnumerable<User>> GetAllStudents()
+    {
+        var users = await _userRepository.GetAllAsync();
+        return users.Where(u=>u.Roles.Any(r=>r.RoleId==3));
     }
 
-    public List<User> GetAllTeachers()
+    public async Task<IEnumerable<User>> GetAllTeachers()
     {
-        throw new NotImplementedException();
+        var users = await _userRepository.GetAllAsync();
+        return users.Where(t => t.Roles.Any(r => r.RoleId == 2));
     }
 
-    public User GetUserById(int userId)
+    public async Task<User> GetUserById(int userId)
     {
-        throw new NotImplementedException();
+        return await _userRepository.GetByIdAsync(userId);
     }
 
-    public User AddUser(UserRegisterModel model)
+    public async Task<User> AddUser(UserRegisterModel model)
     {
-        throw new NotImplementedException();
+        var user = new User
+        {
+            UserName = model.UserName,
+            PasswordHash =await _passwordHasher.HashPassword(model.Password),
+            Email = model.Email,
+            RegistrationDate = DateTime.UtcNow,
+            Person = new Person
+            {
+                FirstName = model.Person.FirstName,
+                LastName = model.Person.LastName,
+                Phone = model.Person.Phone,
+                Address = model.Person.Address
+            }
+        };
+        await _userRepository.AddAsync(user);
+        return user;
     }
 
-    public void AssignRole(int userld, List<int> roleIds)
+    public async Task<User> AssignRole(int userId, List<int> roleIDs)
     {
-        throw new NotImplementedException();
+        var user = await _userRepository.AssignRoleUserAsync(userId,roleIDs);
+        if (user == null) throw new Exception("User not found");
+
+        return user;
+
     }
 
-    public void UpdateUser(int userId, UpdateUserModel model)
+    public async Task<User> UpdateUser(int userId, UpdateUserModel model)
     {
-        throw new NotImplementedException();
+        var user = await _userRepository.GetByIdAsync(userId);
+        user.Email = model.Email;
+        user.UserName = model.UserName;
+        user.PasswordHash = await _passwordHasher.HashPassword(model.Password);
+       
+        await _userRepository.UpdateAsync(user);
+
+        if (user == null) 
+            throw new Exception("User not found");
+
+        return user;
+        
     }
 
-    public void DeleteUser(int userId)
+    public async Task<User> DeleteUser(int userId)
     {
-        throw new NotImplementedException();
+        var user = await _userRepository.GetByIdAsync(userId);
+
+        await _userRepository.DeleteAsync(userId);
+
+        return user;
+
     }
+
 }

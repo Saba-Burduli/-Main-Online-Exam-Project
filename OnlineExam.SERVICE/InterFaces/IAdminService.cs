@@ -5,18 +5,18 @@ namespace OnlineExam.SERVICE.InterFaces;
 
 public interface IAdminService
 {
-   List<User> GetUsGetAllStudentsers();
+    Task<IEnumerable<User>> GetAllStudents();
 
-   List<User> GetAllTeachers();
-   
-   User GetUserById(int userId);
-                                          
-   User AddUser(UserRegisterModel model);
-                                                   
-   void AssignRole(int userld, List<int> roleIds);
-                                                      
-   void UpdateUser(int userId , UpdateUserModel model);
-   
-   void DeleteUser(int userId);
+    Task<IEnumerable<User>> GetAllTeachers();
+
+    Task<User> GetUserById(int userId);
+
+    Task<User> AddUser(UserRegisterModel model);
+
+    Task<User> AssignRole(int userId, List<int> roleIDs);
+
+    Task<User> UpdateUser(int userId, UpdateUserModel model);
+
+    Task<User> DeleteUser(int userId);
    
 }

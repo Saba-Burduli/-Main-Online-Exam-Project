@@ -37,29 +37,23 @@ namespace OnlineExam.Controllers
 
             return BadRequest();
         }
-        //what problem i have in there ???
-        public async Task<ResponseModel> UserRegistrationAsync(UserRegisterModel model)
-        {
-            //???????????????????????
-        }
+        
         [HttpPut("Login")]
-        public async Task<IActionResult> LoginUserAsync(LoginModel model)
+        public async Task<IActionResult> LoginUserAsync(string username, string password)
         {
             if (ModelState.IsValid)
             {
-                var result = await _userService.LoginUserAsync(model);
-
-                if (result.Success)
-                {                               //??
-                    var loggedUser = await _userRepository.GetUserByEmailAsync(model.Email);//!!!! how to check also Password ?? 
-
-                    //I change _userService to _userRepository .. because i dont have any
-                    //method like this GetUserByEmailAsync in _userService .
+                var result = await _userService.LoginUserAsync(username,password);
+                
+                if (result!=null)
+                {                               
                     return Ok(new ResponseModel { Success = true, Massage = "User Logged in" });
-
                     //WE GONNA CHANGE THIS LOGIN HTTP METHOD AND ADD "JWT TOKEN"
                 }
-                //++ ADD ALSO HERE SOME RETURN FOR TOKENS
+                else
+                {
+                    return Unauthorized(new ResponseModel { Success = false, Massage = "Cannot logged in" });
+                }
             }
             return BadRequest();
 
@@ -106,15 +100,29 @@ namespace OnlineExam.Controllers
             return BadRequest();
         }
 
+        [HttpPost("RegistrateOnExam")]
+        public async Task<ActionResult<bool>> RegistrateOnExam(int examId, int userId)
+        {
+            if (ModelState.IsValid)
+            {
+                var result = await _userService.RegistrateOnExam(examId,userId);
+                if (result)
+                {
+                    return Ok("User Registered");
+                }
+            }
+            return BadRequest("User cannot Register");
+        }
 
-        public async Task<bool> RegistrateOnExam(int examId, int userId)
-        {
-            //am gonna add this one ..
-        }
-        public async Task<ResponseModel> LogoutUserAsync(int userId)
-        {
-            //am gonna add this one ..
-        }
+        //public async Task<ResponseModel> LogoutUserAsync(int userId)
+        //{
+        //    //am gonna add this one ..
+        //}
+
+        //public async Task<ResponseModel> UserRegistrationAsync(UserRegisterModel model)
+        //{
+
+        //}
     }
 
 }

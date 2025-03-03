@@ -9,10 +9,10 @@ namespace OnlineExam.DAL.Repositories;
 public interface IUserRepository : IBaseRepository<User>
 {
     Task<User> GetUserByEmailAsync(string email);
-    Task<User> GetUserByIdAsync(int userId);
     Task<User> GetUserWithRolesByIdAsync(int userId);
     Task<User> AssignRoleUserAsync(int userId, List<int> roleIds);
     Task<bool> RegisterUserForExam(int userId, int examId); //should i delate this ?? first version is this : <bool> RegisterUserForExam(int userId, int examId);
+    Task<User> GetUserByUserNameAndPasswordAsync(string username, string password);
 }
 
 public class UserRepository : BaseRepository<User>, IUserRepository
@@ -33,12 +33,6 @@ public class UserRepository : BaseRepository<User>, IUserRepository
         return await _context.Users.FirstOrDefaultAsync(u => u.Email == email);
     }
 
-    public async Task<User> GetUserByIdAsync(int userId)
-    {
-        return  _context.Users
-            .Include(u => u.Roles)
-            .FirstOrDefault(u=>u.UserId == userId);
-    }
 
     public async Task<User> GetUserWithRolesByIdAsync(int userId)
     {
@@ -74,17 +68,22 @@ public class UserRepository : BaseRepository<User>, IUserRepository
 
         var user = await _context.Users.FindAsync(userId);
 
+        if (user == null)
+        {
+            return false;
+        }
+
         var exam = await _context.Users.FindAsync(examId);
 
-        if (exam==null || user==null)
+        if (exam==null)
         {
             return false;
         };
 
         //now check if  user is already registered for the exam
 
-        var existingRegistartion =  _context.ExamParticpants //should i add await ???
-            .FirstOrDefault(ep => ep.UserId == userId && ep.ExamId == examId);
+        var existingRegistartion = await _context.ExamParticpants //should i add await ???
+            .FirstOrDefaultAsync(ep => ep.UserId == userId && ep.ExamId == examId);
         if (existingRegistartion != null)
         {
             return false; //User already exists
@@ -93,14 +92,19 @@ public class UserRepository : BaseRepository<User>, IUserRepository
         // register  user for the exam
         var examParticipant = new ExamParticpant
         {
-            UserId =userId,
-            ExamId=examId,
-            //(i can add also  RegistrationDate = DateTime.UtcNow ) ..
-            //but first im gonna add this property in ExamParticpant entity as a property .. 
+            UserId = userId,
+            ExamId = examId,
+            RegistrationDate = DateTime.Now
         };
+
         _context.ExamParticpants.Add(examParticipant);
         await _context.SaveChangesAsync();
         return true;
+    }
 
+    public async Task<User> GetUserByUserNameAndPasswordAsync(string username, string password)
+    {
+        return await _context.Users
+             .FirstOrDefaultAsync(ep => ep.UserName ==username  && ep.PasswordHash == password);
     }
 }

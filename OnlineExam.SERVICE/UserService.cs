@@ -48,10 +48,9 @@ public class UserService : IUserService
      */
     public async Task<User> LoginUserAsync(string username, string password)
     {
-        var user = await _userRepository.GetUserByEmailAsync(username);
+        var user = await _userRepository.GetUserByUserNameAndPasswordAsync(username,await _passwordHasher.HashPassword(password));
         if (user ==null || password==null)
         {
-            // return new ResponseModel{Success = false ,Massage = "username or password is incorrect."};
             return null;
         }
         return user;
@@ -60,7 +59,7 @@ public class UserService : IUserService
     //[GET METHOD] GetProfile
     public async Task<User> GetProfileAsync(int userId) // ???????
     {
-        var user = await _userRepository.GetUserByIdAsync(userId);
+        var user = await _userRepository.GetByIdAsync(userId);
         if (user==null)
         {
             return null;
@@ -72,37 +71,20 @@ public class UserService : IUserService
             Email = user.Email
         };
     }
-    //[PUT METHOD] Update Profile 
-    public async Task<ResponseModel> UpdateProfileAsync(int userId,UpdateProfileModel model)
-    {
-        var user = await _userRepository.GetUserByIdAsync(userId);
-        if (user==null) 
-        {
-            return new ResponseModel { Success = false, Massage = "Something wrong !!" };
-        }
-        if (!string.IsNullOrWhiteSpace(model.UserName))
-        {
-            user.UserName = model.UserName;
-        }
-        if (!string.IsNullOrEmpty(model.Password))
-        {
-            user.PasswordHash = await _passwordHasher.HashPassword(model.Password);
-        }
-        await _userRepository.UpdateAsync(user);
 
-        return new ResponseModel { Success = true, Massage = "User Profile Updated" };
-    }
 
     //[DELATE METHOD] Delete User Profile
     public async Task<ResponseModel>DeleteUserProfileAsync(int userId)
     {
-        var user = await _userRepository.GetUserByIdAsync(userId);
+        var user = await _userRepository.GetByIdAsync(userId);
         if (user==null) 
             return new ResponseModel { Success = false, Massage = "User not Found" };
 
         await _userRepository.DeleteAsync(user.UserId);
         return new ResponseModel { Success = true, Massage = "User was delated" };
     }
+
+
     //[POST METHOD] Registrate On Exam
     public async Task<bool> RegistrateOnExam(int examId, int userId) // i add userId .. for check also user
     {
@@ -112,12 +94,15 @@ public class UserService : IUserService
         }
         catch (ArgumentException ex)
         {
-
             throw new ApplicationException("Invalid input :" + ex.Message);
         }
         catch(InvalidOperationException ex)
         {
             throw new ApplicationException("An error occurred while registering the user for the exam.", ex);
+        }
+        catch(Exception ex)
+        {
+            throw new Exception("Error !!");
         }
     }
     //[POST METHOD]
@@ -135,5 +120,36 @@ public class UserService : IUserService
        
         return new ResponseModel { Success = true, Massage = "user loggout succsessfully" };
        
+    }
+
+    //public Task<ResponseModel> UpdateProfileAsync(int userId, UpdateProfileModel model)
+    //{
+    //    throw new NotImplementedException();
+    //}
+
+    //[PUT METHOD] Update Profile 
+    public async Task<ResponseModel> UpdateProfileAsync(int userId, UpdateProfileModel model)
+    {
+        var user = await _userRepository.GetByIdAsync(userId);
+        if (user == null)
+        {
+            return new ResponseModel { Success = false, Massage = "Something wrong !!" };
+        }
+        if (!string.IsNullOrWhiteSpace(model.UserName))
+        {
+            user.UserName = model.UserName;
+        }
+        if (!string.IsNullOrEmpty(model.Password))
+        {
+            user.PasswordHash = await _passwordHasher.HashPassword(model.Password);
+        }
+        await _userRepository.UpdateAsync(user);
+
+        return new ResponseModel { Success = true, Massage = "User Profile Updated" };
+    }
+
+    public async Task<User> GetUserByEmailAsync(string email)
+    {
+        return await _userRepository.GetUserByEmailAsync(email);
     }
 }
