@@ -16,44 +16,44 @@ This Is Project Full Description :
 Develop an online examination system that allows administrators to manage exams, questions, and results. Students can take exams and view their scores.
 
 <h2>User</h2>
-	Id: int
-	Username: string
-	PasswordHash: string
-	PasswordSalt: string
-	RoleId: int (foreign key)
-	Role: Role (navigation property)
-	ExamsCreated: ICollection<Exam> (for teachers)
-	Results: ICollection<Result> (for students)
+	Id: int
+	Username: string
+	PasswordHash: string
+	PasswordSalt: string
+	RoleId: int (foreign key)
+	Role: Role (navigation property)
+	ExamsCreated: ICollection<Exam> (for teachers)
+	Results: ICollection<Result> (for students)
 
 <h2>Role</h2>
-	Id: int
-	RoleName: RoleType (enum) (Admin, Teacher, Student)
-	Users: ICollection<User>
+	Id: int
+	RoleName: RoleType (enum) (Admin, Teacher, Student)
+	Users: ICollection<User>
 
 <h2>Exam</h2>
-	Id: int
-	Title: string
-	TeacherId: int (foreign key)
-	Teacher: User (navigation property)
-	Questions: ICollection<Question>
-	Results: ICollection<Result>
+	Id: int
+	Title: string
+	TeacherId: int (foreign key)
+	Teacher: User (navigation property)
+	Questions: ICollection<Question>
+	Results: ICollection<Result>
 
 <h2>Question</h2>
-	Id: int
-	Content: string
-	CorrectAnswer: string
-	ExamId: int (foreign key)
-	Exam: Exam (navigation property)
-	Options: ICollection<string> (optional, if multiple choice is needed)
+	Id: int
+	Content: string
+	CorrectAnswer: string
+	ExamId: int (foreign key)
+	Exam: Exam (navigation property)
+	Options: ICollection<string> (optional, if multiple choice is needed)
 
 <h2>Result</h2>
-	Id: int
-	StudentId: int (foreign key)
-	Student: User (navigation property)
-	ExamId: int (foreign key)
-	Exam: Exam (navigation property)
-	Score: decimal(8,2)
-	DateTaken: DateTime
+	Id: int
+	StudentId: int (foreign key)
+	Student: User (navigation property)
+	ExamId: int (foreign key)
+	Exam: Exam (navigation property)
+	Score: decimal(8,2)
+	DateTaken: DateTime
 
 
 
@@ -62,19 +62,19 @@ Develop an online examination system that allows administrators to manage exams,
 
 <h1>Interfaces</h1>
 <h2>1.	IUserService</h2>
-	void AddUser(User user);
-	User Login(string username, string password);
-	void AssignRole(int userId, int roleId);
-	User GetUserById(int userId);
+	void AddUser(User user);
+	User Login(string username, string password);
+	void AssignRole(int userId, int roleId);
+	User GetUserById(int userId);
 <h2>2.IExamService</h2>
-	void CreateExam(Exam exam);
-	void AddQuestion(int examId, Question question);
-	Exam GetExam(int examId);
-	IEnumerable<Exam> GetExamsByTeacher(int teacherId);
+	void CreateExam(Exam exam);
+	void AddQuestion(int examId, Question question);
+	Exam GetExam(int examId);
+	IEnumerable<Exam> GetExamsByTeacher(int teacherId);
 <h2>.	IResultService</h2>
-	void SubmitResult(Result result);
-	IEnumerable<Result> GetResultsByStudent(int studentId);
-	Result GetResult(int examId, int studentId);
+	void SubmitResult(Result result);
+	IEnumerable<Result> GetResultsByStudent(int studentId);
+	Result GetResult(int examId, int studentId);
 
 
 
