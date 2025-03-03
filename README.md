@@ -15,7 +15,7 @@ This Is Project Full Description :
 
 Develop an online examination system that allows administrators to manage exams, questions, and results. Students can take exams and view their scores.
 
-##User
+<h2>User</h2>
 	Id: int
 	Username: string
 	PasswordHash: string
@@ -25,12 +25,12 @@ Develop an online examination system that allows administrators to manage exams,
 	ExamsCreated: ICollection<Exam> (for teachers)
 	Results: ICollection<Result> (for students)
 
-##Role
+<h2>Role</h2>
 	Id: int
 	RoleName: RoleType (enum) (Admin, Teacher, Student)
 	Users: ICollection<User>
 
-##Exam
+<h2>Exam</h2>
 	Id: int
 	Title: string
 	TeacherId: int (foreign key)
@@ -38,7 +38,7 @@ Develop an online examination system that allows administrators to manage exams,
 	Questions: ICollection<Question>
 	Results: ICollection<Result>
 
-##Question
+<h2>Question</h2>
 	Id: int
 	Content: string
 	CorrectAnswer: string
@@ -46,7 +46,7 @@ Develop an online examination system that allows administrators to manage exams,
 	Exam: Exam (navigation property)
 	Options: ICollection<string> (optional, if multiple choice is needed)
 
-##Result
+<h2>Result</h2>
 	Id: int
 	StudentId: int (foreign key)
 	Student: User (navigation property)
@@ -60,18 +60,18 @@ Develop an online examination system that allows administrators to manage exams,
 
 
 
-#Interfaces
-##1.	IUserService
+<h1>Interfaces</h1>
+<h2>1.	IUserService</h2>
 	void AddUser(User user);
 	User Login(string username, string password);
 	void AssignRole(int userId, int roleId);
 	User GetUserById(int userId);
-##2.	IExamService
+<h2>2.IExamService</h2>
 	void CreateExam(Exam exam);
 	void AddQuestion(int examId, Question question);
 	Exam GetExam(int examId);
 	IEnumerable<Exam> GetExamsByTeacher(int teacherId);
-##3.	IResultService
+<h2>.	IResultService</h2>
 	void SubmitResult(Result result);
 	IEnumerable<Result> GetResultsByStudent(int studentId);
 	Result GetResult(int examId, int studentId);
