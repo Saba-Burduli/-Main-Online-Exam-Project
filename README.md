@@ -11,10 +11,10 @@ This Is Project Full Description :
 here is Online Exam Description in Text Format :
 1. Online Exam System
 
-Project Overview
-Develop an online examination system that allows administrators to manage exams, questions, and results. Students can take exams and view their scores.
+##Project Overview
+**Develop an online examination system that allows administrators to manage exams, questions, and results. Students can take exams and view their scores.**
 
-User
+#User
 	Id: int
 	Username: string
 	PasswordHash: string
@@ -24,12 +24,12 @@ User
 	ExamsCreated: ICollection<Exam> (for teachers)
 	Results: ICollection<Result> (for students)
 
-Role
+#Role
 	Id: int
 	RoleName: RoleType (enum) (Admin, Teacher, Student)
 	Users: ICollection<User>
 
-Exam
+#Exam
 	Id: int
 	Title: string
 	TeacherId: int (foreign key)
@@ -37,7 +37,7 @@ Exam
 	Questions: ICollection<Question>
 	Results: ICollection<Result>
 
-Question
+#Question
 	Id: int
 	Content: string
 	CorrectAnswer: string
@@ -45,7 +45,7 @@ Question
 	Exam: Exam (navigation property)
 	Options: ICollection<string> (optional, if multiple choice is needed)
 
-Result
+#Result
 	Id: int
 	StudentId: int (foreign key)
 	Student: User (navigation property)
@@ -59,18 +59,18 @@ Result
 
 
 
-Interfaces
-1.	IUserService
+##Interfaces
+#1.	IUserService
 	void AddUser(User user);
 	User Login(string username, string password);
 	void AssignRole(int userId, int roleId);
 	User GetUserById(int userId);
-2.	IExamService
+#2.	IExamService
 	void CreateExam(Exam exam);
 	void AddQuestion(int examId, Question question);
 	Exam GetExam(int examId);
 	IEnumerable<Exam> GetExamsByTeacher(int teacherId);
-3.	IResultService
+#3.	IResultService
 	void SubmitResult(Result result);
 	IEnumerable<Result> GetResultsByStudent(int studentId);
 	Result GetResult(int examId, int studentId);
