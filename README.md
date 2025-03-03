@@ -55,6 +55,35 @@ Result
 	DateTaken: DateTime
 
 
+
+
+
+
+Interfaces
+1.	IUserService
+	void AddUser(User user);
+	User Login(string username, string password);
+	void AssignRole(int userId, int roleId);
+	User GetUserById(int userId);
+2.	IExamService
+	void CreateExam(Exam exam);
+	void AddQuestion(int examId, Question question);
+	Exam GetExam(int examId);
+	IEnumerable<Exam> GetExamsByTeacher(int teacherId);
+3.	IResultService
+	void SubmitResult(Result result);
+	IEnumerable<Result> GetResultsByStudent(int studentId);
+	Result GetResult(int examId, int studentId);
+
+
+
+
+
+
+
+
+
+
 Online Exam API The Online Exam API is built using ASP.NET Core and Entity Framework, designed to manage online exams efficiently. This API provides endpoints for handling user authentication, exam creation, question management, result tracking, and more.
 
 Key Features & Functionalities
