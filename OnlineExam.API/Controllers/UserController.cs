@@ -60,11 +60,20 @@ namespace OnlineExam.Controllers
         }
 
 
+        [HttpGet("GetProfileAsync")]
+        public async Task<ActionResult<User>> GetProfileAsync(int userId)//what method is this 
+        {
+            if (ModelState.IsValid)
+            {
+                var result = await _userService.GetProfileAsync(userId);
 
-        //public async Task<User> GetProfileAsync(int userId)//what method is this 
-        //{
-        //    //WHAT HAPPEND IN THERE ??
-        //}
+                if (result!=null)
+                {
+                    return Ok(new ResponseModel { Success =true,Massage= "You can see Profile Successfully !" });
+                }
+            }
+            return BadRequest("Profile Not Found !");
+        }
 
 
 
@@ -114,15 +123,31 @@ namespace OnlineExam.Controllers
             return BadRequest("User cannot Register");
         }
 
-        //public async Task<ResponseModel> LogoutUserAsync(int userId)
-        //{
-        //    //am gonna add this one ..
-        //}
+        [HttpPut("LogoutUser")]
+        public async Task<ActionResult<ResponseModel>> LogoutUserAsync(int userId)
+        {
+            var user = await _userService.LogoutUserAsync(userId);
+            if (user==null)
+            {
+                return NotFound("User not found.");
+            }
+            return Ok(new ResponseModel { Success = true,Massage = "User logged out successfully !"});
 
-        //public async Task<ResponseModel> UserRegistrationAsync(UserRegisterModel model)
-        //{
-
-        //}
+        }
+        [HttpPost("UserRegistration")]
+        public async Task<IActionResult> UserRegistrationAsync(UserRegisterModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                var result = await _userService.UserRegistrationAsync(model);
+                if (!result.Success)
+                {
+                    return BadRequest(result.Massage);
+                }
+                return Ok(result);
+            }
+            return BadRequest();
+        }
     }
 
 }
