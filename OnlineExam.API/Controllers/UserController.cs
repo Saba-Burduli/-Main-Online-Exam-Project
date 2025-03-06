@@ -1,3 +1,4 @@
+﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
@@ -5,6 +6,7 @@ using OnlineExam.DAL.Repositories;
 using OnlineExam.DATA.Entites;
 using OnlineExam.SERVICE.DTOs.UserModels;
 using OnlineExam.SERVICE.InterFaces;
+using System.Security.Claims;
 
 namespace OnlineExam.Controllers
 {
@@ -75,6 +77,29 @@ namespace OnlineExam.Controllers
             return BadRequest("Profile Not Found !");
         }
 
+
+        [Authorize] // Require authentication
+        [HttpGet("Profile")]
+        public IActionResult GetProfile()
+        {
+            var userId = User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.NameIdentifier)?.Value;
+            var userName = User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Name)?.Value;
+
+            var roles = User.Claims
+                        .Where(c => c.Type == ClaimTypes.Role) // ✅ Get only Role claims
+                        .Select(c => c.Value) // ✅ Extract role names
+                        .ToList(); // ✅ Convert to List<string>
+
+            if (userId == null)
+                return Unauthorized("Invalid token or user not found");
+
+            return Ok(new
+            {
+                UserId = userId,
+                UserName = userName,
+                Roles = roles
+            });
+        }
 
 
 
@@ -148,6 +173,9 @@ namespace OnlineExam.Controllers
             }
             return BadRequest();
         }
+
+     
+
     }
 
 }

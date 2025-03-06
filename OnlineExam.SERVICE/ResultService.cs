@@ -1,27 +1,48 @@
+using OnlineExam.DAL.Repositories;
 using OnlineExam.DATA.Entites;
 using OnlineExam.SERVICE.DTOs.ResultModels;
+using OnlineExam.SERVICE.DTOs.UserModels;
 using OnlineExam.SERVICE.InterFaces;
 
 namespace OnlineExam.SERVICE;
 
 public class ResultService : IResultService
 {
-    public IEnumerable<Result> GetResultsByStudentId(int studentsId)
+    private readonly IResultRepository _resultRepository;
+    private readonly IUserRepository _userRepository;
+    private readonly IExamRepository _examRepository;
+    public ResultService(IResultRepository resultRepository, IUserRepository userRepository , IExamRepository examRepository)
+    {
+        _resultRepository = resultRepository;
+        _userRepository = userRepository;
+        _examRepository = examRepository;
+    }
+    public async Task<ResponseModel> AddResult(Result result)
+    {
+        throw new NotImplementedException();
+        //if (result ==null)
+        //{
+        //   return new ResponseModel { Success = false, Massage = "There is no Result" };
+        //}
+        //var user = await _userRepository.GetByIdAsync(result.userId);
+        //if (user ==null)
+        //{
+        //    return new ResponseModel { Success = false, Massage = "User doesnt Exists" };
+        //}
+        //var exam = await
+    }
+
+    public Task<Result> GetResultById(int examId, int studentId)
     {
         throw new NotImplementedException();
     }
 
-    public Result GetResultById(int examId, int studentId)
+    public Task<Result> GetResultsByStudentId(int studentsId)
     {
         throw new NotImplementedException();
     }
 
-    public void AddResult(Result result)
-    {
-        throw new NotImplementedException();
-    }
-
-    public void UpdateResult(ResultUpdateModel model)
+    public Task<ResponseModel> UpdateResult(ResultUpdateModel model)
     {
         throw new NotImplementedException();
     }

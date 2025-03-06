@@ -1,15 +1,16 @@
 using OnlineExam.DATA.Entites;
 using OnlineExam.SERVICE.DTOs.ExamModels;
+using OnlineExam.SERVICE.DTOs.UserModels;
 
 namespace OnlineExam.SERVICE.InterFaces;
 
 public interface IExamService
 {
-    void CreateExam(Exam exam);
-    void AddQuestion(int examId,Question question);
-    IEnumerable<Exam> GetAllExams();
-    Exam GetExamById(int examId);
-    IEnumerable<Exam> GetExamsByTeacher(int teacherId);
-    void UpdateExam(ExamUpdateModel model);
-    void DeleteExam(int examId);
+    Task<Exam> CreateExam(Exam exam);
+    Task<Question> AddQuestion(int examId,Question question);
+    Task<Exam> GetAllExams();
+    Task<Exam> GetExamById(int examId);
+    Task<Exam> GetExamsByTeacher(int teacherId);
+    Task<ResponseModel> UpdateExam(ExamUpdateModel model);
+    Task<Exam> DeleteExam(int examId);
 }

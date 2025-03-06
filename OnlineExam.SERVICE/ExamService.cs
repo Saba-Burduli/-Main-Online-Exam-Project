@@ -2,6 +2,7 @@ using Microsoft.EntityFrameworkCore;
 using OnlineExam.DAL.Repositories;
 using OnlineExam.DATA.Entites;
 using OnlineExam.SERVICE.DTOs.ExamModels;
+using OnlineExam.SERVICE.DTOs.UserModels;
 using OnlineExam.SERVICE.InterFaces;
 using System.Threading.Tasks;
 
@@ -10,45 +11,44 @@ namespace OnlineExam.SERVICE;
 public class ExamService : IExamService
 {
     private readonly IUserRepository _userRepository;
-    public ExamService(IUserRepository userRepository)
+    private readonly IExamRepository _examRepository;
+    public ExamService(IUserRepository userRepository, IExamRepository examRepository)
     {
         _userRepository = userRepository;
+        _examRepository = examRepository;
     }
 
-    //[GET METHODS (START)]
-    public async Task<IEnumerable<Exam>> GetAllExams()
-    {
-        var exam =await _userRepository.getallexa
-    }
-
-    public Exam GetExamById(int examId)
+    public Task<Question> AddQuestion(int examId, Question question)
     {
         throw new NotImplementedException();
     }
 
-    public IEnumerable<Exam> GetExamsByTeacher(int teacherId)
+    public Task<Exam> CreateExam(Exam exam)
     {
         throw new NotImplementedException();
     }
 
-    //[GET METHODS (END)]
-
-    public void AddQuestion(int examId, Question question)
+    public Task<Exam> DeleteExam(int examId)
     {
         throw new NotImplementedException();
     }
 
-    public void CreateExam(Exam exam)
+    public Task<Exam> GetAllExams()
     {
         throw new NotImplementedException();
     }
 
-    public void DeleteExam(int examId)
+    public async Task<Exam> GetExamById(int examId)
+    {
+        return await _examRepository.GetByIdAsync(examId);
+    }
+
+    public Task<Exam> GetExamsByTeacher(int teacherId)
     {
         throw new NotImplementedException();
     }
 
-    public void UpdateExam(ExamUpdateModel model)
+    public Task<ResponseModel> UpdateExam(ExamUpdateModel model)
     {
         throw new NotImplementedException();
     }

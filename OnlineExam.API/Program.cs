@@ -3,6 +3,10 @@ using OnlineExam.DAL.Repositories;
 using OnlineExam.SERVICE;
 using OnlineExam.SERVICE.InterFaces;
 using OnlineExam.DATA;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
+using OnlineExam.SERVICE.Mapping;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -11,6 +15,36 @@ builder.Services.AddDbContext<OnlineExamDbContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("OnlineExamDbConnection"));
 });
+
+// Load JWT secret key from configuration safely
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+    .AddJwtBearer(options =>
+    {
+        options.TokenValidationParameters = new TokenValidationParameters
+        {
+            ValidateIssuerSigningKey = true,
+            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["JWTConfig:Key"])),
+            ValidateIssuer = false,
+            ValidateAudience = false,
+            ValidateLifetime = true
+        };
+        options.Events = new JwtBearerEvents
+        {
+            OnMessageReceived = context =>
+            {
+                if (context.Request.Cookies.ContainsKey("Token"))
+                {
+                    context.Token = context.Request.Cookies["Token"];
+                }
+                return Task.CompletedTask;
+            }
+        };
+    });
+
+builder.Services.AddAuthorization();
+builder.Services.AddHttpContextAccessor();
+
+builder.Services.AddAutoMapper(typeof(MappingProfile));
 
 // Add services to the container.
 builder.Services.AddControllers();
@@ -40,7 +74,6 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-// add when use JWT Token
 app.UseAuthentication();
 
 app.UseAuthorization();
@@ -49,29 +82,3 @@ app.MapControllers();
 
 app.Run();
 
-// var summaries = new[]
-// {
-//     "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-// };
-//
-// app.MapGet("/weatherforecast", () =>
-//     {
-//         var forecast = Enumerable.Range(1, 5).Select(index =>
-//                 new WeatherForecast
-//                 (
-//                     DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
-//                     Random.Shared.Next(-20, 55),
-//                     summaries[Random.Shared.Next(summaries.Length)]
-//                 ))
-//             .ToArray();
-//         return forecast;
-//     })
-//     .WithName("GetWeatherForecast")
-//     .WithOpenApi();
-
-
-//
-// record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
-// {
-//     public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
-// }
