@@ -15,6 +15,7 @@ namespace OnlineExam.Controllers
     public class UserController : ControllerBase
     {
         private readonly IUserService _userService;
+        //we dont need and this is not right to implement repository in there Controller
         private readonly IUserRepository _userRepository;
         //[POST METHOD]
         public UserController(IUserService userService, IUserRepository userRepository)
