@@ -21,7 +21,7 @@ Project Overview
 
 Develop an online examination system that allows administrators to manage exams, questions, and results. Students can take exams and view their scores.
 
-<h2>User</h2>
+<h2>🙋User</h2>
 	Id: int
 	Username: string
 	PasswordHash: string
@@ -31,12 +31,12 @@ Develop an online examination system that allows administrators to manage exams,
 	ExamsCreated: ICollection<Exam> (for teachers)
 	Results: ICollection<Result> (for students)
 
-<h2>Role</h2>
+<h2👏>Role</h2>
 	Id: int
 	RoleName: RoleType (enum) (Admin, Teacher, Student)
 	Users: ICollection<User>
 
-<h2>Exam</h2>
+<h2>📚Exam</h2>
 	Id: int
 	Title: string
 	TeacherId: int (foreign key)
@@ -44,7 +44,7 @@ Develop an online examination system that allows administrators to manage exams,
 	Questions: ICollection<Question>
 	Results: ICollection<Result>
 
-<h2>Question</h2>
+<h2>⁉️Question</h2>
 	Id: int
 	Content: string
 	CorrectAnswer: string
@@ -52,7 +52,7 @@ Develop an online examination system that allows administrators to manage exams,
 	Exam: Exam (navigation property)
 	Options: ICollection<string> (optional, if multiple choice is needed)
 
-<h2>Result</h2>
+<h2>✅Result</h2>
 	Id: int
 	StudentId: int (foreign key)
 	Student: User (navigation property)
