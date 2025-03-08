@@ -148,7 +148,7 @@ namespace OnlineExam.Controllers
             }
             return BadRequest("User cannot Register");
         }
-
+        //Logout
         [HttpPut("LogoutUser")]
         public async Task<ActionResult<ResponseModel>> LogoutUserAsync(int userId)
         {

@@ -246,8 +246,7 @@
               "RelativeToolTip": "OnlineExam.DATA\\OnlineExamDbContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-02T11:24:10.955Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-02T11:24:10.955Z"
             },
             {
               "$type": "Document",
@@ -259,8 +258,7 @@
               "RelativeToolTip": "OnlineExam.API\\Controllers\\AdminController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-03T14:09:04.789Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-03T14:09:04.789Z"
             },
             {
               "$type": "Document",
@@ -272,8 +270,7 @@
               "RelativeToolTip": "OnlineExam.API\\Controllers\\ExamController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-03T12:10:15.087Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-03T12:10:15.087Z"
             },
             {
               "$type": "Document",
@@ -285,8 +282,7 @@
               "RelativeToolTip": "OnlineExam.API\\Controllers\\ResultController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-04T18:08:48.444Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-04T18:08:48.444Z"
             },
             {
               "$type": "Document",
@@ -296,7 +292,7 @@
               "RelativeDocumentMoniker": "OnlineExam.API\\Controllers\\UserController.cs",
               "ToolTip": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.API\\Controllers\\UserController.cs",
               "RelativeToolTip": "OnlineExam.API\\Controllers\\UserController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAzAAAAAAAAAA==",
+              "ViewState": "AgIAAIYAAAAAAAAAAAAuwKIAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-02T11:00:37.057Z",
               "EditorCaption": ""
