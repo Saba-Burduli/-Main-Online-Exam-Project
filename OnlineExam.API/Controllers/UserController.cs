@@ -160,6 +160,7 @@ namespace OnlineExam.Controllers
             return Ok(new ResponseModel { Success = true,Massage = "User logged out successfully !"});
 
         }
+        //Registration
         [HttpPost("UserRegistration")]
         public async Task<IActionResult> UserRegistrationAsync(UserRegisterModel model)
         {
