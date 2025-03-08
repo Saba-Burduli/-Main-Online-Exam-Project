@@ -40,7 +40,8 @@ namespace OnlineExam.Controllers
 
             return BadRequest();
         }
-        
+
+        // Login
         [HttpPut("Login")]
         public async Task<IActionResult> LoginUserAsync(string username, string password)
         {
@@ -62,7 +63,7 @@ namespace OnlineExam.Controllers
 
         }
 
-
+        //Get Profile 
         [HttpGet("GetProfileAsync")]
         public async Task<ActionResult<User>> GetProfileAsync(int userId)//what method is this 
         {
@@ -135,6 +136,7 @@ namespace OnlineExam.Controllers
             return BadRequest();
         }
 
+        //Registrate On Exam
         [HttpPost("RegistrateOnExam")]
         public async Task<ActionResult<bool>> RegistrateOnExam(int examId, int userId)
         {
