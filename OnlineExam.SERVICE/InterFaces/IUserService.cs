@@ -12,7 +12,6 @@ public interface IUserService
     Task<bool> RegistrateOnExam(int examId,int userId);//-
     Task<ResponseModel> LogoutUserAsync(int userId);//+
     Task<ResponseModel> UpdateProfileAsync(int userId, UpdateProfileModel model);
-
     Task<User> GetUserByEmailAsync(string email);
 
 

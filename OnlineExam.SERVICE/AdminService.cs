@@ -59,10 +59,12 @@ public class AdminService : IAdminService
     public async Task<User> AssignRole(int userId, List<int> roleIDs)
     {
         var user = await _userRepository.AssignRoleUserAsync(userId,roleIDs);
-        if (user == null) throw new Exception("User not found");
+        if (user == null)
+        {
+            throw new Exception("User not found");
+        }
 
         return user;
-
     }
 
     public async Task<User> UpdateUser(int userId, UpdateUserModel model)
@@ -88,7 +90,6 @@ public class AdminService : IAdminService
         await _userRepository.DeleteAsync(userId);
 
         return user;
-
     }
 
 }
