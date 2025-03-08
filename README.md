@@ -83,20 +83,33 @@ Develop an online examination system that allows administrators to manage exams,
 </ol>
 
 <h2>IExamService</h2>
+
 <ol>
-	<li>void CreateExam(Exam exam);</li>
-	<li>void AddQuestion(int examId, Question question);</li>
-	<li>Exam GetExam(int examId);<li>
-	<li>IEnumerable<Exam> GetExamsByTeacher(int teacherId);</li>
+	
+<li>void CreateExam(Exam exam);</li>
+	
+<li>void AddQuestion(int examId, Question question);</li>
+
+<li>Exam GetExam(int examId);<li>
+	
+<li>IEnumerable<Exam> GetExamsByTeacher(int teacherId);</li>
 		
 </ol>		
 
 
-<h2>.	IResultService</h2>
-	void SubmitResult(Result result);
-	IEnumerable<Result> GetResultsByStudent(int studentId);
-	Result GetResult(int examId, int studentId);
 
+
+<h2>.	IResultService </h2>
+
+<ol>
+	
+<li>void SubmitResult(Result result);</li>
+	
+<li>IEnumerable<Result> GetResultsByStudent(int studentId);</li>
+	
+<li>Result GetResult(int examId, int studentId);</li>
+
+</ol>
 
 
 <h1>Services</h1>
