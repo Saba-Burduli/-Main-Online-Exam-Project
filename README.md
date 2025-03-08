@@ -69,7 +69,7 @@ Develop an online examination system that allows administrators to manage exams,
 <h1>Interfaces</h1>
 <br>
 
-<h1>IUserService </h1>
+<h2>IUserService </h2>
 <ol>
 
 <li>void AddUser(User user);</li>
