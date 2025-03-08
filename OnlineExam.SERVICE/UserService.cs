@@ -20,7 +20,7 @@ public class UserService : IUserService
         _roleRepository = roleRepository;
         
     }
-    //[POST METHOD] User registration
+    //[POST METHOD] User Registration
     public async Task<ResponseModel> UserRegistrationAsync(UserRegisterModel model)
     { 
         var existingUser = await _userRepository.GetUserByEmailAsync(model.Email);
