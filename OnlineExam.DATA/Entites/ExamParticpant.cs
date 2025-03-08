@@ -14,5 +14,7 @@ public class ExamParticpant
     public Exam? Exam { get; set; }
     [ForeignKey("User")]
     public int UserId { get; set; }
+    //Relations :
+    //ExamParticpant => User
     public User? User { get; set; }
 }

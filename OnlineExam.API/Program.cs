@@ -71,7 +71,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
+//this is all for JWT Tokens
 app.UseHttpsRedirection();
 
 app.UseAuthentication();
