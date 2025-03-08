@@ -15,7 +15,7 @@ namespace OnlineExam.DATA
         public DbSet<User>? Users { get; set; }
         public DbSet<ExamParticpant>? ExamParticpants { get; set; }
 
-
+        //conststructor for context class
         public OnlineExamDbContext()
         {
             
