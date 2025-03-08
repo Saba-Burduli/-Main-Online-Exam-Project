@@ -17,49 +17,49 @@ This Is Project Full Description :
 ![Screenshot 2025-03-05 203519](https://github.com/user-attachments/assets/8e2f31b1-1b8e-42d0-839d-2eb6fcfece0f)
 ![Screenshot 2025-03-05 203544](https://github.com/user-attachments/assets/f8509629-f8b8-4dc1-9d61-089de9357bf0)
 
-       Project Overview
+Project Overview
 
 Develop an online examination system that allows administrators to manage exams, questions, and results. Students can take exams and view their scores.
 
-<h2>🙋User</h2>
-	Id: int
-	Username: string
-	PasswordHash: string
-	PasswordSalt: string
-	RoleId: int (foreign key)
-	Role: Role (navigation property)
-	ExamsCreated: ICollection<Exam> (for teachers)
-	Results: ICollection<Result> (for students)
+	<h2>🙋User</h2>
+		Id: int
+		Username: string
+		PasswordHash: string
+		PasswordSalt: string
+		RoleId: int (foreign key)
+		Role: Role (navigation property)
+		ExamsCreated: ICollection<Exam> (for teachers)
+		Results: ICollection<Result> (for students)
 
-<h2👏>Role</h2>
-	Id: int
-	RoleName: RoleType (enum) (Admin, Teacher, Student)
-	Users: ICollection<User>
+	<h2👏>Role</h2>
+		Id: int
+		RoleName: RoleType (enum) (Admin, Teacher, Student)
+		Users: ICollection<User>
 
-<h2>📚Exam</h2>
-	Id: int
-	Title: string
-	TeacherId: int (foreign key)
-	Teacher: User (navigation property)
-	Questions: ICollection<Question>
-	Results: ICollection<Result>
+	<h2>📚Exam</h2>
+		Id: int
+		Title: string
+		TeacherId: int (foreign key)
+		Teacher: User (navigation property)
+		Questions: ICollection<Question>
+		Results: ICollection<Result>
 
-<h2>⁉️Question</h2>
-	Id: int
-	Content: string
-	CorrectAnswer: string
-	ExamId: int (foreign key)
-	Exam: Exam (navigation property)
-	Options: ICollection<string> (optional, if multiple choice is needed)
-
-<h2>✅Result</h2>
-	Id: int
-	StudentId: int (foreign key)
-	Student: User (navigation property)
-	ExamId: int (foreign key)
-	Exam: Exam (navigation property)
-	Score: decimal(8,2)
-	DateTaken: DateTime
+	<h2>⁉️Question</h2>
+		Id: int
+		Content: string
+		CorrectAnswer: string
+		ExamId: int (foreign key)
+		Exam: Exam (navigation property)
+		Options: ICollection<string> (optional, if multiple choice is needed)
+	
+	<h2>✅Result</h2>
+		Id: int
+		StudentId: int (foreign key)
+		Student: User (navigation property)
+		ExamId: int (foreign key)
+		Exam: Exam (navigation property)
+		Score: decimal(8,2)
+		DateTaken: DateTime
 
 
 
