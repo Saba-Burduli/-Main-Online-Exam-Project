@@ -67,16 +67,31 @@ Develop an online examination system that allows administrators to manage exams,
 
 
 <h1>Interfaces</h1>
-<h2>1.	IUserService</h2>
-	void AddUser(User user);
-	User Login(string username, string password);
-	void AssignRole(int userId, int roleId);
-	User GetUserById(int userId);
-<h2>2.IExamService</h2>
-	void CreateExam(Exam exam);
-	void AddQuestion(int examId, Question question);
-	Exam GetExam(int examId);
-	IEnumerable<Exam> GetExamsByTeacher(int teacherId);
+<br>
+
+<h1>IUserService </h1>
+<ol>
+
+<li>void AddUser(User user);</li>
+
+<li>User Login(string username, string password);</li>
+
+<li>void AssignRole(int userId, int roleId);</li>
+
+<li>User GetUserById(int userId);</li>
+
+</ol>
+
+<h2>IExamService</h2>
+<ol>
+	<li>void CreateExam(Exam exam);</li>
+	<li>void AddQuestion(int examId, Question question);</li>
+	<li>Exam GetExam(int examId);<li>
+	<li>IEnumerable<Exam> GetExamsByTeacher(int teacherId);</li>
+		
+</ol>		
+
+
 <h2>.	IResultService</h2>
 	void SubmitResult(Result result);
 	IEnumerable<Result> GetResultsByStudent(int studentId);
@@ -86,16 +101,16 @@ Develop an online examination system that allows administrators to manage exams,
 
 <h1>Services</h1>
 
-<ul>
- <li>1.UserService</li>
+<ol>
+ <li>UserService</li>
 	Handles user authentication and role assignment.
 
-<li>2.ExamrService</li>
+<li>ExamrService</li>
 	Manages exam creation, question addition, and retrieval.
 
-<li>3.ResultService</li>
+<li>ResultService</li>
 	Handles result submission and retrieval
-</ul>
+</ol>
 
 
 
