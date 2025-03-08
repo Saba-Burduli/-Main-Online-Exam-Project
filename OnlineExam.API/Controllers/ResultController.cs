@@ -7,5 +7,6 @@ namespace OnlineExam.Controllers
     [ApiController]
     public class ResultController : ControllerBase
     {
+        //add this controller
     }
 }
