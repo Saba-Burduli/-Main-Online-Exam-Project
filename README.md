@@ -85,15 +85,17 @@ Develop an online examination system that allows administrators to manage exams,
 
 
 <h1>Services</h1>
- <h2>1.UserService</h2>
+
+<ul>
+ <li>1.UserService</li>
 	Handles user authentication and role assignment.
 
- <h2>2.ExamrService</h2>
+<li>2.ExamrService</li>
 	Manages exam creation, question addition, and retrieval.
 
- <h2>3.ResultService</h2>
+<li>3.ResultService</li>
 	Handles result submission and retrieval
-
+</ul>
 
 
 
