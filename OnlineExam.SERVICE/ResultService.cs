@@ -19,17 +19,17 @@ public class ResultService : IResultService
     }
     public async Task<ResponseModel> AddResult(Result result)
     {
-        throw new NotImplementedException();
-        //if (result ==null)
-        //{
-        //   return new ResponseModel { Success = false, Massage = "There is no Result" };
-        //}
-        //var user = await _userRepository.GetByIdAsync(result.userId);
-        //if (user ==null)
-        //{
-        //    return new ResponseModel { Success = false, Massage = "User doesnt Exists" };
-        //}
-        //var exam = await
+
+        if (result == null)
+        {
+            return new ResponseModel { Success = false, Massage = "There is no Result" };
+        }
+        var user = await _userRepository.GetByIdAsync();
+        if (user == null)
+        {
+            return new ResponseModel { Success = false, Massage = "User doesnt Exists" };
+        }
+        var exam = await _examRepository.GetByIdAsync();
     }
 
     public Task<Result> GetResultById(int examId, int studentId)
