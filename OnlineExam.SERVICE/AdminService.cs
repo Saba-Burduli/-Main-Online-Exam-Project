@@ -16,13 +16,13 @@ public class AdminService : IAdminService
     private readonly IUserRepository _userRepository;
     private readonly IMapper _mapper;
 
-
     public AdminService(IPasswordHasher passwordHasher, IUserRepository userRepository, IMapper mapper)
     {
         _passwordHasher = passwordHasher;
         _userRepository = userRepository;
         _mapper = mapper;
     }
+
     
     public async Task<IEnumerable<User>> GetAllStudents()
     {
@@ -30,17 +30,20 @@ public class AdminService : IAdminService
         return users.Where(u=>u.Roles.Any(r=>r.RoleId==3));
     }
 
+
     public async Task<IEnumerable<User>> GetAllTeachers()
     {
         var users = await _userRepository.GetAllAsync();
         return users.Where(t => t.Roles.Any(r => r.RoleId == 2));
     }
 
+
     public async Task<UserModel> GetUserById(int userId)
     {
         var entity = await _userRepository.GetByIdAsync(userId);
         return _mapper.Map<UserModel>(entity); 
     }
+
 
     public async Task<User> AddUser(UserRegisterModel model)// i change this UserModel to User
     {
@@ -56,6 +59,7 @@ public class AdminService : IAdminService
         return user;
     }
 
+
     public async Task<User> AssignRole(int userId, List<int> roleIDs)// i change this UserModel to User
     {
         var user = await _userRepository.AssignRoleUserAsync(userId,roleIDs);
@@ -66,6 +70,7 @@ public class AdminService : IAdminService
 
         return user;
     }
+
 
     public async Task<User> UpdateUser(int userId, UpdateUserModel model)// i change this UserModel to User
     {
@@ -82,6 +87,7 @@ public class AdminService : IAdminService
         return user;
         
     }
+
 
     public async Task<User> DeleteUser(int userId)// i change this UserModel to User
     {
