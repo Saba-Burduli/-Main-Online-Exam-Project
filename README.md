@@ -140,7 +140,7 @@ Develop an online examination system that allows administrators to manage exams,
 
 Online Exam API The Online Exam API is built using ASP.NET Core and Entity Framework, designed to manage online exams efficiently. This API provides endpoints for handling user authentication, exam creation, question management, result tracking, and more.
 
-Key Features & Functionalities
+ Key Features & Functionalities
 
 1. **User Management User authentication and authorization (JWT-based).** Role-based access control (Admin, Instructor, Student). Profile management.
 
@@ -156,6 +156,6 @@ Key Features & Functionalities
 
 7. **Security & Scalability JWT authentication for secure API access. Role-based authorization to control access to different endpoints.** Designed for scalability, supporting future integrations with mobile apps or external LMS platforms.
 
-   <br>
+     <br>
  📥  If you want to learn more about This Project you can actually contact me on Mail : **sabagg790@gmail.com**
 
