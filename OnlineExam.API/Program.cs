@@ -53,6 +53,7 @@ builder.Services.AddControllers();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IRoleRepository, RoleRepository>();
 builder.Services.AddScoped<IPasswordHasher, PasswordHasher>();
+
 // add services for Services
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IResultService, ResultService>();
