@@ -36,7 +36,7 @@ namespace OnlineExam.DAL.Repositories
             return await _context.Results.FirstOrDefaultAsync(r => r.Score == Score);
         }
 
-        //public async Task<Result> GetByUserAndExamAsync(int userId,int examId) should i add this method ??
+        //public async Task<Result> GetByUserAndExamAsync(int userId,int examId) should i add this method ???
         //{
 
 
