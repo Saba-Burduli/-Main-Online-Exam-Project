@@ -16,6 +16,7 @@ namespace OnlineExam.SERVICE.Mapping
             CreateMap<User, UserModel>().ReverseMap();
 
             CreateMap<User, UserRolesModel>()
+
             .ForMember(dest => dest.Roles, opt => opt.MapFrom(src => src.Roles)); // Ensure this mapping is correct
 
             CreateMap<Role, RoleModel>(); // Make sure Role -> RoleModel mapping exists
