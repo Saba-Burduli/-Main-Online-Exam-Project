@@ -71,7 +71,6 @@ namespace OnlineExam.Controllers
             return BadRequest();
         }
 
-
         //api/admin/UpdateUser
         [HttpGet("UpdateUser")]
         public async Task<ActionResult<UserModel>> UpdateUser(int userId, UpdateUserModel model)
@@ -88,8 +87,6 @@ namespace OnlineExam.Controllers
             return BadRequest();
         }
 
-
-
         //api/admin/DeleteUser
         [HttpGet("DeleteUser")]
         public async Task<ActionResult<UserModel>> DeleteUser(int userId)
@@ -105,7 +102,6 @@ namespace OnlineExam.Controllers
 
             return BadRequest();
         }
-
 
         //api/admin/AssignRole
         [HttpGet("AssignRole")]
