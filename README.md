@@ -148,7 +148,7 @@ Online Exam API The Online Exam API is built using ASP.NET Core and Entity Frame
 
 3. **Question & Answer Management Create multiple-choice, true/false, and open-ended questions.** Support for different question difficulty levels. Options for shuffling questions per exam session.
 
-4. **Exam Attempt & Submission Students can start, pause, and submit exams within a given time frame.** Auto-save feature to prevent data loss. Timer management for live exams.
+4. **Exam Attempt & Submission Students can start, pause, and submit exams within a given time frame.**  Auto-save feature to prevent data loss. Timer management for live exams.
 
 5. **Result & Evaluation System Auto-evaluation for multiple-choice and true/false questions.** Instructors can manually grade open-ended questions. Generate exam reports, scores, and performance analysis.
 
