@@ -72,13 +72,13 @@ Develop an online examination system that allows administrators to manage exams,
 <h2>⚪IUserService </h2>
 <ol>
 
-<li>void AddUser(User user);</li>
+<li> void AddUser(User user);</li>
 
-<li>User Login(string username, string password);</li>
+<li> User Login(string username, string password);</li>
 
-<li>void AssignRole(int userId, int roleId);</li>
+<li> void AssignRole(int userId, int roleId);</li>
 
-<li>User GetUserById(int userId);</li>
+<li> User GetUserById(int userId);</li>
 
 </ol>
 
