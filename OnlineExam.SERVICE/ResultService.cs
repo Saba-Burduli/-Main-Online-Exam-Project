@@ -1,3 +1,4 @@
+using Azure;
 using OnlineExam.DAL.Repositories;
 using OnlineExam.DATA.Entites;
 using OnlineExam.SERVICE.DTOs.ResultModels;
@@ -17,19 +18,16 @@ public class ResultService : IResultService
         _userRepository = userRepository;
         _examRepository = examRepository;
     }
-    public async Task<ResponseModel> AddResult(Result result)
+    public async Task<ResponseModel> AddResult(AddResultModel result)
     {
+        var existingUser = await _userRepository.GetUserByEmailAsync(result.Email);
+        if (existingUser==null)
+        {
+            return new ResponseModel {Success = false, Massage = "existingUser not found" }
+        }
 
-        if (result == null)
-        {
-            return new ResponseModel { Success = false, Massage = "There is no Result" };
-        }
-        var user = await _userRepository.GetByIdAsync();
-        if (user == null)
-        {
-            return new ResponseModel { Success = false, Massage = "User doesnt Exists" };
-        }
-        var exam = await _examRepository.GetByIdAsync();
+ 
+        
     }
 
     public Task<Result> GetResultById(int examId, int studentId)

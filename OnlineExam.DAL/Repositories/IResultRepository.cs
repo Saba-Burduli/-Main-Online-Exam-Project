@@ -14,6 +14,7 @@ namespace OnlineExam.DAL.Repositories
     public interface IResultRepository :IBaseRepository<Result>     
     {
         Task<Result> GetResultsByScore(decimal Score);
+        //Task<Result> GetByUserAndExamAsync(int userId,int examId);
     }
 
     public class ResultRepository : BaseRepository<Result>, IResultRepository
@@ -23,7 +24,38 @@ namespace OnlineExam.DAL.Repositories
         {
             _context = context;
         }
-     
+
+        //public async Task<Result> GetByUserAndExamAsync(int userId,int examId) should i add this method ??
+        //{
+          
+
+        //    //var user = await _context.Users
+        //    //   .Include(e => e.Exam)
+        //    //   .FirstOrDefaultAsync(u => u.UserId == userId);
+
+        //    //if (user ==null)
+        //    //{
+        //    //    throw new Exception("User not found");
+        //    //}
+        //    //var exam = await _context.Exams
+        //    //    .Where(r => examId.Contains(r.ExamId))
+        //    //    .ToListAsync();
+        //    //if (exam.Count!=examId.Count)
+        //    //{
+        //    //    throw new Exception("Some Exam were not found");
+        //    //}
+        //    //var result = await _context.Results
+        //    //    .Include(R => R.ResultId)
+        //    //    .FirstOrDefaultAsync();
+
+        //    //if (true)
+        //    //{
+
+        //    //}
+
+        //    //user.Exam = exam;
+        //    //await _context.SaveChangesAsync();      
+        //}
 
         public async Task<Result> GetResultsByScore(decimal Score)
         {
