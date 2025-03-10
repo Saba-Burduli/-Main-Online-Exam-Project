@@ -21,7 +21,6 @@ namespace OnlineExam.DATA
             
         }
         
-        
         public OnlineExamDbContext(DbContextOptions<OnlineExamDbContext>context):base(context)
         {
             
