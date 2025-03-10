@@ -13,7 +13,6 @@ public interface IAdminService
 
     Task<User> AddUser(UserRegisterModel model); // i change this UserModel to User
 
-
     Task<User> AssignRole(int userId, List<int> roleIDs); // i change this UserModel to User
 
     Task<User> UpdateUser(int userId, UpdateUserModel model);// i change this UserModel to User

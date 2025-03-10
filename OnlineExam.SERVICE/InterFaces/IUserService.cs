@@ -14,5 +14,4 @@ public interface IUserService
     Task<ResponseModel> UpdateProfileAsync(int userId, UpdateProfileModel model);
     Task<User> GetUserByEmailAsync(string email);
 
-
 }

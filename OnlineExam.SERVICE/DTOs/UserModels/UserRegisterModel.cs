@@ -10,4 +10,5 @@ public class UserRegisterModel
     public DateTime RegistrationDate { get; set; } = DateTime.Now;
     public int RoleId { get; set; }
     public Person? Person { get; set; }
+
 }
