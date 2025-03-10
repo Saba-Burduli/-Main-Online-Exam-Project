@@ -25,9 +25,20 @@ namespace OnlineExam.DAL.Repositories
             _context = context;
         }
 
+
+        public async Task<Result> GetResultsByScore(decimal Score)
+        {
+            if (_context == null || _context.Results == null)
+            {
+                throw new NullReferenceException("This context is null");
+            }
+
+            return await _context.Results.FirstOrDefaultAsync(r => r.Score == Score);
+        }
+
         //public async Task<Result> GetByUserAndExamAsync(int userId,int examId) should i add this method ??
         //{
-          
+
 
         //    //var user = await _context.Users
         //    //   .Include(e => e.Exam)
@@ -57,14 +68,5 @@ namespace OnlineExam.DAL.Repositories
         //    //await _context.SaveChangesAsync();      
         //}
 
-        public async Task<Result> GetResultsByScore(decimal Score)
-        {
-            if (_context == null || _context.Results ==null)
-            {
-                throw new NullReferenceException("This context is null");
-            }
-
-            return await _context.Results.FirstOrDefaultAsync(r => r.Score == Score);
-        }
     }
 }

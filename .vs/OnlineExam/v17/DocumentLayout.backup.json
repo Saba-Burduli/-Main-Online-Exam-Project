@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{32825716-6BC4-44E2-B7B3-4E5A243E1C85}|OnlineExam.API\\OnlineExam.API.csproj|c:\\users\\user\\desktop\\online-exam-asp.net-web-api-project-using-ef-main\\onlineexam.api\\controllers\\resultcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32825716-6BC4-44E2-B7B3-4E5A243E1C85}|OnlineExam.API\\OnlineExam.API.csproj|solutionrelative:onlineexam.api\\controllers\\resultcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{32825716-6BC4-44E2-B7B3-4E5A243E1C85}|OnlineExam.API\\OnlineExam.API.csproj|c:\\users\\user\\desktop\\online-exam-asp.net-web-api-project-using-ef-main\\onlineexam.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{32825716-6BC4-44E2-B7B3-4E5A243E1C85}|OnlineExam.API\\OnlineExam.API.csproj|solutionrelative:onlineexam.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -33,10 +37,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{32825716-6BC4-44E2-B7B3-4E5A243E1C85}|OnlineExam.API\\OnlineExam.API.csproj|c:\\users\\user\\desktop\\online-exam-asp.net-web-api-project-using-ef-main\\onlineexam.api\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{32825716-6BC4-44E2-B7B3-4E5A243E1C85}|OnlineExam.API\\OnlineExam.API.csproj|solutionrelative:onlineexam.api\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{32825716-6BC4-44E2-B7B3-4E5A243E1C85}|OnlineExam.API\\OnlineExam.API.csproj|c:\\users\\user\\desktop\\online-exam-asp.net-web-api-project-using-ef-main\\onlineexam.api\\controllers\\resultcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{32825716-6BC4-44E2-B7B3-4E5A243E1C85}|OnlineExam.API\\OnlineExam.API.csproj|solutionrelative:onlineexam.api\\controllers\\resultcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{396A2FA6-9CF3-477D-B65B-F4453A357277}|OnlineExam.SERVICE\\OnlineExam.SERVICE.csproj|c:\\users\\user\\desktop\\online-exam-asp.net-web-api-project-using-ef-main\\onlineexam.service\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -262,7 +262,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "UserController.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.API\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "OnlineExam.API\\Controllers\\UserController.cs",
@@ -270,25 +270,24 @@
               "RelativeToolTip": "OnlineExam.API\\Controllers\\UserController.cs",
               "ViewState": "AgIAAE0AAAAAAAAAAAAwwGUAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-02T11:00:37.057Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-02T11:00:37.057Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 0,
               "Title": "ResultController.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.API\\Controllers\\ResultController.cs",
               "RelativeDocumentMoniker": "OnlineExam.API\\Controllers\\ResultController.cs",
               "ToolTip": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.API\\Controllers\\ResultController.cs",
               "RelativeToolTip": "OnlineExam.API\\Controllers\\ResultController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-04T18:08:48.444Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "IAdminService.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.SERVICE\\InterFaces\\IAdminService.cs",
               "RelativeDocumentMoniker": "OnlineExam.SERVICE\\InterFaces\\IAdminService.cs",
@@ -296,12 +295,11 @@
               "RelativeToolTip": "OnlineExam.SERVICE\\InterFaces\\IAdminService.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAABfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-02T15:13:47.286Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-02T15:13:47.286Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "UserModel.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.SERVICE\\DTOs\\UserModels\\UserModel.cs",
               "RelativeDocumentMoniker": "OnlineExam.SERVICE\\DTOs\\UserModels\\UserModel.cs",
@@ -309,12 +307,11 @@
               "RelativeToolTip": "OnlineExam.SERVICE\\DTOs\\UserModels\\UserModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAkAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-10T12:48:41.418Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-10T12:48:41.418Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.DATA\\Entites\\User.cs",
               "RelativeDocumentMoniker": "OnlineExam.DATA\\Entites\\User.cs",
@@ -322,12 +319,11 @@
               "RelativeToolTip": "OnlineExam.DATA\\Entites\\User.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwA8AAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-03T12:26:37.606Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-03T12:26:37.606Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "UserService.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.SERVICE\\UserService.cs",
               "RelativeDocumentMoniker": "OnlineExam.SERVICE\\UserService.cs",
@@ -335,12 +331,11 @@
               "RelativeToolTip": "OnlineExam.SERVICE\\UserService.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAQwBYAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-02T11:20:27.353Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-02T11:20:27.353Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "AdminController.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.API\\Controllers\\AdminController.cs",
               "RelativeDocumentMoniker": "OnlineExam.API\\Controllers\\AdminController.cs",
@@ -348,8 +343,7 @@
               "RelativeToolTip": "OnlineExam.API\\Controllers\\AdminController.cs",
               "ViewState": "AgIAAC8AAAAAAAAAAAAwwDoAAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-03T14:09:04.789Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-03T14:09:04.789Z"
             },
             {
               "$type": "Document",
@@ -361,12 +355,11 @@
               "RelativeToolTip": "OnlineExam.DAL\\Repositories\\IUserRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAEAAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-02T17:05:39.892Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-02T17:05:39.892Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "ResultService.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.SERVICE\\ResultService.cs",
               "RelativeDocumentMoniker": "OnlineExam.SERVICE\\ResultService.cs",
@@ -374,12 +367,11 @@
               "RelativeToolTip": "OnlineExam.SERVICE\\ResultService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-10T14:00:32.554Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-10T14:00:32.554Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "IResultService.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.SERVICE\\InterFaces\\IResultService.cs",
               "RelativeDocumentMoniker": "OnlineExam.SERVICE\\InterFaces\\IResultService.cs",
@@ -387,8 +379,7 @@
               "RelativeToolTip": "OnlineExam.SERVICE\\InterFaces\\IResultService.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAcwAsAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-02T15:13:38.743Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-02T15:13:38.743Z"
             },
             {
               "$type": "Document",
@@ -400,8 +391,7 @@
               "RelativeToolTip": "OnlineExam.SERVICE\\InterFaces\\IUserService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-02T14:56:30.935Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-02T14:56:30.935Z"
             },
             {
               "$type": "Document",
@@ -413,8 +403,7 @@
               "RelativeToolTip": "OnlineExam.SERVICE\\DTOs\\PersonModels\\PersonModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-10T13:34:01.001Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-10T13:34:01.001Z"
             },
             {
               "$type": "Document",
@@ -426,8 +415,7 @@
               "RelativeToolTip": "OnlineExam.DATA\\Entites\\Person.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-08T19:15:50.093Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-08T19:15:50.093Z"
             },
             {
               "$type": "Document",
@@ -439,8 +427,7 @@
               "RelativeToolTip": "OnlineExam.SERVICE\\Mapping\\MappingProfile.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-06T14:40:53.683Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-06T14:40:53.683Z"
             },
             {
               "$type": "Document",
@@ -452,8 +439,7 @@
               "RelativeToolTip": "OnlineExam.DATA\\Infrastructures\\IBaseRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAYAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-10T11:03:10.984Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-10T11:03:10.984Z"
             },
             {
               "$type": "Document",
@@ -465,8 +451,7 @@
               "RelativeToolTip": "OnlineExam.DATA\\OnlineExamDbContext.cs",
               "ViewState": "AgIAABQAAAAAAAAAAAAAwDQAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-02T11:24:10.955Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-02T11:24:10.955Z"
             },
             {
               "$type": "Document",
@@ -478,8 +463,7 @@
               "RelativeToolTip": "OnlineExam.SERVICE\\DTOs\\UserModels\\UserRegisterModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-02T15:13:55.793Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-02T15:13:55.793Z"
             },
             {
               "$type": "Document",
@@ -491,8 +475,7 @@
               "RelativeToolTip": "OnlineExam.DAL\\Repositories\\IPasswordHasher.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-03T12:53:06.696Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-03T12:53:06.696Z"
             },
             {
               "$type": "Document",
@@ -504,8 +487,7 @@
               "RelativeToolTip": "OnlineExam.DAL\\Repositories\\IExamRepository.cs",
               "ViewState": "AgIAABcAAAAAAAAAAAAUwDcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T15:48:17.735Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-05T15:48:17.735Z"
             },
             {
               "$type": "Document",
@@ -517,8 +499,7 @@
               "RelativeToolTip": "OnlineExam.DATA\\Entites\\Result.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwBIAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-06T12:14:00.113Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-06T12:14:00.113Z"
             },
             {
               "$type": "Document",
@@ -530,8 +511,7 @@
               "RelativeToolTip": "OnlineExam.DAL\\Repositories\\IResultRepository.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAqwA0AAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T15:49:00.767Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-05T15:49:00.767Z"
             },
             {
               "$type": "Document",
@@ -543,8 +523,7 @@
               "RelativeToolTip": "OnlineExam.DAL\\Repositories\\IRoleRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T15:47:25.736Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-05T15:47:25.736Z"
             },
             {
               "$type": "Document",
@@ -556,8 +535,7 @@
               "RelativeToolTip": "OnlineExam.SERVICE\\DTOs\\UserModels\\UpdateProfileModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-02T11:58:40.783Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-02T11:58:40.783Z"
             },
             {
               "$type": "Document",
@@ -569,8 +547,7 @@
               "RelativeToolTip": "OnlineExam.SERVICE\\Helpers\\TokenHelper.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-06T14:13:19.229Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-06T14:13:19.229Z"
             },
             {
               "$type": "Document",
@@ -582,8 +559,7 @@
               "RelativeToolTip": "OnlineExam.API\\Controllers\\ExamController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-03T12:10:15.087Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-03T12:10:15.087Z"
             },
             {
               "$type": "Document",
@@ -595,8 +571,7 @@
               "RelativeToolTip": "OnlineExam.DATA\\Entites\\Option.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-08T19:26:31.953Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-08T19:26:31.953Z"
             },
             {
               "$type": "Document",
@@ -608,8 +583,7 @@
               "RelativeToolTip": "OnlineExam.DATA\\Entites\\Question.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-08T19:27:01.38Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-08T19:27:01.38Z"
             },
             {
               "$type": "Document",
@@ -621,8 +595,7 @@
               "RelativeToolTip": "OnlineExam.DATA\\Entites\\Exam.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAUAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T15:57:01.082Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-05T15:57:01.082Z"
             },
             {
               "$type": "Document",
@@ -634,8 +607,7 @@
               "RelativeToolTip": "OnlineExam.DATA\\Entites\\Role.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-08T19:27:05.406Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-08T19:27:05.406Z"
             },
             {
               "$type": "Document",
