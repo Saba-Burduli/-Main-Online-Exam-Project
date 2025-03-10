@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace OnlineExam.DAL.Repositories
 {
-    public interface IExamRepository :IBaseRepository<Exam>
+    public interface IExamRepository : IBaseRepository<Exam>
     {
         Task<bool> RegisterExam(int examId,string title);
     }
