@@ -84,7 +84,6 @@ public class UserService : IUserService
         return new ResponseModel { Success = true, Massage = "User was delated" };
     }
 
-
     //[POST METHOD] Registrate On Exam
     public async Task<bool> RegistrateOnExam(int examId, int userId) // i add userId .. for check also user
     {
@@ -105,6 +104,7 @@ public class UserService : IUserService
             throw new Exception("Error !!");
         }
     }
+
     //[POST METHOD]
     public async Task<ResponseModel> LogoutUserAsync(int userId)
     {
@@ -126,6 +126,8 @@ public class UserService : IUserService
     //{
     //    throw new NotImplementedException();
     //}
+
+
 
     //[PUT METHOD] Update Profile 
     public async Task<ResponseModel> UpdateProfileAsync(int userId, UpdateProfileModel model)
@@ -152,4 +154,5 @@ public class UserService : IUserService
     {
         return await _userRepository.GetUserByEmailAsync(email);
     }
+
 }
