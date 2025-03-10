@@ -9,14 +9,15 @@ public interface IAdminService
 
     Task<IEnumerable<User>> GetAllTeachers();
 
-    Task<User> GetUserById(int userId);
+    Task<UserModel> GetUserById(int userId);
 
-    Task<User> AddUser(UserRegisterModel model);
+    Task<User> AddUser(UserRegisterModel model); // i change this UserModel to User
 
-    Task<User> AssignRole(int userId, List<int> roleIDs);
 
-    Task<User> UpdateUser(int userId, UpdateUserModel model);
+    Task<User> AssignRole(int userId, List<int> roleIDs); // i change this UserModel to User
 
-    Task<User> DeleteUser(int userId);
-   
+    Task<User> UpdateUser(int userId, UpdateUserModel model);// i change this UserModel to User
+
+    Task<User> DeleteUser(int userId);// i change this UserModel to User
+
 }

@@ -1,4 +1,4 @@
-using Azure;
+﻿using Azure;
 using OnlineExam.DAL.Repositories;
 using OnlineExam.DATA.Entites;
 using OnlineExam.SERVICE.DTOs.ResultModels;
@@ -18,21 +18,15 @@ public class ResultService : IResultService
         _userRepository = userRepository;
         _examRepository = examRepository;
     }
-    public async Task<ResponseModel> AddResult(AddResultModel result)
-    {
-        var existingUser = await _userRepository.GetUserByEmailAsync(result.Email);
-        if (existingUser==null)
-        {
-            return new ResponseModel {Success = false, Massage = "existingUser not found" }
-        }
-
- 
-        
-    }
-
-    public Task<Result> GetResultById(int examId, int studentId)
+    public async Task<ResponseModel> AddResult(UserRegisterModel model)
     {
         throw new NotImplementedException();
+    }
+    // ????????????????????????????????????????????? კითხვა მაქ ამაზე
+
+    public async Task<Result> GetResultById(int examId, int studentId)
+    {
+        return await _resultRepository.GetByIdAsync(examId);
     }
 
     public Task<Result> GetResultsByStudentId(int studentsId)

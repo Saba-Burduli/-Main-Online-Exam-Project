@@ -10,21 +10,22 @@ using System.Security.Claims;
 
 namespace OnlineExam.Controllers
 {
+    [Authorize(Roles = "Admin,Teacher,Student")]
     [Route("api/[controller]")]
     [ApiController]
     public class UserController : ControllerBase
     {
         private readonly IUserService _userService;
         //we dont need and this is not right to implement repository in there Controller
-        private readonly IUserRepository _userRepository;
+        
         //[POST METHOD]
-        public UserController(IUserService userService, IUserRepository userRepository)
+        public UserController(IUserService userService)
         {
             _userService = userService;
-            _userRepository = userRepository;
         }
 
         //api/user/Register
+        [AllowAnonymous]
         [HttpPost("Register")]
         //should i change name ?? RegisterUserAsync to UserRegistrationAsync
         public async Task<IActionResult> RegisterUserAsync([FromBody] UserRegisterModel model)
@@ -42,6 +43,7 @@ namespace OnlineExam.Controllers
         }
 
         // Login
+        [AllowAnonymous]
         [HttpPut("Login")]
         public async Task<IActionResult> LoginUserAsync(string username, string password)
         {
@@ -63,24 +65,24 @@ namespace OnlineExam.Controllers
 
         }
 
-        //Get Profile 
-        [HttpGet("GetProfileAsync")]
-        public async Task<ActionResult<User>> GetProfileAsync(int userId)//what method is this 
-        {
-            if (ModelState.IsValid)
-            {
-                var result = await _userService.GetProfileAsync(userId);
+        ////Get Profile 
+        //[HttpGet("GetProfileAsync")]
+        //public async Task<ActionResult<User>> GetProfileAsync(int userId)//what method is this 
+        //{
+        //    if (ModelState.IsValid)
+        //    {
+        //        var result = await _userService.GetProfileAsync(userId);
 
-                if (result!=null)
-                {
-                    return Ok(new ResponseModel { Success =true,Massage= "You can see Profile Successfully !" });
-                }
-            }
-            return BadRequest("Profile Not Found !");
-        }
+        //        if (result!=null)
+        //        {
+        //            return Ok(new ResponseModel { Success =true,Massage= "You can see Profile Successfully !" });
+        //        }
+        //    }
+        //    return BadRequest("Profile Not Found !");
+        //}
 
 
-        [Authorize] // Require authentication
+        //[Authorize] // Require authentication
         [HttpGet("Profile")]
         public IActionResult GetProfile()
         {
@@ -104,7 +106,7 @@ namespace OnlineExam.Controllers
         }
 
 
-
+        //[Authorize(Roles = "Admin,Teacher,Student")]
         [HttpPut("Update")]
         public async Task<IActionResult> UpdateProfileAsync([FromQuery] int userId, [FromBody] UpdateProfileModel model)
         {
@@ -137,6 +139,7 @@ namespace OnlineExam.Controllers
         }
 
         //Registrate On Exam
+        [Authorize(Roles = "Student")]
         [HttpPost("RegistrateOnExam")]
         public async Task<ActionResult<bool>> RegistrateOnExam(int examId, int userId)
         {
@@ -150,6 +153,7 @@ namespace OnlineExam.Controllers
             }
             return BadRequest("User cannot Register");
         }
+
         //Logout
         [HttpPut("LogoutUser")]
         public async Task<ActionResult<ResponseModel>> LogoutUserAsync(int userId)
@@ -162,23 +166,6 @@ namespace OnlineExam.Controllers
             return Ok(new ResponseModel { Success = true,Massage = "User logged out successfully !"});
 
         }
-        //Registration
-        [HttpPost("UserRegistration")]
-        public async Task<IActionResult> UserRegistrationAsync(UserRegisterModel model)
-        {
-            if (ModelState.IsValid)
-            {
-                var result = await _userService.UserRegistrationAsync(model);
-                if (!result.Success)
-                {
-                    return BadRequest(result.Massage);
-                }
-                return Ok(result);
-            }
-            return BadRequest();
-        }
-
-     
 
     }
 
