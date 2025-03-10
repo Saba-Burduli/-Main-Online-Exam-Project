@@ -86,13 +86,13 @@ Develop an online examination system that allows administrators to manage exams,
 
 <ol>
 	
-<li>void CreateExam(Exam exam);</li>
+<li> void CreateExam(Exam exam);</li>
 	
-<li>void AddQuestion(int examId, Question question);</li>
+<li> void AddQuestion(int examId, Question question);</li>
 
-<li>Exam GetExam(int examId);<li>
+<li> Exam GetExam(int examId);<li>
 	
-<li>IEnumerable<Exam> GetExamsByTeacher(int teacherId);</li>
+<li> IEnumerable<Exam> GetExamsByTeacher(int teacherId);</li>
 		
 </ol>		
 
