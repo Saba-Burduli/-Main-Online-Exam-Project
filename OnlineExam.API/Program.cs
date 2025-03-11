@@ -50,9 +50,14 @@ builder.Services.AddAutoMapper(typeof(MappingProfile));
 builder.Services.AddControllers();
 
 // add Services for Repositories
+builder.Services.AddScoped<IResultRepository, ResultRepository>();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IRoleRepository, RoleRepository>();
 builder.Services.AddScoped<IPasswordHasher, PasswordHasher>();
+//<<<<<<< HEAD
+builder.Services.AddScoped<IExamRepository, ExamRepository>();
+//=======
+//>>>>>>> fc58457a961c910f06adee792ef49f115863902d
 
 // add services for Services
 builder.Services.AddScoped<IUserService, UserService>();

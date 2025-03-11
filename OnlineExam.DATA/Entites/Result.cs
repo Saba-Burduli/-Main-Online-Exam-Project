@@ -1,3 +1,4 @@
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -8,6 +9,7 @@ public class Result
     [Key] 
     public int ResultId { get; set; }
     [Required]
+    [Column(TypeName = "decimal(8,2)")]
     public decimal Score { get; set; }
     [Required]
     public DateTime DateTaken { get; set; }
