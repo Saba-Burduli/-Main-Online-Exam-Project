@@ -26,6 +26,7 @@ namespace OnlineExam.Controllers
 
         //api/Result/GetResultsByStudentId
         [Authorize(Roles = "Admin,Teacher")]
+
         [HttpGet("GetResultsByStudentId")]
         public async Task<ActionResult<List<User>>> GetResultsByStudentId(int studentsId)
         {
