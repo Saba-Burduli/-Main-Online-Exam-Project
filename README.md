@@ -88,6 +88,8 @@ Develop an online examination system that allows administrators to manage exams,
 
 </ol>
 
+
+
 <h2>⚪IExamService</h2>
 
 <ol>
@@ -116,6 +118,8 @@ Develop an online examination system that allows administrators to manage exams,
 <li> Result GetResult(int examId, int studentId);</li>
 
 </ol>
+
+
 
 
 <h1>💢Services</h1>
