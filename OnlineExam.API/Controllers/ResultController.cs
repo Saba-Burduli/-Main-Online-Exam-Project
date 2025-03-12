@@ -23,6 +23,7 @@ namespace OnlineExam.Controllers
             _resultService = resultService;
         }
 
+
         //api/Result/GetResultsByStudentId
         [Authorize(Roles = "Admin,Teacher")]
         [HttpGet("GetResultsByStudentId")]
