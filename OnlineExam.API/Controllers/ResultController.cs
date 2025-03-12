@@ -43,6 +43,7 @@ namespace OnlineExam.Controllers
             return BadRequest();
         }
 
+
         [Authorize("Admin,Teacher,Student")]
         //api/Result/GetResultById
         [HttpGet("GetResultById")]
@@ -77,6 +78,7 @@ namespace OnlineExam.Controllers
 
             return BadRequest();
         }
+
 
         [Authorize(Roles ="Teacher,Admin")]
         //api/Result/UpdateResult
