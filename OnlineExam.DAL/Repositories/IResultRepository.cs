@@ -14,6 +14,7 @@ namespace OnlineExam.DAL.Repositories
     public interface IResultRepository :IBaseRepository<Result>     
     {
         Task<Result> GetResultsByScore(decimal Score);
+        Task<Result> GetResultsByStudentId(int studentsId);
         //Task<Result> GetByUserAndExamAsync(int userId,int examId);
     }
 
@@ -34,6 +35,17 @@ namespace OnlineExam.DAL.Repositories
             }
 
             return await _context.Results.FirstOrDefaultAsync(r => r.Score == Score);
+        }
+
+        public async Task<Result> GetResultsByStudentId(int studentsId)
+        {
+            if (_context == null || _context.Users == null || _context.Results ==null)
+            {
+                throw new NullReferenceException("The context is null");
+            }
+            return await _context.Results
+                .FirstOrDefaultAsync(r => r.ResultId == studentsId);
+          
         }
 
         //public async Task<Result> GetByUserAndExamAsync(int userId,int examId) should i add this method ???

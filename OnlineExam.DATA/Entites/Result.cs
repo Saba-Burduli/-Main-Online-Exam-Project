@@ -22,5 +22,5 @@ public class Result
 
     //Result => User ;Many to Many
     public virtual ICollection<User>? Users { get; set; }
-    
+    public DateTime UpdatedAt { get; set; }
 }
