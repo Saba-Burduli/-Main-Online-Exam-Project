@@ -155,15 +155,15 @@ Online Exam API The Online Exam API is built using ASP.NET Core and Entity Frame
 1. **User Management User authentication and authorization (JWT-based).** Role-based access control (Admin, Instructor, Student). Profile management.
 
    **Exam Management Instructors can create, update, and delete exams.** Define exam settings like duration, passing criteria, and question randomization. Assign exams to specific students or groups.
-<br>
+
 3. **Question & Answer Management Create multiple-choice, true/false, and open-ended questions.** Support for different question difficulty levels. Options for shuffling questions per exam session.
-<br>
+   
 4. **Exam Attempt & Submission Students can start, pause, and submit exams within a given time frame.**  Auto-save feature to prevent data loss. Timer management for live exams.
-<br>
+
 5. **Result & Evaluation System Auto-evaluation for multiple-choice and true/false questions.** Instructors can manually grade open-ended questions. Generate exam reports, scores, and performance analysis.
-<br>
+
 6. **Entity Framework & Database Management Uses Entity Framework Core for database interactions.** Supports MSSQL with migrations for schema updates. Well-structured entity relationships (User ↔ Exam ↔ Question ↔ Result).
-<br>
+
 7. **Security & Scalability JWT authentication for secure API access. Role-based authorization to control access to different endpoints.** Designed for scalability, supporting future integrations with mobile apps or external LMS platforms.
 <br>
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
