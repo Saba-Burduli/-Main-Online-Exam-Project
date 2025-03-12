@@ -10,6 +10,7 @@ using System.Runtime.InteropServices;
 
 namespace OnlineExam.Controllers
 {
+    [Authorize(Roles = "Admin,Teacher,Student")]
     [Route("api/[controller]")]
     [ApiController]
     public class ResultController : ControllerBase
