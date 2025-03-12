@@ -165,7 +165,8 @@ Online Exam API The Online Exam API is built using ASP.NET Core and Entity Frame
 6. **Entity Framework & Database Management Uses Entity Framework Core for database interactions.** Supports MSSQL with migrations for schema updates. Well-structured entity relationships (User ↔ Exam ↔ Question ↔ Result).
 
 7. **Security & Scalability JWT authentication for secure API access. Role-based authorization to control access to different endpoints.** Designed for scalability, supporting future integrations with mobile apps or external LMS platforms.
-
+<br>
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
    <br>
  📥  If you want to learn more about This Project you can actually contact me on Mail : **sabagg790@gmail.com**
 
