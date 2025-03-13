@@ -50,6 +50,9 @@ namespace OnlineExam.DATA.Migrations
                         .HasMaxLength(30)
                         .HasColumnType("nvarchar(30)");
 
+                    b.Property<DateTime>("UpdatedAt")
+                        .HasColumnType("datetime2");
+
                     b.HasKey("ExamId");
 
                     b.ToTable("Exam", (string)null);
@@ -135,6 +138,16 @@ namespace OnlineExam.DATA.Migrations
                     b.HasKey("PersonId");
 
                     b.ToTable("Person", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            PersonId = 1,
+                            Address = "Some Address",
+                            FirstName = "Dachi",
+                            LastName = "Skhirtladze",
+                            Phone = "+995 12 34 56"
+                        });
                 });
 
             modelBuilder.Entity("OnlineExam.DATA.Entites.Question", b =>
@@ -177,6 +190,9 @@ namespace OnlineExam.DATA.Migrations
 
                     b.Property<decimal>("Score")
                         .HasColumnType("decimal(8,2)");
+
+                    b.Property<DateTime>("UpdatedAt")
+                        .HasColumnType("datetime2");
 
                     b.HasKey("ResultId");
 
@@ -250,6 +266,17 @@ namespace OnlineExam.DATA.Migrations
                         .IsUnique();
 
                     b.ToTable("Users", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            UserId = 1,
+                            Email = "d.skhirtladze@gmail.com",
+                            PasswordHash = "JAvlGPq9JyTdtvBO6x2llnRI1+gxwIyPqCKAn3THIKk=",
+                            PersonId = 1,
+                            RegistrationDate = new DateTime(2025, 2, 14, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            UserName = "Admin"
+                        });
                 });
 
             modelBuilder.Entity("ResultExam", b =>
@@ -284,17 +311,24 @@ namespace OnlineExam.DATA.Migrations
 
             modelBuilder.Entity("RoleUser", b =>
                 {
-                    b.Property<int>("RolesRoleId")
+                    b.Property<int>("RoleId")
                         .HasColumnType("int");
 
-                    b.Property<int>("UsersUserId")
+                    b.Property<int>("UserId")
                         .HasColumnType("int");
 
-                    b.HasKey("RolesRoleId", "UsersUserId");
+                    b.HasKey("RoleId", "UserId");
 
-                    b.HasIndex("UsersUserId");
+                    b.HasIndex("UserId");
 
                     b.ToTable("RoleUser");
+
+                    b.HasData(
+                        new
+                        {
+                            RoleId = 1,
+                            UserId = 1
+                        });
                 });
 
             modelBuilder.Entity("ExamUser", b =>
@@ -398,13 +432,13 @@ namespace OnlineExam.DATA.Migrations
                 {
                     b.HasOne("OnlineExam.DATA.Entites.Role", null)
                         .WithMany()
-                        .HasForeignKey("RolesRoleId")
+                        .HasForeignKey("RoleId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("OnlineExam.DATA.Entites.User", null)
                         .WithMany()
-                        .HasForeignKey("UsersUserId")
+                        .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });

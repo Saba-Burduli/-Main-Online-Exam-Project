@@ -18,24 +18,36 @@ public class ExamService : IExamService
         _examRepository = examRepository;
     }
 
-    public Task<Question> AddQuestion(int examId, Question question)
+    public async Task<Question> AddQuestion(int examId, Question question)
     {
-        throw new NotImplementedException();
+        var exam = await _examRepository.GetByIdAsync(examId);
+        if (exam == null)
+            throw new Exception("Exam not found.");
+
+        exam.Questions.Add(question);
+        await _examRepository.UpdateAsync(exam);
+        return question;
     }
 
-    public Task<Exam> CreateExam(Exam exam)
+    public async Task<Exam> CreateExam(Exam exam)
     {
-        throw new NotImplementedException();
+        await _examRepository.AddAsync(exam);
+        return exam;
     }
 
-    public Task<Exam> DeleteExam(int examId)
+    public async Task<Exam> DeleteExam(int examId)
     {
-        throw new NotImplementedException();
+        var exam = await _examRepository.GetByIdAsync(examId);
+        if (exam == null)
+            throw new NullReferenceException("Exam is null");
+
+        await _examRepository.DeleteAsync(examId);
+        return exam;
     }
 
-    public Task<Exam> GetAllExams()
+    public async Task<Exam> GetAllExams(int examId)
     {
-        throw new NotImplementedException();
+        return await _examRepository.GetAllExams(examId);
     }
 
     public async Task<Exam> GetExamById(int examId)
@@ -43,13 +55,23 @@ public class ExamService : IExamService
         return await _examRepository.GetByIdAsync(examId);
     }
 
-    public Task<Exam> GetExamsByTeacher(int teacherId)
+    public async Task<Exam> GetExamsByTeacher(int teacherId)
     {
-        throw new NotImplementedException();
+        return await _examRepository.GetExamsByTeacher(teacherId);
     }
 
-    public Task<ResponseModel> UpdateExam(ExamUpdateModel model)
+    public async Task<ResponseModel> UpdateExam(ExamUpdateModel model)
     {
-        throw new NotImplementedException();
+        var exam = await _examRepository.GetByIdAsync(model.ExamId);
+        if (exam == null)
+            return new ResponseModel { Success = false, Massage = "Exam not found." };
+
+        exam.Title = model.Title;
+        exam.Title = model.Title;
+        exam.UpdatedAt = DateTime.UtcNow;
+
+        await _examRepository.UpdateAsync(exam);
+        return new ResponseModel { Success = true, Massage = "Exam updated successfully." };
     }
 }
+

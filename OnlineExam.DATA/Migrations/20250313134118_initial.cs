@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace OnlineExam.DATA.Migrations
 {
     /// <inheritdoc />
-    public partial class init : Migration
+    public partial class initial : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -19,7 +19,8 @@ namespace OnlineExam.DATA.Migrations
                 {
                     ExamId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Title = table.Column<string>(type: "nvarchar(30)", maxLength: 30, nullable: false)
+                    Title = table.Column<string>(type: "nvarchar(30)", maxLength: 30, nullable: false),
+                    UpdatedAt = table.Column<DateTime>(type: "datetime2", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -48,8 +49,9 @@ namespace OnlineExam.DATA.Migrations
                 {
                     ResultId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Score = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
-                    DateTaken = table.Column<DateTime>(type: "datetime2", nullable: false)
+                    Score = table.Column<decimal>(type: "decimal(8,2)", nullable: false),
+                    DateTaken = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    UpdatedAt = table.Column<DateTime>(type: "datetime2", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -237,25 +239,30 @@ namespace OnlineExam.DATA.Migrations
                 name: "RoleUser",
                 columns: table => new
                 {
-                    RolesRoleId = table.Column<int>(type: "int", nullable: false),
-                    UsersUserId = table.Column<int>(type: "int", nullable: false)
+                    RoleId = table.Column<int>(type: "int", nullable: false),
+                    UserId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_RoleUser", x => new { x.RolesRoleId, x.UsersUserId });
+                    table.PrimaryKey("PK_RoleUser", x => new { x.RoleId, x.UserId });
                     table.ForeignKey(
-                        name: "FK_RoleUser_Role_RolesRoleId",
-                        column: x => x.RolesRoleId,
+                        name: "FK_RoleUser_Role_RoleId",
+                        column: x => x.RoleId,
                         principalTable: "Role",
                         principalColumn: "RoleId",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_RoleUser_Users_UsersUserId",
-                        column: x => x.UsersUserId,
+                        name: "FK_RoleUser_Users_UserId",
+                        column: x => x.UserId,
                         principalTable: "Users",
                         principalColumn: "UserId",
                         onDelete: ReferentialAction.Cascade);
                 });
+
+            migrationBuilder.InsertData(
+                table: "Person",
+                columns: new[] { "PersonId", "Address", "FirstName", "LastName", "Phone" },
+                values: new object[] { 1, "Some Address", "Dachi", "Skhirtladze", "+995 12 34 56" });
 
             migrationBuilder.InsertData(
                 table: "Role",
@@ -266,6 +273,16 @@ namespace OnlineExam.DATA.Migrations
                     { 2, "Teacher" },
                     { 3, "Student" }
                 });
+
+            migrationBuilder.InsertData(
+                table: "Users",
+                columns: new[] { "UserId", "Email", "PasswordHash", "PersonId", "RegistrationDate", "UserName" },
+                values: new object[] { 1, "d.skhirtladze@gmail.com", "JAvlGPq9JyTdtvBO6x2llnRI1+gxwIyPqCKAn3THIKk=", 1, new DateTime(2025, 2, 14, 0, 0, 0, 0, DateTimeKind.Unspecified), "Admin" });
+
+            migrationBuilder.InsertData(
+                table: "RoleUser",
+                columns: new[] { "RoleId", "UserId" },
+                values: new object[] { 1, 1 });
 
             migrationBuilder.CreateIndex(
                 name: "IX_ExamParticpant_ExamId",
@@ -303,9 +320,9 @@ namespace OnlineExam.DATA.Migrations
                 column: "UsersUserId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_RoleUser_UsersUserId",
+                name: "IX_RoleUser_UserId",
                 table: "RoleUser",
-                column: "UsersUserId");
+                column: "UserId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Users_PersonId",

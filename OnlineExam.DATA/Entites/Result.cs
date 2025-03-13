@@ -13,8 +13,8 @@ public class Result
     public decimal Score { get; set; }
     [Required]
     public DateTime DateTaken { get; set; }
+    public DateTime UpdatedAt { get; set; }
 
-    
     //Relations :
 
     //Result => Exam ; many to many  ;(Result) to (Exam)
@@ -22,5 +22,5 @@ public class Result
 
     //Result => User ;Many to Many
     public virtual ICollection<User>? Users { get; set; }
-    public DateTime UpdatedAt { get; set; }
+ 
 }

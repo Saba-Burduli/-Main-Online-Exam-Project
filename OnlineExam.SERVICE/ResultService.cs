@@ -44,7 +44,7 @@ public class ResultService : IResultService
         }
     }
 
-    public async Task<Result> GetResultById(int examId, int studentId) //???????????????? WHAT HAPPEND IN HERE ??
+    public async Task<ResponseModel> GetResult(int examId, int studentId) 
     {
         var exam = await _resultRepository.GetByIdAsync(examId);
         if (exam == null)
@@ -56,6 +56,7 @@ public class ResultService : IResultService
         {
             throw new Exception("Student not found!");
         }
+        return new ResponseModel { Success = true, Massage = "Result found" };
 
     }
 
