@@ -1,10 +1,10 @@
 <h1>👂Hello My Name is Saba Burduli and this is my first time ever doing Online Exam ASP.NET Web API .</h1>
-Whats cool in this project is im gonna create 3 type of role ..
-and they have different tokens (accses). We dont have actually many entity classes manually but we actually creating meny join tables using configuration querys .
-there is many different type of Relations like : Many => Many , Many => One and also ofc One to One ......
-Add some Contorlers and tokens .
-Imgonna use token for SuperAdmin(can change and create anything) also for teacher (he/she can write points for student result and actualy can see..also can see exams papers early) and the last one student(he/she can only write a exam and can only see resuly).
-This Is Project Full Description :
+Whats cool in this project is im gonna create 3 type of role ..<br>
+and they have different tokens (accses). We dont have actually many entity classes manually but we actually creating meny join tables using configuration querys .<br>
+there is many different type of Relations like : Many => Many , Many => One and also ofc One to One ......<br>
+Add some Contorlers and tokens .<br>
+Imgonna use token for SuperAdmin(can change and create anything) also for teacher (he/she can write points for student result and actualy can see..also can see exams papers early) and the last one student(he/she can only write a exam and can only see resuly).<br>
+This Is Project Full Description :<br>
 
 <main aling="center">
 <h1 aling="center" style="color=🟨">here is Online Exam Description in Text Format : </h1>
@@ -12,12 +12,16 @@ This Is Project Full Description :
 <h1>✅Online Exam System</h1>
 	
 ![Screenshot 2025-03-05 203539](https://github.com/user-attachments/assets/89e289be-2423-4290-89f0-321fef03d3c0)
+<br>
 ![Screenshot 2025-03-05 203533](https://github.com/user-attachments/assets/b73acdbd-3937-421c-a37a-1a51819d5580)
+<br>
 ![Screenshot 2025-03-05 203526](https://github.com/user-attachments/assets/a88c98cc-493b-4d5e-98c0-c1c3ac76fb11)
+<br>
 ![Screenshot 2025-03-05 203519](https://github.com/user-attachments/assets/8e2f31b1-1b8e-42d0-839d-2eb6fcfece0f)
+<br>
 ![Screenshot 2025-03-05 203544](https://github.com/user-attachments/assets/f8509629-f8b8-4dc1-9d61-089de9357bf0)
 
-Project Overview
+Project Overview :
 
 Develop an online examination system that allows administrators to manage exams, questions, and results. Students can take exams and view their scores.
 
@@ -65,6 +69,8 @@ Develop an online examination system that allows administrators to manage exams,
 
 
 
+<br>
+<br>
 
 <h1>💢Interfaces</h1>
 <br>
@@ -82,6 +88,8 @@ Develop an online examination system that allows administrators to manage exams,
 
 </ol>
 
+
+
 <h2>⚪IExamService</h2>
 
 <ol>
@@ -97,7 +105,7 @@ Develop an online examination system that allows administrators to manage exams,
 </ol>		
 
 
-
+<br>
 
 <h2>⚪IResultService </h2>
 
@@ -111,6 +119,8 @@ Develop an online examination system that allows administrators to manage exams,
 
 </ol>
 
+
+<br>
 
 <h1>💢Services</h1>
 
@@ -126,16 +136,12 @@ Develop an online examination system that allows administrators to manage exams,
 </ol>
 
 
-
+<br>
 
 </main>
 
 
-
-
-
-
-
+<br>
 
 
 Online Exam API The Online Exam API is built using ASP.NET Core and Entity Framework, designed to manage online exams efficiently. This API provides endpoints for handling user authentication, exam creation, question management, result tracking, and more.
@@ -147,7 +153,7 @@ Online Exam API The Online Exam API is built using ASP.NET Core and Entity Frame
    **Exam Management Instructors can create, update, and delete exams.** Define exam settings like duration, passing criteria, and question randomization. Assign exams to specific students or groups.
 
 3. **Question & Answer Management Create multiple-choice, true/false, and open-ended questions.** Support for different question difficulty levels. Options for shuffling questions per exam session.
-
+   
 4. **Exam Attempt & Submission Students can start, pause, and submit exams within a given time frame.**  Auto-save feature to prevent data loss. Timer management for live exams.
 
 5. **Result & Evaluation System Auto-evaluation for multiple-choice and true/false questions.** Instructors can manually grade open-ended questions. Generate exam reports, scores, and performance analysis.
@@ -156,6 +162,9 @@ Online Exam API The Online Exam API is built using ASP.NET Core and Entity Frame
 
 7. **Security & Scalability JWT authentication for secure API access. Role-based authorization to control access to different endpoints.** Designed for scalability, supporting future integrations with mobile apps or external LMS platforms.
 
+
+<br>
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
    <br>
  📥  If you want to learn more about This Project you can actually contact me on Mail : **sabagg790@gmail.com**
 
