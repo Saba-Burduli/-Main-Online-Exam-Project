@@ -199,7 +199,7 @@
               "RelativeDocumentMoniker": "OnlineExam.DATA\\Infrastructures\\BaseRepository.cs",
               "ToolTip": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.DATA\\Infrastructures\\BaseRepository.cs",
               "RelativeToolTip": "OnlineExam.DATA\\Infrastructures\\BaseRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAA3AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-13T14:06:48.655Z",
               "EditorCaption": ""
@@ -226,7 +226,8 @@
               "RelativeToolTip": "OnlineExam.API\\Controllers\\AdminController.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAABwAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-12T20:11:12.71Z"
+              "WhenOpened": "2025-03-12T20:11:12.71Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -274,7 +275,8 @@
               "RelativeToolTip": "OnlineExam.SERVICE\\AdminService.cs",
               "ViewState": "AgIAAAcAAAAAAAAAAAAmwBsAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T12:28:56.753Z"
+              "WhenOpened": "2025-03-13T12:28:56.753Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",

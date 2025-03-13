@@ -66,6 +66,7 @@ namespace OnlineExam.DATA
             modelBuilder.ApplyConfiguration(new RoleConfiguration());
             modelBuilder.ApplyConfiguration(new UserConfigurations());
             modelBuilder.ApplyConfiguration(new ExamParticpantConfiguration());
+            
 
            modelBuilder.Entity<Person>().HasData(
            new Person()
