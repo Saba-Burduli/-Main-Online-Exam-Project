@@ -1,3 +1,4 @@
+using AutoMapper;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using OnlineExam.DAL.Repositories;
 using OnlineExam.DATA.Entites;
@@ -12,12 +13,14 @@ public class UserService : IUserService
     private readonly IUserRepository _userRepository;
     private readonly IPasswordHasher _passwordHasher;
     private readonly IRoleRepository _roleRepository;
+    private readonly IMapper _mapper;
 
-    public UserService(IRoleRepository roleRepository, IUserRepository userRepository, IPasswordHasher passwordHasher)
+    public UserService(IMapper mapper, IRoleRepository roleRepository, IUserRepository userRepository, IPasswordHasher passwordHasher)
     {
         _userRepository = userRepository;
         _passwordHasher = passwordHasher;
         _roleRepository = roleRepository;
+        _mapper = mapper;
         
     }
     //[POST METHOD] User Registration
@@ -155,4 +158,9 @@ public class UserService : IUserService
         return await _userRepository.GetUserByEmailAsync(email);
     }
 
+    public async Task<UserRolesModel?> GetUserWithRolesByIdAsync(int id)
+    {
+        var userWithRoles = await _userRepository.GetUserWithRolesByIdAsync(id);
+        return _mapper.Map<UserRolesModel>(userWithRoles);
+    }
 }

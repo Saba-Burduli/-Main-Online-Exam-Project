@@ -22,4 +22,5 @@ public class Exam
 
     //Exam => Result
     public virtual ICollection<Result>? Results { get; set; }
+    public DateTime UpdatedAt { get; set; }
 }

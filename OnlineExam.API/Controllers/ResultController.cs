@@ -47,11 +47,11 @@ namespace OnlineExam.Controllers
         [Authorize("Admin,Teacher,Student")]
         //api/Result/GetResultById
         [HttpGet("GetResultById")]
-        public async Task<ActionResult<Result>> GetResultById(int examId, int studentId)
+        public async Task<ActionResult<Result>> GetResult(int examId, int studentId)
         {
             if (ModelState.IsValid)
             {
-                var exam = await _resultService.GetResultById(examId,studentId);
+                var exam = await _resultService.GetResult(examId,studentId);
                 if (exam == null)
                     return BadRequest("Student List is empty");
 

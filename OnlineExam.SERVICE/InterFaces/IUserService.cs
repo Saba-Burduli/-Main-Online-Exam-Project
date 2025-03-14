@@ -13,5 +13,6 @@ public interface IUserService
     Task<ResponseModel> LogoutUserAsync(int userId);//+
     Task<ResponseModel> UpdateProfileAsync(int userId, UpdateProfileModel model);
     Task<User> GetUserByEmailAsync(string email);
+    Task<UserRolesModel?> GetUserWithRolesByIdAsync(int id);
 
 }

@@ -16,6 +16,7 @@ namespace OnlineExam.SERVICE.Helpers
             {
                 new Claim(ClaimTypes.NameIdentifier, parameter),
             };
+
             var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(configuration.GetSection("JWTConfig:Key").Value));
             var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256Signature);
             var Token = new JwtSecurityToken(

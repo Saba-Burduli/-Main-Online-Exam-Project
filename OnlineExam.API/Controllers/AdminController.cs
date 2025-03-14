@@ -8,9 +8,9 @@ using OnlineExam.SERVICE.InterFaces;
 
 namespace OnlineExam.Controllers
 {
+    [Authorize(Roles = "Admin")]
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize(Roles = "Admin")]
     public class AdminController : ControllerBase
     {
         private readonly IAdminService _adminService;
@@ -25,15 +25,15 @@ namespace OnlineExam.Controllers
 
         //api/admin/GetAllStudents
         [HttpGet("GetAllStudents")]
-        public async Task<ActionResult<List<User>>> GetAllStudents()
+        public async Task<ActionResult<IEnumerable<UserModel>>> GetAllStudents()
         {
             if (ModelState.IsValid)
             {
                 var result = await _adminService.GetAllStudents();
-                if (result==null)
+                if (result == null)
                     return BadRequest("Student List is empty");
 
-                return Ok(result.ToList());
+                return Ok(result);
             }
 
             return BadRequest();

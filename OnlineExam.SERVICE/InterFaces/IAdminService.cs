@@ -5,7 +5,7 @@ namespace OnlineExam.SERVICE.InterFaces;
 
 public interface IAdminService
 {
-    Task<IEnumerable<User>> GetAllStudents();
+    Task<IEnumerable<UserModel>> GetAllStudents();
 
     Task<IEnumerable<User>> GetAllTeachers();
 

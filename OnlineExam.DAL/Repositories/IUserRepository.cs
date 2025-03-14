@@ -13,6 +13,7 @@ public interface IUserRepository : IBaseRepository<User>
     Task<User> AssignRoleUserAsync(int userId, List<int> roleIds);
     Task<bool> RegisterUserForExam(int userId, int examId); //should i delate this ?? first version is this : <bool> RegisterUserForExam(int userId, int examId);
     Task<User> GetUserByUserNameAndPasswordAsync(string username, string password);
+    Task<IEnumerable<User>> GetAllStudents();
 }
 
 public class UserRepository : BaseRepository<User>, IUserRepository
@@ -105,5 +106,12 @@ public class UserRepository : BaseRepository<User>, IUserRepository
     {
         return await _context.Users
              .FirstOrDefaultAsync(ep => ep.UserName ==username  && ep.PasswordHash == password);
+    }
+
+    public async Task<IEnumerable<User>> GetAllStudents()
+    {
+        return await _context.Users
+                            .Include(x => x.Roles)
+                            .ToListAsync();                          
     }
 }

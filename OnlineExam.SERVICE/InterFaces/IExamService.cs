@@ -8,7 +8,7 @@ public interface IExamService
 {
     Task<Exam> CreateExam(Exam exam);
     Task<Question> AddQuestion(int examId,Question question);
-    Task<Exam> GetAllExams();
+    Task<Exam> GetAllExams(int examId);
     Task<Exam> GetExamById(int examId);
     Task<Exam> GetExamsByTeacher(int teacherId);
     Task<ResponseModel> UpdateExam(ExamUpdateModel model);

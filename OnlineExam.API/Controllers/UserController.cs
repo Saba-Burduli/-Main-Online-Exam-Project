@@ -2,9 +2,11 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
 using OnlineExam.DAL.Repositories;
 using OnlineExam.DATA.Entites;
 using OnlineExam.SERVICE.DTOs.UserModels;
+using OnlineExam.SERVICE.Helpers;
 using OnlineExam.SERVICE.InterFaces;
 using System.Security.Claims;
 
@@ -16,12 +18,13 @@ namespace OnlineExam.Controllers
     public class UserController : ControllerBase
     {
         private readonly IUserService _userService;
-        //we dont need and this is not right to implement repository in there Controller
+        private readonly IConfiguration _configuration;
         
         //[POST METHOD]
-        public UserController(IUserService userService)
+        public UserController(IConfiguration configuration, IUserService userService)
         {
             _userService = userService;
+            _configuration = configuration;
         }
 
         //api/user/Register
@@ -47,21 +50,17 @@ namespace OnlineExam.Controllers
         [HttpPut("Login")]
         public async Task<IActionResult> LoginUserAsync(string username, string password)
         {
-            if (ModelState.IsValid)
+            var user = await _userService.LoginUserAsync(username,password);
+            if (user != null)
             {
-                var result = await _userService.LoginUserAsync(username,password);
-                
-                if (result!=null)
-                {                               
-                    return Ok(new ResponseModel { Success = true, Massage = "User Logged in" });
-                    //WE GONNA CHANGE THIS LOGIN HTTP METHOD AND ADD "JWT TOKEN"
-                }
-                else
-                {
-                    return Unauthorized(new ResponseModel { Success = false, Massage = "Cannot logged in" });
-                }
+                var userWithRoles = await _userService.GetUserWithRolesByIdAsync(user.UserId);
+                var token = TokenHelper.TokenGeneration(userWithRoles, _configuration);
+                HttpContext.Response.Cookies.Append("Token", token);
+
+                return Ok(new { Token = token, Msg = "User has logged!"});
             }
-            return BadRequest();
+
+            return Unauthorized(new ResponseModel { Success = false, Massage = "Cannot logged in" });
 
         }
 

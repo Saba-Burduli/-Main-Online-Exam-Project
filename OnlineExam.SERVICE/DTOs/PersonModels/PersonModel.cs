@@ -13,5 +13,6 @@ namespace OnlineExam.SERVICE.DTOs.PersonModels
         public string? LastName { get; set; }
         public string? Phone { get; set; }
         public string? Address { get; set; }
+
     }
 }

@@ -8,7 +8,7 @@ namespace OnlineExam.SERVICE.InterFaces;
 public interface IResultService
 {
     Task<Result> GetResultsByStudentId(int studentsId);
-    Task<Result> GetResultById(int examId,int studentId);
+    Task<ResponseModel> GetResult(int examId,int studentId);
     Task<ResponseModel> AddResult(Result result);  
     Task<ResponseModel> UpdateResult(ResultUpdateModel model);
     
