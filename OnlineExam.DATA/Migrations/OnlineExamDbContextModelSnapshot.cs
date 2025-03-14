@@ -144,8 +144,13 @@ namespace OnlineExam.DATA.Migrations
                         {
                             PersonId = 1,
                             Address = "Some Address",
+<<<<<<< HEAD
                             FirstName = "Saba",
                             LastName = "Burduli",
+=======
+                            FirstName = "Dachi",
+                            LastName = "Skhirtladze",
+>>>>>>> ca93197684515ec3871d540aeab8560f52a59851
                             Phone = "+995 12 34 56"
                         });
                 });
@@ -271,7 +276,11 @@ namespace OnlineExam.DATA.Migrations
                         new
                         {
                             UserId = 1,
+<<<<<<< HEAD
                             Email = "s.burduli.com",
+=======
+                            Email = "d.skhirtladze@gmail.com",
+>>>>>>> ca93197684515ec3871d540aeab8560f52a59851
                             PasswordHash = "JAvlGPq9JyTdtvBO6x2llnRI1+gxwIyPqCKAn3THIKk=",
                             PersonId = 1,
                             RegistrationDate = new DateTime(2025, 2, 14, 0, 0, 0, 0, DateTimeKind.Unspecified),

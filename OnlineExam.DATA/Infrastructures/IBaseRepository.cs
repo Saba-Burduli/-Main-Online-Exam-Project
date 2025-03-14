@@ -2,6 +2,7 @@ namespace OnlineExam.DATA.Infrastructures;
 
 public interface IBaseRepository<T> where T : class 
 {
+    //ff
     Task<IEnumerable<T>> GetAllAsync();
     Task<T> GetByIdAsync(int id);
     Task AddAsync(T entity);
