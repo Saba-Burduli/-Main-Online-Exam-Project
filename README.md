@@ -40,10 +40,12 @@ Develop an online examination system that allows administrators to manage exams,
 		ExamsCreated: ICollection<Exam> (for teachers)
 		Results: ICollection<Result> (for students)
 
+
 	<h2👏>Role</h2>
 		Id: int
 		RoleName: RoleType (enum) (Admin, Teacher, Student)
 		Users: ICollection<User>
+
 
 	<h2>📚Exam</h2>
 		Id: int
@@ -53,6 +55,7 @@ Develop an online examination system that allows administrators to manage exams,
 		Questions: ICollection<Question>
 		Results: ICollection<Result>
 
+
 	<h2>⁉️Question</h2>
 		Id: int
 		Content: string
@@ -60,7 +63,8 @@ Develop an online examination system that allows administrators to manage exams,
 		ExamId: int (foreign key)
 		Exam: Exam (navigation property)
 		Options: ICollection<string> (optional, if multiple choice is needed)
-	
+
+ 
 	<h2>✅Result</h2>
 		Id: int
 		StudentId: int (foreign key)
