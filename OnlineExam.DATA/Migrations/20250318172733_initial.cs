@@ -262,7 +262,7 @@ namespace OnlineExam.DATA.Migrations
             migrationBuilder.InsertData(
                 table: "Person",
                 columns: new[] { "PersonId", "Address", "FirstName", "LastName", "Phone" },
-                values: new object[] { 1, "Some Address", "Dachi", "Skhirtladze", "+995 12 34 56" });
+                values: new object[] { 1, "Some Address", "Saba", "Burduli", "+995 12 34 56" });
 
             migrationBuilder.InsertData(
                 table: "Role",
@@ -277,7 +277,7 @@ namespace OnlineExam.DATA.Migrations
             migrationBuilder.InsertData(
                 table: "Users",
                 columns: new[] { "UserId", "Email", "PasswordHash", "PersonId", "RegistrationDate", "UserName" },
-                values: new object[] { 1, "d.skhirtladze@gmail.com", "JAvlGPq9JyTdtvBO6x2llnRI1+gxwIyPqCKAn3THIKk=", 1, new DateTime(2025, 2, 14, 0, 0, 0, 0, DateTimeKind.Unspecified), "Admin" });
+                values: new object[] { 1, "s.burduli.com", "JAvlGPq9JyTdtvBO6x2llnRI1+gxwIyPqCKAn3THIKk=", 1, new DateTime(2025, 2, 14, 0, 0, 0, 0, DateTimeKind.Unspecified), "Admin" });
 
             migrationBuilder.InsertData(
                 table: "RoleUser",

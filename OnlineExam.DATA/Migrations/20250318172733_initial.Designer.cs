@@ -12,13 +12,8 @@ using OnlineExam.DATA;
 namespace OnlineExam.DATA.Migrations
 {
     [DbContext(typeof(OnlineExamDbContext))]
-<<<<<<<< HEAD:OnlineExam.DATA/Migrations/20250313173356_migrateV1.Designer.cs
-    [Migration("20250313173356_migrateV1")]
-    partial class migrateV1
-========
-    [Migration("20250313134118_initial")]
+    [Migration("20250318172733_initial")]
     partial class initial
->>>>>>>> ca93197684515ec3871d540aeab8560f52a59851:OnlineExam.DATA/Migrations/20250313134118_initial.Designer.cs
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -152,13 +147,8 @@ namespace OnlineExam.DATA.Migrations
                         {
                             PersonId = 1,
                             Address = "Some Address",
-<<<<<<<< HEAD:OnlineExam.DATA/Migrations/20250313173356_migrateV1.Designer.cs
                             FirstName = "Saba",
                             LastName = "Burduli",
-========
-                            FirstName = "Dachi",
-                            LastName = "Skhirtladze",
->>>>>>>> ca93197684515ec3871d540aeab8560f52a59851:OnlineExam.DATA/Migrations/20250313134118_initial.Designer.cs
                             Phone = "+995 12 34 56"
                         });
                 });
@@ -284,11 +274,7 @@ namespace OnlineExam.DATA.Migrations
                         new
                         {
                             UserId = 1,
-<<<<<<<< HEAD:OnlineExam.DATA/Migrations/20250313173356_migrateV1.Designer.cs
                             Email = "s.burduli.com",
-========
-                            Email = "d.skhirtladze@gmail.com",
->>>>>>>> ca93197684515ec3871d540aeab8560f52a59851:OnlineExam.DATA/Migrations/20250313134118_initial.Designer.cs
                             PasswordHash = "JAvlGPq9JyTdtvBO6x2llnRI1+gxwIyPqCKAn3THIKk=",
                             PersonId = 1,
                             RegistrationDate = new DateTime(2025, 2, 14, 0, 0, 0, 0, DateTimeKind.Unspecified),

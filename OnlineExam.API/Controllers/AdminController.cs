@@ -11,10 +11,7 @@ namespace OnlineExam.Controllers
     [Authorize(Roles = "Admin")]
     [Route("api/[controller]")]
     [ApiController]
-<<<<<<< HEAD
-=======
-    //[Authorize(Roles = "Admin")]
->>>>>>> ca93197684515ec3871d540aeab8560f52a59851
+
     public class AdminController : ControllerBase
     {
         private readonly IAdminService _adminService;
