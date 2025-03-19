@@ -42,16 +42,18 @@ Develop an online examination system that allows administrators to manage exams,
 		Username: string
 		PasswordHash: string
 		Email: string
-		RoleId: int (foreign key)
-		Role: Role (navigation property)
-		ExamsCreated: ICollection<Exam> (for teachers)
-		Results: ICollection<Result> (for students)
+		RegistrationDate: datetime
+		PersonId: int
+		ICollection<Exam> Exams 
+		ICollection<Result> Results
+
+  
 
 
 	<h2👏>Role</h2>
-		Id: int
-		RoleName: RoleType (enum) (Admin, Teacher, Student)
-		Users: ICollection<User>
+		RoleId: int
+		RoleName: string (admin, teacher, student)
+		
 
 
 	<h2>📚Exam</h2>
