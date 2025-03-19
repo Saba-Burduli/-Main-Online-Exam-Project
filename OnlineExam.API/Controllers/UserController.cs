@@ -27,6 +27,7 @@ namespace OnlineExam.Controllers
             _configuration = configuration;
         }
 
+
         //api/user/Register
         [AllowAnonymous]
         [HttpPost("Register")]
