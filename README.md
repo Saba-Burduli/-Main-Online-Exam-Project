@@ -38,7 +38,7 @@ Develop an online examination system that allows administrators to manage exams,
 
 
 	<h2>🙋User</h2>
-			UserId: int
+	 	UserId: int
 		Username: string
 		PasswordHash: string
 		PasswordSalt: string
