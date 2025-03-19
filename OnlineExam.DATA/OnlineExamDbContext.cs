@@ -54,12 +54,7 @@ namespace OnlineExam.DATA
 
                 );
 
-
-
-            //ადმინის სიდინგი მაქვს დასამატებელი 
-
-
-
+         
             modelBuilder.ApplyConfiguration(new ExamConfiguration());
             modelBuilder.ApplyConfiguration(new OptionConfiguration());
             modelBuilder.ApplyConfiguration(new PersonConfiguration());
@@ -70,7 +65,8 @@ namespace OnlineExam.DATA
             modelBuilder.ApplyConfiguration(new ExamParticpantConfiguration());
 
 
-           modelBuilder.Entity<Person>().HasData(
+            //ადმინის სიდინგი მაქვს დასამატებელი 
+            modelBuilder.Entity<Person>().HasData(
            new Person()
             {
                 PersonId = 1,
@@ -111,6 +107,7 @@ namespace OnlineExam.DATA
 
              r => r.HasData(new { UserId = 1, RoleId = 1 }));
         }
+
       }
         
     }

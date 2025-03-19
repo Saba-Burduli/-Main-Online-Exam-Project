@@ -24,6 +24,7 @@ public class UserRepository : BaseRepository<User>, IUserRepository
     {
         _context = context; 
     }
+
     public async Task<User> GetUserByEmailAsync(string email)
     {
         if (_context == null || _context.Users == null)
@@ -32,7 +33,6 @@ public class UserRepository : BaseRepository<User>, IUserRepository
         }
         return await _context.Users.FirstOrDefaultAsync(u => u.Email == email);
     }
-
 
     public async Task<User> GetUserWithRolesByIdAsync(int userId)
     {

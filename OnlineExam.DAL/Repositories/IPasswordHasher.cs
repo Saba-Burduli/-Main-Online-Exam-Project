@@ -3,7 +3,6 @@ using System.Text;
 
 namespace OnlineExam.DAL.Repositories
 {
-
     public interface IPasswordHasher
     {
         Task<string> HashPassword(string password);
