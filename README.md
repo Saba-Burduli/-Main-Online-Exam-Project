@@ -1,3 +1,5 @@
+
+
 <h1>👂Hello My Name is Saba Burduli and this is my first time ever doing Online Exam ASP.NET Web API .</h1>
 Whats cool in this project is im gonna create 3 type of role ..<br>
 and they have different tokens (accses). We dont have actually many entity classes manually but we actually creating meny join tables using configuration querys .<br>
@@ -38,27 +40,27 @@ Develop an online examination system that allows administrators to manage exams,
 
 
 	<h2>🙋User</h2>
-		Id: int
+	 	UserId: int
 		Username: string
 		PasswordHash: string
-		PasswordSalt: string
-		RoleId: int (foreign key)
-		Role: Role (navigation property)
-		ExamsCreated: ICollection<Exam> (for teachers)
-		Results: ICollection<Result> (for students)
+		Email: string
+		RegistrationDate: datetime
+		PersonId: int
+		ICollection<Exam> Exams 
+		ICollection<Result> Results
+
+  
 
 
 	<h2👏>Role</h2>
-		Id: int
-		RoleName: RoleType (enum) (Admin, Teacher, Student)
-		Users: ICollection<User>
-
+		RoleId: int
+		RoleName: string (admin, teacher, student)
+		
 
 	<h2>📚Exam</h2>
-		Id: int
+		ExamId: int
 		Title: string
-		TeacherId: int (foreign key)
-		Teacher: User (navigation property)
+		UserId: int (Teacher)
 		Questions: ICollection<Question>
 		Results: ICollection<Result>
 
@@ -70,6 +72,13 @@ Develop an online examination system that allows administrators to manage exams,
 		ExamId: int (foreign key)
 		Exam: Exam (navigation property)
 		Options: ICollection<string> (optional, if multiple choice is needed)
+  
+  	<h2>💢Option</h2>
+	 	Id: int
+		Content: string
+		IsCorrect: bool
+		QuestionId: int (foreign key)
+
 
  
 	<h2>✅Result</h2>
@@ -81,6 +90,11 @@ Develop an online examination system that allows administrators to manage exams,
 		Score: decimal(8,2)
 		DateTaken: DateTime
 
+
+	<h2>📚🙋ExamParticipant</h2>
+		Id: int
+		ExamId: int (foreign key)
+		UserId: int (foreign key)
 
 
 
@@ -180,18 +194,24 @@ Online Exam API The Online Exam API is built using ASP.NET Core and Entity Frame
 
 1. **User Management User authentication and authorization (JWT-based).** Role-based access control (Admin, Instructor, Student). Profile management.
 
+
    **Exam Management Instructors can create, update, and delete exams.** Define exam settings like duration, passing criteria, and question randomization. Assign exams to specific students or groups.
+
    
 
 3. **Question & Answer Management Create multiple-choice, true/false, and open-ended questions.** Support for different question difficulty levels. Options for shuffling questions per exam session.
 4. 
+
    
 5. **Exam Attempt & Submission Students can start, pause, and submit exams within a given time frame.**  Auto-save feature to prevent data loss. Timer management for live exams.
 
 
+
 6. **Result & Evaluation System Auto-evaluation for multiple-choice and true/false questions.** Instructors can manually grade open-ended questions. Generate exam reports, scores, and performance analysis.
 
+
 7. **Entity Framework & Database Management Uses Entity Framework Core for database interactions.** Supports MSSQL with migrations for schema updates. Well-structured entity relationships (User ↔ Exam ↔ Question ↔ Result).
+
 
 8. **Security & Scalability JWT authentication for secure API access. Role-based authorization to control access to different endpoints.** Designed for scalability, supporting future integrations with mobile apps or external LMS platforms.
 
@@ -199,6 +219,10 @@ Online Exam API The Online Exam API is built using ASP.NET Core and Entity Frame
 <br>
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
    <br>
+      <br>
+   From Comic Solvency (Me) 👽
+      <br>
+    <br>
  📥  If you want to learn more about This Project you can actually contact me on Mail : **sabagg790@gmail.com**
 
 
