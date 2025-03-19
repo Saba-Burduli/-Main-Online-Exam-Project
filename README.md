@@ -70,6 +70,13 @@ Develop an online examination system that allows administrators to manage exams,
 		ExamId: int (foreign key)
 		Exam: Exam (navigation property)
 		Options: ICollection<string> (optional, if multiple choice is needed)
+  
+  	<h2>💢Option</h2>
+	 	Id: int
+		Content: string
+		IsCorrect: bool
+		QuestionId: int (foreign key)
+
 
  
 	<h2>✅Result</h2>
