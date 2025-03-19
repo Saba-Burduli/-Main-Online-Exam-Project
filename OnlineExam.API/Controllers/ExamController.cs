@@ -100,7 +100,6 @@ namespace OnlineExam.Controllers
 
 
 
-
         [Authorize("Admin,Teacher,Student")] //should i delate Student ??
         //api/Result/GetExamsByTeacher
         [HttpGet("GetExamsByTeacher")]
@@ -117,7 +116,6 @@ namespace OnlineExam.Controllers
 
             return BadRequest();
         }
-
 
         [Authorize(Roles = "Teacher,Admin")]
         //api/Result/UpdateExam

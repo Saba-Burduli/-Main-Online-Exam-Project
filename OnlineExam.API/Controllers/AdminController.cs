@@ -17,6 +17,7 @@ namespace OnlineExam.Controllers
         private readonly IAdminService _adminService;
         private readonly IUserService _userService;
         private readonly IMapper _mapper;
+
         public AdminController(IAdminService adminService, IMapper mapper, IUserService userService)
         {
             _adminService = adminService;
