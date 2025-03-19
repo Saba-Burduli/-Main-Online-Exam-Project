@@ -41,7 +41,7 @@ Develop an online examination system that allows administrators to manage exams,
 	 	UserId: int
 		Username: string
 		PasswordHash: string
-		PasswordSalt: string
+		Email: string
 		RoleId: int (foreign key)
 		Role: Role (navigation property)
 		ExamsCreated: ICollection<Exam> (for teachers)
