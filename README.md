@@ -57,10 +57,9 @@ Develop an online examination system that allows administrators to manage exams,
 
 
 	<h2>📚Exam</h2>
-		Id: int
+		ExamId: int
 		Title: string
-		TeacherId: int (foreign key)
-		Teacher: User (navigation property)
+		UserId: int (Teacher)
 		Questions: ICollection<Question>
 		Results: ICollection<Result>
 
