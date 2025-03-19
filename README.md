@@ -89,6 +89,11 @@ Develop an online examination system that allows administrators to manage exams,
 		DateTaken: DateTime
 
 
+	<h2>📚🙋ExamParticipant</h2>
+		Id: int
+		ExamId: int (foreign key)
+		UserId: int (foreign key)
+
 
 
 
