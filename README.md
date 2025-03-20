@@ -172,6 +172,7 @@ Develop an online examination system that allows administrators to manage exams,
 <ol>
 	
 <li> void SubmitResult(Result result);</li>
+
 	
 <li> IEnumerable<Result> GetResultsByStudent(int studentId);</li>
 	
