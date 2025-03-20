@@ -85,6 +85,7 @@ Develop an online examination system that allows administrators to manage exams,
 		Exam: Exam (navigation property)
 		Options: ICollection<string> (optional, if multiple choice is needed)
 
+
   
   	<h2>💢Option</h2>
 	 	Id: int
