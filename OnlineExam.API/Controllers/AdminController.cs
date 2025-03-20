@@ -57,7 +57,7 @@ namespace OnlineExam.Controllers
         }
 
         //api/admin/AddUser
-        [HttpGet("AddUser")]
+        [HttpPost("AddUser")]
         public async Task<IActionResult> AddUser(UserRegisterModel model)
         {
             if (ModelState.IsValid)
@@ -74,7 +74,7 @@ namespace OnlineExam.Controllers
         }
 
         //api/admin/UpdateUser
-        [HttpGet("UpdateUser")]
+        [HttpPut("UpdateUser")]
         public async Task<ActionResult<UserModel>> UpdateUser(int userId, UpdateUserModel model)
         {
             if (ModelState.IsValid)
@@ -90,7 +90,7 @@ namespace OnlineExam.Controllers
         }
 
         //api/admin/DeleteUser
-        [HttpGet("DeleteUser")]
+        [HttpDelete("DeleteUser")]
         public async Task<ActionResult<UserModel>> DeleteUser(int userId)
         {
             if (ModelState.IsValid)
@@ -106,7 +106,7 @@ namespace OnlineExam.Controllers
         }
 
         //api/admin/AssignRole
-        [HttpGet("AssignRole")]
+        [HttpPost("AssignRole")]
         public async Task<ActionResult<UserModel>> AssignRole(int userId, List<int> roleIDs)
         {
             if (ModelState.IsValid)

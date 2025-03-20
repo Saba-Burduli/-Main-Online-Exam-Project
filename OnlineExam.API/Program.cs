@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using OnlineExam.SERVICE.Mapping;
+using static OnlineExam.DAL.Repositories.IPersonRepository;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -54,7 +55,7 @@ builder.Services.AddScoped<IResultRepository, ResultRepository>();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IRoleRepository, RoleRepository>();
 builder.Services.AddScoped<IPasswordHasher, PasswordHasher>();
-
+builder.Services.AddScoped<IPersonRepository, PersonRepository>();
 builder.Services.AddScoped<IExamRepository, ExamRepository>();
 
 // add services for Services
@@ -62,6 +63,7 @@ builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IResultService, ResultService>();
 builder.Services.AddScoped<IExamService, ExamService>();
 builder.Services.AddScoped<IAdminService, AdminService>();
+
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();

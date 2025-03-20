@@ -6,7 +6,7 @@ namespace OnlineExam.SERVICE.InterFaces;
 
 public interface IExamService
 {
-    Task<Exam> CreateExam(Exam exam);
+    Task<ResponseModel> CreateExam(CreateExamModel exam);
     Task<Question> AddQuestion(int examId,Question question);
     Task<Exam> GetAllExams(int examId);
     Task<Exam> GetExamById(int examId);

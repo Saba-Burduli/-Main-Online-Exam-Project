@@ -1,11 +1,7 @@
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using OnlineExam.DAL.Repositories;
 using OnlineExam.DATA.Entites;
-using OnlineExam.SERVICE;
 using OnlineExam.SERVICE.DTOs.ExamModels;
-using OnlineExam.SERVICE.DTOs.ResultModels;
 using OnlineExam.SERVICE.DTOs.UserModels;
 using OnlineExam.SERVICE.InterFaces;
 
@@ -17,29 +13,27 @@ namespace OnlineExam.Controllers
     public class ExamController : ControllerBase
     {
         private readonly IExamService _examService;
-        private readonly IExamRepository _examRepository; // imgonna delate _resultRepository from here ...
-
-        public ExamController(IExamService examService, IExamRepository examRepository)
+        
+        public ExamController(IExamService examService)
         {
-            examService = _examService;
-            _examRepository = examRepository;
+            _examService = examService;
+            
         }
 
         //api/Exam/CreateExam
         [Authorize(Roles = "Admin,Teacher")]
         [HttpPost("CreateExam")]
-        public async Task<ActionResult<Exam>> CreateExam(Exam exam)
+        public async Task<ActionResult<ResponseModel>> CreateExam([FromBody]CreateExamModel exam)
         {
             if (ModelState.IsValid)
             {
                 var createExam = await _examService.CreateExam(exam);
-                if (createExam == null)
-                    return BadRequest("Exam List is empty");
 
-                return Ok(createExam);
+                if (createExam.Success)
+                 return Ok(createExam.Massage);
+                  
             }
-
-            return BadRequest();
+            return BadRequest(new ResponseModel {Success =false ,Massage = "Exam cannot created" });
         }
 
 
@@ -61,7 +55,7 @@ namespace OnlineExam.Controllers
         }
 
 
-        [Authorize("Admin,Teacher,Student")] //should i delate Student ??
+        [Authorize(Roles ="Admin,Teacher")] //should i delate Student ??
         //api/Result/GetAllExams
         [HttpGet("GetAllExams")]
         public async Task<ActionResult<Exam>> GetAllExams(int examId)
@@ -80,7 +74,7 @@ namespace OnlineExam.Controllers
 
 
 
-        [Authorize("Admin,Teacher,Student")] //should i delate Student ??
+        [Authorize(Roles ="Admin,Teacher")] //should i delate Student ??
         //api/Result/GetExamById
         [HttpGet("GetExamById")]
         public async Task<ActionResult<Exam>> GetExamById(int examId)
@@ -100,7 +94,7 @@ namespace OnlineExam.Controllers
 
 
 
-        [Authorize("Admin,Teacher,Student")] //should i delate Student ??
+        [Authorize(Roles ="Admin,Teacher")] //should i delate Student ??
         //api/Result/GetExamsByTeacher
         [HttpGet("GetExamsByTeacher")]
         public async Task<ActionResult<Exam>> GetExamsByTeacher(int teacherId)

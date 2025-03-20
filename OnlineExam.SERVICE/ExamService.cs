@@ -1,3 +1,4 @@
+using AutoMapper;
 using Microsoft.EntityFrameworkCore;
 using OnlineExam.DAL.Repositories;
 using OnlineExam.DATA.Entites;
@@ -12,10 +13,12 @@ public class ExamService : IExamService
 {
     private readonly IUserRepository _userRepository;
     private readonly IExamRepository _examRepository;
-    public ExamService(IUserRepository userRepository, IExamRepository examRepository)
+    private readonly IMapper _mapper;
+    public ExamService(IUserRepository userRepository, IExamRepository examRepository, IMapper mapper)
     {
         _userRepository = userRepository;
         _examRepository = examRepository;
+        _mapper = mapper;
     }
 
     public async Task<Question> AddQuestion(int examId, Question question)
@@ -29,10 +32,11 @@ public class ExamService : IExamService
         return question;
     }
 
-    public async Task<Exam> CreateExam(Exam exam)
+    public async Task<ResponseModel> CreateExam(CreateExamModel exam)
     {
-        await _examRepository.AddAsync(exam);
-        return exam;
+        var examEntity = _mapper.Map<Exam>(exam);
+        await _examRepository.AddAsync(examEntity);
+        return new ResponseModel { Success = true, Massage = " Exam created successfully" };
     }
 
     public async Task<Exam> DeleteExam(int examId)

@@ -14,13 +14,15 @@ public class UserService : IUserService
     private readonly IPasswordHasher _passwordHasher;
     private readonly IRoleRepository _roleRepository;
     private readonly IMapper _mapper;
+    private readonly IPersonRepository _personReposiotry;
 
-    public UserService(IMapper mapper, IRoleRepository roleRepository, IUserRepository userRepository, IPasswordHasher passwordHasher)
+    public UserService(IMapper mapper, IRoleRepository roleRepository, IUserRepository userRepository, IPasswordHasher passwordHasher, IPersonRepository personReposiotry)
     {
         _userRepository = userRepository;
         _passwordHasher = passwordHasher;
         _roleRepository = roleRepository;
         _mapper = mapper;
+        _personReposiotry = personReposiotry;
         
     }
     //[POST METHOD] User Registration
@@ -32,15 +34,18 @@ public class UserService : IUserService
         {
             return new ResponseModel {Success = false ,Massage = "Email already exists"};
         }
-        var roleId =model.RoleId==2 ? model.RoleId:3;
+        var personEntity = _mapper.Map<Person>(model.Person);
+        var newPerson = await _personReposiotry.GetLastPersonAsync(personEntity);
         var roles = await _roleRepository.GetAllAsync();
         var newUser = new User
         {
             UserName = model.UserName,
             Email = model.Email,
             PasswordHash = await _passwordHasher.HashPassword(model.Password),
-            Roles = roles.Where(r => r.RoleId == roleId).ToList()
+            Roles = roles.Where(r => r.RoleId == model.RoleId).ToList(),
+            PersonId = newPerson.PersonId
         };
+        await _userRepository.AddAsync(newUser);
         return new ResponseModel{Success = true ,Massage = "User registered successfully"};
     }
     //[POST METHOD] Login User

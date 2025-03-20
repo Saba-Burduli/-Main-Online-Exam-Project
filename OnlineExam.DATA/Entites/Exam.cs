@@ -11,7 +11,8 @@ public class Exam
     [MaxLength(30,ErrorMessage = "title must be between 3 and 30 characters.")]
     [Required(ErrorMessage = "Title is required")]
     public string? Title { get; set; }
-    
+    public DateTime UpdatedAt { get; set; }
+
     //Relations : 
 
     //Exam => Question ; one to many ; (Exam) to (Question)
@@ -22,5 +23,5 @@ public class Exam
 
     //Exam => Result
     public virtual ICollection<Result>? Results { get; set; }
-    public DateTime UpdatedAt { get; set; }
+ 
 }
