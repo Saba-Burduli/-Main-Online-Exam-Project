@@ -68,6 +68,7 @@ Develop an online examination system that allows administrators to manage exams,
 		RoleName: string (admin, teacher, student)
 		
 
+
 	<h2>📚Exam</h2>
 		ExamId: int
 		Title: string
