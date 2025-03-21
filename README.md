@@ -12,7 +12,7 @@ there is many different type of Relations like : Many => Many , Many => One and 
 Add some Controlers and tokens .<br>
 
 
-Imgonna use token for SuperAdmin(can change and create anything) also for teacher (he/she can write points for student result and actualy can see..also can see exams papers early) and the last one student(he/she can 
+Im gonna use token for SuperAdmin(can change and create anything) also for teacher (he/she can write points for student result and actualy can see..also can see exams papers early) and the last one student(he/she can 
 
 only write a exam and can only see resuly).<br>
 
