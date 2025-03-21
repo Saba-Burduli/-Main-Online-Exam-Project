@@ -5,7 +5,7 @@
 Whats Cool in this project is Im gonna create 3 type of role ...
 <br>
 
-and they have different tokens (accses). We dont have actually many entity classes manually but we actually creating meny join tables using configuration querys .<br>
+and they have different tokens (accses). We dont have actually many Entity classes manually but we actually creating meny join tables using configuration querys .<br>
 
 there is many different type of Relations like : Many => Many , Many => One and also ofc One to One ......<br>
 
