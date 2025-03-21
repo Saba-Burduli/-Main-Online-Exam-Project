@@ -223,7 +223,7 @@ Online Exam API The Online Exam API is built using ASP.NET Core and Entity Frame
  Key Features & Functionalities :
  
 
-1. **User Management User authentication and authorization (JWT-based).** Role-based access control (Admin, Instructor, Student). Profile management.
+1. **User Management User Authentication and authorization (JWT-based).** Role-based access control (Admin, Instructor, Student). Profile management.
 
 
    **Exam Management Instructors can create, update, and delete exams.** Define exam settings like duration, passing criteria, and question randomization. Assign exams to specific students or groups.
