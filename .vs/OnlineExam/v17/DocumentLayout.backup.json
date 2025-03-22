@@ -193,7 +193,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 33,
+          "SelectedChildIndex": 23,
           "Children": [
             {
               "$type": "Bookmark",
@@ -277,30 +277,6 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "IPersonRepository.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.DAL\\Repositories\\IPersonRepository.cs",
-              "RelativeDocumentMoniker": "OnlineExam.DAL\\Repositories\\IPersonRepository.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.DAL\\Repositories\\IPersonRepository.cs",
-              "RelativeToolTip": "OnlineExam.DAL\\Repositories\\IPersonRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAABQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-20T12:22:44.22Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "AdminService.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.SERVICE\\AdminService.cs",
-              "RelativeDocumentMoniker": "OnlineExam.SERVICE\\AdminService.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.SERVICE\\AdminService.cs",
-              "RelativeToolTip": "OnlineExam.SERVICE\\AdminService.cs",
-              "ViewState": "AgIAADIAAAAAAAAAAAAIwB0AAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T12:28:56.753Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 17,
               "Title": "UserService.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.SERVICE\\UserService.cs",
@@ -334,6 +310,43 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-14T17:03:30.076Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BaseRepository.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.DATA\\Infrastructures\\BaseRepository.cs",
+              "RelativeDocumentMoniker": "OnlineExam.DATA\\Infrastructures\\BaseRepository.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.DATA\\Infrastructures\\BaseRepository.cs",
+              "RelativeToolTip": "OnlineExam.DATA\\Infrastructures\\BaseRepository.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwBcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-13T14:06:48.655Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "AdminService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.SERVICE\\AdminService.cs",
+              "RelativeDocumentMoniker": "OnlineExam.SERVICE\\AdminService.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.SERVICE\\AdminService.cs",
+              "RelativeToolTip": "OnlineExam.SERVICE\\AdminService.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAIwB0AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-13T12:28:56.753Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "IPersonRepository.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.DAL\\Repositories\\IPersonRepository.cs",
+              "RelativeDocumentMoniker": "OnlineExam.DAL\\Repositories\\IPersonRepository.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.DAL\\Repositories\\IPersonRepository.cs",
+              "RelativeToolTip": "OnlineExam.DAL\\Repositories\\IPersonRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T12:22:44.22Z"
             },
             {
               "$type": "Document",
@@ -435,19 +448,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-14T17:04:59.46Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "BaseRepository.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.DATA\\Infrastructures\\BaseRepository.cs",
-              "RelativeDocumentMoniker": "OnlineExam.DATA\\Infrastructures\\BaseRepository.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.DATA\\Infrastructures\\BaseRepository.cs",
-              "RelativeToolTip": "OnlineExam.DATA\\Infrastructures\\BaseRepository.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAQwAQAAABHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T14:06:48.655Z",
               "EditorCaption": ""
             },
             {
