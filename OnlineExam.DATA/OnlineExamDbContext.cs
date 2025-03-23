@@ -89,6 +89,7 @@ namespace OnlineExam.DATA
             }
             );
 
+
             modelBuilder.Entity<User>()
                 .HasMany(u => u.Roles)
                 .WithMany(r => r.Users)
