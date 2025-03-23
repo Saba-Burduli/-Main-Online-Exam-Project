@@ -5,6 +5,7 @@ namespace OnlineExam.DATA.Entites;
 [Table("Question")]
 public class Question
 {
+
     [Key]
     public int QuestionId { get; set; }
 
