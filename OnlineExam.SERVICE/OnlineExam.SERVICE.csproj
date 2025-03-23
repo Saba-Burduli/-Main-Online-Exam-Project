@@ -24,8 +24,4 @@
       <ProjectReference Include="..\OnlineExam.DAL\OnlineExam.DAL.csproj" />
     </ItemGroup>
 
-    <ItemGroup>
-      <Folder Include="DTOs\QuestionModels\" />
-    </ItemGroup>
-
 </Project>
