@@ -130,13 +130,6 @@ public class UserService : IUserService
        
     }
 
-    //public Task<ResponseModel> UpdateProfileAsync(int userId, UpdateProfileModel model)
-    //{
-    //    throw new NotImplementedException();
-    //}
-
-
-
     //[PUT METHOD] Update Profile 
     public async Task<ResponseModel> UpdateProfileAsync(int userId, UpdateProfileModel model)
     {
