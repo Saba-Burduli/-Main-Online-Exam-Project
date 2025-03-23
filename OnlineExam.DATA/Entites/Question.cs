@@ -16,7 +16,7 @@ public class Question
     [Required(ErrorMessage = "content is required")]
     public string? CorrectAnswer { get; set; }
     
-    //Relations
+    //Relations :
 
     //Question => Exam ; Many to One ; (Question) to (Exam)
     [ForeignKey("Exam")] 
