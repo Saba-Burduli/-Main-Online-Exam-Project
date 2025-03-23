@@ -1,6 +1,7 @@
 
 
-<h1>👂 Hello My Name is Saba Burduli(Comic Solvency). and this is my first Time ever doing Online Exam ASP.NET Web API </h1>
+<h1>👂 Hello My Name is Saba Burduli(Comic Solvency).... </h1>
+	<h4>..and this is my first Time ever doing Online Exam ASP.NET Web API </h4>
 <br>
 Whats Cool in this project is Im gonna create 3 type of role ...
 <br>
@@ -126,6 +127,12 @@ Develop an online examination system that allows administrators to manage exams,
 
 ***Project Entity Diagrams*** :
 ![image](https://github.com/user-attachments/assets/1acbdc00-14d2-42b5-9eb0-29d7e6642cb1)
+
+<br>
+
+***Project All Methods*** :
+<br>
+![image](https://github.com/user-attachments/assets/5fc54772-9c35-46b5-a84e-d6e98c6d83bc)
 <br>
 
 <h1>💢Interfaces</h1>
