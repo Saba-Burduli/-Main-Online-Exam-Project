@@ -124,7 +124,9 @@ Develop an online examination system that allows administrators to manage exams,
 
 <br>
 
-
+***Project Entity Diagrams*** :
+![image](https://github.com/user-attachments/assets/1acbdc00-14d2-42b5-9eb0-29d7e6642cb1)
+<br>
 
 <h1>💢Interfaces</h1>
 <br>
