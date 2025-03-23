@@ -128,6 +128,10 @@ Develop an online examination system that allows administrators to manage exams,
 ![image](https://github.com/user-attachments/assets/1acbdc00-14d2-42b5-9eb0-29d7e6642cb1)
 <br>
 
+***Project All Methods*** :
+![image](https://github.com/user-attachments/assets/5fc54772-9c35-46b5-a84e-d6e98c6d83bc)
+
+
 <h1>💢Interfaces</h1>
 <br>
 
