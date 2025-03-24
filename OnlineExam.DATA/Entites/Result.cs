@@ -12,6 +12,7 @@ public class Result
     [Required]
     [Column(TypeName = "decimal(8,2)")]
     public decimal Score { get; set; }
+    
     [Required]
     public DateTime DateTaken { get; set; }
     public DateTime UpdatedAt { get; set; }
