@@ -13,9 +13,11 @@ namespace OnlineExam.DAL.Repositories
 {
     public interface IExamRepository :IBaseRepository<Exam>
     {
+    
         Task<bool> RegisterExam(int examId,string title);
         Task<Exam> GetAllExams(int examId);
         Task<Exam> GetExamsByTeacher(int teacherId);
+        
     }
 
     public class ExamRepository : BaseRepository<Exam>, IExamRepository
