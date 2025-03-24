@@ -29,7 +29,7 @@ public class AdminService : IAdminService
         var allUsers = await _userRepository.GetAllStudents();
         var allStudents = allUsers.Where(x => x.Roles.Any(r=>r.RoleName.ToLower() == "student")).ToList();
 
-        return allStudents.Any() ? _mapper.Map<IEnumerable<UserModel>>(allStudents) : null;
+        return allStudents.Any() ? _mapper.Map<IEnumerable<UserModel>>(allStudents) : null ;
 
         //var users = await _userRepository.GetAllAsync();
         //return users.Where(u=>u.Roles.Any(r=>r.RoleId==3)) ?? null;
