@@ -66,5 +66,6 @@ namespace OnlineExam.DATA.Infrastructures
             _context.Remove(user);
             await _context.SaveChangesAsync();
         }
+        
     }
 }
