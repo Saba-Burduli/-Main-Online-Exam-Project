@@ -35,6 +35,7 @@ public class UserRepository : BaseRepository<User>, IUserRepository
         }
         return await _context.Users.FirstOrDefaultAsync(u => u.Email == email);
     }
+    
 
     public async Task<User> GetUserWithRolesByIdAsync(int userId)
     {
