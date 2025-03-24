@@ -65,6 +65,7 @@ public class UserRepository : BaseRepository<User>, IUserRepository
         await _context.SaveChangesAsync();
         return user;
     }
+    
 
     public async Task<bool> RegisterUserForExam(int userId, int examId) 
     {
