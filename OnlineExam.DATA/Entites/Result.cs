@@ -8,6 +8,7 @@ public class Result
 {
     [Key] 
     public int ResultId { get; set; }
+    
     [Required]
     [Column(TypeName = "decimal(8,2)")]
     public decimal Score { get; set; }
