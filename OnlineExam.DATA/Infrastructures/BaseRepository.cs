@@ -43,6 +43,7 @@ namespace OnlineExam.DATA.Infrastructures
             await _dbSet.AddAsync(entity);
             await _context.SaveChangesAsync();
         }
+        
 
         public async Task UpdateAsync(T entity)
         {
