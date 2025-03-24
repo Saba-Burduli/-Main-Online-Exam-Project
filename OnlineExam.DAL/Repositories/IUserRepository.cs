@@ -113,6 +113,7 @@ public class UserRepository : BaseRepository<User>, IUserRepository
         return await _context.Users
              .FirstOrDefaultAsync(ep => ep.UserName ==username  && ep.PasswordHash == password);
     }
+    
 
     public async Task<IEnumerable<User>> GetAllStudents()
     {
