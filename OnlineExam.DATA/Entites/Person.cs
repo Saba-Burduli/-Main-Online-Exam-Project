@@ -7,9 +7,9 @@ public class Person
 {
     [Key] 
     public int PersonId { get; set; }
+    
     [Required]
     [MaxLength(20,ErrorMessage = "first name cannot be longer than 20 characters.")]
-
     public string? FirstName { get; set; }
     [Required]
     [MaxLength(30,ErrorMessage = "last name must be between 3 and 30 characters ")]
