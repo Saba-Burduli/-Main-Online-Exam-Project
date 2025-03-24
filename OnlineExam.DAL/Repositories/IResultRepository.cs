@@ -26,7 +26,6 @@ namespace OnlineExam.DAL.Repositories
             _context = context;
         }
 
-
         public async Task<Result> GetResultsByScore(decimal Score)
         {
             if (_context == null || _context.Results == null)
