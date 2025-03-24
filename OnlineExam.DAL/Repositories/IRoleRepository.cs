@@ -8,6 +8,7 @@ public interface IRoleRepository : IBaseRepository<Role>
 {
     
 }
+
 public class RoleRepository : BaseRepository<Role>, IRoleRepository
 {
     private readonly OnlineExamDbContext _context;
