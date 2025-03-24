@@ -26,4 +26,5 @@ public class Person
     //Relation :
     //Person => User ;one to one
     public virtual User? User { get; set; }
+    
 }
