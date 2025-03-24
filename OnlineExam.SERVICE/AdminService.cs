@@ -19,9 +19,11 @@ public class AdminService : IAdminService
 
     public AdminService(IPasswordHasher passwordHasher, IUserRepository userRepository, IMapper mapper)
     {
+    
         _passwordHasher = passwordHasher;
         _userRepository = userRepository;
         _mapper = mapper;
+        
     }
 
     
