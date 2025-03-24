@@ -14,6 +14,7 @@ namespace OnlineExam.DATA.Infrastructures
                      throw new ArgumentNullException($"DBSet for Type: {typeof(T)} could not initialize");
         }
 
+        
         public async Task<IEnumerable<T>> GetAllAsync()
         {
             if (_context == null || _dbSet == null)
