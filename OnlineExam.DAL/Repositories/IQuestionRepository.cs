@@ -10,8 +10,6 @@ using Microsoft.EntityFrameworkCore;
 
 namespace OnlineExam.DAL.Repositories
 {
-
 //We need Question Repo with Implementation and also methods in there...
 //Also I need Question IService and Service (Implementation)
-
 }
