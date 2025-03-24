@@ -18,6 +18,7 @@ public interface IUserRepository : IBaseRepository<User>
 
 public class UserRepository : BaseRepository<User>, IUserRepository
 {
+
     private readonly OnlineExamDbContext _context;
 
     public UserRepository(OnlineExamDbContext context):base(context)
