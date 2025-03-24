@@ -52,6 +52,7 @@ public class AdminService : IAdminService
     }
 
 
+
     public async Task<User> AddUser(UserRegisterModel model)// i change this UserModel to User
     {
         var user = new User
