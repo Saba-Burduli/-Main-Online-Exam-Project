@@ -105,6 +105,7 @@ public class UserRepository : BaseRepository<User>, IUserRepository
         _context.ExamParticpants.Add(examParticipant);
         await _context.SaveChangesAsync();
         return true;
+        
     }
 
     public async Task<User> GetUserByUserNameAndPasswordAsync(string username, string password)
