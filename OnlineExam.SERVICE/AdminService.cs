@@ -44,6 +44,7 @@ public class AdminService : IAdminService
     }
 
 
+
     public async Task<UserModel> GetUserById(int userId)
     {
         var entity = await _userRepository.GetByIdAsync(userId);
