@@ -49,6 +49,7 @@ public class AdminService : IAdminService
         return _mapper.Map<UserModel>(entity); 
     }
 
+
     public async Task<User> AddUser(UserRegisterModel model)// i change this UserModel to User
     {
         var user = new User
