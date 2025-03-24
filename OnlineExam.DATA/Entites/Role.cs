@@ -15,4 +15,5 @@ public class Role
     //Relations :
     //Role => User ; Many to Many
     public ICollection<User>? Users { get; set; }
+    
 }
