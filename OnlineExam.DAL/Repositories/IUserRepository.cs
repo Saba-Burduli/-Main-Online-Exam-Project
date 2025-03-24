@@ -26,6 +26,7 @@ public class UserRepository : BaseRepository<User>, IUserRepository
         _context = context; 
     }
 
+    
     public async Task<User> GetUserByEmailAsync(string email)
     {
         if (_context == null || _context.Users == null)
