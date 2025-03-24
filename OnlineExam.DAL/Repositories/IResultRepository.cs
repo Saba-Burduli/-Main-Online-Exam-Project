@@ -20,6 +20,7 @@ namespace OnlineExam.DAL.Repositories
 
     public class ResultRepository : BaseRepository<Result>, IResultRepository
     {
+    
         private readonly OnlineExamDbContext _context;
         public ResultRepository(OnlineExamDbContext context) : base(context)
         {
