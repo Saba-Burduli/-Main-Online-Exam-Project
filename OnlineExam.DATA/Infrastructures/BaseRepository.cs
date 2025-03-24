@@ -22,6 +22,7 @@ namespace OnlineExam.DATA.Infrastructures
 
             return await _dbSet.ToListAsync();
         }
+        
 
         public async Task<T> GetByIdAsync(int id)
         {
@@ -31,6 +32,7 @@ namespace OnlineExam.DATA.Infrastructures
             return await _dbSet.FindAsync(id);
         }
 
+        
         public async Task AddAsync(T entity)
         {
             if (entity == null) throw new ArgumentNullException(nameof(entity) + "can not be null");
