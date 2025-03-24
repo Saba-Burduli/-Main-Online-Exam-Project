@@ -1,4 +1,4 @@
-﻿using OnlineExam.DATA.Entites;
+a﻿using OnlineExam.DATA.Entites;
 using OnlineExam.DATA.Infrastructures;
 using OnlineExam.DATA;
 using System;
@@ -11,5 +11,6 @@ using Microsoft.EntityFrameworkCore;
 namespace OnlineExam.DAL.Repositories
 {
 //We need Question Repo with Implementation and also methods in there..
-//Also I need Question IService and Service (Implementation)
+//Also I need Question IService and Service (Implementation)add main methods in there
+
 }
