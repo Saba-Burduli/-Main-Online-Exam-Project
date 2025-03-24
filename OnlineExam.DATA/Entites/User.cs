@@ -20,9 +20,7 @@ public class User
     public DateTime RegistrationDate { get; set; }
     
     
-    
     //Relations :
-
     // User => Role ; Many to Many , (User) => (Role)
     public virtual ICollection<Role>? Roles { get; set; } //add in there +a is this ok ?    
 
