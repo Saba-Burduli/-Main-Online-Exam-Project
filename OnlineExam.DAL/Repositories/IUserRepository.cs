@@ -34,6 +34,7 @@ public class UserRepository : BaseRepository<User>, IUserRepository
             throw new NullReferenceException("The context is null");    
         }
         return await _context.Users.FirstOrDefaultAsync(u => u.Email == email);
+        
     }
     
 
