@@ -18,7 +18,6 @@ public class Result
     public DateTime UpdatedAt { get; set; }
 
     //Relations :
-
     //Result => Exam ; many to many  ;(Result) to (Exam)
     public virtual ICollection<Exam>? Exam { get; set; }
 
