@@ -44,6 +44,7 @@ public class UserRepository : BaseRepository<User>, IUserRepository
             .FirstOrDefaultAsync(u=>u.UserId == userId);   
     }
 
+
     public async Task<User> AssignRoleUserAsync(int userId, List<int> roleIds)
     {
         var user = await _context.Users
