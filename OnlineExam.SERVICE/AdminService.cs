@@ -60,7 +60,6 @@ public class AdminService : IAdminService
             Email = model.Email,
             RegistrationDate = DateTime.UtcNow,
             Person = _mapper.Map<Person>(model.Person)
-
         };
         return user;
     }
