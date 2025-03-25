@@ -20,6 +20,7 @@ namespace OnlineExam.DAL.Repositories
         Task<Question> DeleteQuestion(int questionId);
     }
 
+    
     public class QuestionRepository : BaseRepository<Question>, IQuestionRepository
     {
         public QuestionRepository(OnlineExamDbContext context) : base(context)
