@@ -16,4 +16,5 @@ public class RoleRepository : BaseRepository<Role>, IRoleRepository
     {
         _context = context;
     }
+    
 }

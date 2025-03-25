@@ -20,12 +20,12 @@ namespace OnlineExam.DAL.Repositories
 
     public class ResultRepository : BaseRepository<Result>, IResultRepository
     {
+    
         private readonly OnlineExamDbContext _context;
         public ResultRepository(OnlineExamDbContext context) : base(context)
         {
             _context = context;
         }
-
 
         public async Task<Result> GetResultsByScore(decimal Score)
         {
@@ -36,6 +36,7 @@ namespace OnlineExam.DAL.Repositories
 
             return await _context.Results.FirstOrDefaultAsync(r => r.Score == Score);
         }
+        
 
         public async Task<Result> GetResultsByStudentId(int studentsId)
         {
@@ -47,6 +48,8 @@ namespace OnlineExam.DAL.Repositories
                 .FirstOrDefaultAsync(r => r.ResultId == studentsId);
           
         }
+
+
 
         //public async Task<Result> GetByUserAndExamAsync(int userId,int examId) should i add this method ???
         //{
@@ -79,6 +82,8 @@ namespace OnlineExam.DAL.Repositories
         //    //user.Exam = exam;
         //    //await _context.SaveChangesAsync();      
         //}
+
+
 
     }
 }

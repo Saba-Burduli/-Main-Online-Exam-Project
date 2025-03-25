@@ -9,18 +9,21 @@ using System.Threading.Tasks;
 
 namespace OnlineExam.SERVICE;
 
+
 public class AdminService : IAdminService
 {
-
     private readonly IPasswordHasher _passwordHasher;
     private readonly IUserRepository _userRepository;
     private readonly IMapper _mapper;
+    
 
     public AdminService(IPasswordHasher passwordHasher, IUserRepository userRepository, IMapper mapper)
     {
+    
         _passwordHasher = passwordHasher;
         _userRepository = userRepository;
         _mapper = mapper;
+        
     }
 
     
@@ -29,7 +32,7 @@ public class AdminService : IAdminService
         var allUsers = await _userRepository.GetAllStudents();
         var allStudents = allUsers.Where(x => x.Roles.Any(r=>r.RoleName.ToLower() == "student")).ToList();
 
-        return allStudents.Any() ? _mapper.Map<IEnumerable<UserModel>>(allStudents) : null;
+        return allStudents.Any() ? _mapper.Map<IEnumerable<UserModel>>(allStudents) : null ;
 
         //var users = await _userRepository.GetAllAsync();
         //return users.Where(u=>u.Roles.Any(r=>r.RoleId==3)) ?? null;
@@ -59,7 +62,6 @@ public class AdminService : IAdminService
             Email = model.Email,
             RegistrationDate = DateTime.UtcNow,
             Person = _mapper.Map<Person>(model.Person)
-
         };
         return user;
     }
@@ -92,6 +94,7 @@ public class AdminService : IAdminService
         return user;
         
     }
+
 
 
     public async Task<User> DeleteUser(int userId)// i change this UserModel to User

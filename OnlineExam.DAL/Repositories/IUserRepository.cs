@@ -18,6 +18,7 @@ public interface IUserRepository : IBaseRepository<User>
 
 public class UserRepository : BaseRepository<User>, IUserRepository
 {
+
     private readonly OnlineExamDbContext _context;
 
     public UserRepository(OnlineExamDbContext context):base(context)
@@ -25,6 +26,7 @@ public class UserRepository : BaseRepository<User>, IUserRepository
         _context = context; 
     }
 
+    
     public async Task<User> GetUserByEmailAsync(string email)
     {
         if (_context == null || _context.Users == null)
@@ -32,7 +34,9 @@ public class UserRepository : BaseRepository<User>, IUserRepository
             throw new NullReferenceException("The context is null");    
         }
         return await _context.Users.FirstOrDefaultAsync(u => u.Email == email);
+        
     }
+    
 
     public async Task<User> GetUserWithRolesByIdAsync(int userId)
     {
@@ -40,6 +44,7 @@ public class UserRepository : BaseRepository<User>, IUserRepository
             .Include(u => u.Roles)
             .FirstOrDefaultAsync(u=>u.UserId == userId);   
     }
+
 
     public async Task<User> AssignRoleUserAsync(int userId, List<int> roleIds)
     {
@@ -61,6 +66,7 @@ public class UserRepository : BaseRepository<User>, IUserRepository
         await _context.SaveChangesAsync();
         return user;
     }
+    
 
     public async Task<bool> RegisterUserForExam(int userId, int examId) 
     {
@@ -100,6 +106,7 @@ public class UserRepository : BaseRepository<User>, IUserRepository
         _context.ExamParticpants.Add(examParticipant);
         await _context.SaveChangesAsync();
         return true;
+        
     }
 
     public async Task<User> GetUserByUserNameAndPasswordAsync(string username, string password)
@@ -107,6 +114,7 @@ public class UserRepository : BaseRepository<User>, IUserRepository
         return await _context.Users
              .FirstOrDefaultAsync(ep => ep.UserName ==username  && ep.PasswordHash == password);
     }
+    
 
     public async Task<IEnumerable<User>> GetAllStudents()
     {

@@ -11,7 +11,6 @@ public class Option
     public bool IsCorrect { get; set; }
 
     //Relations :
-
     //Options => Question
     [ForeignKey("Question")]
     public int QuestionId { get; set; }

@@ -14,6 +14,7 @@ namespace OnlineExam.DATA.Infrastructures
                      throw new ArgumentNullException($"DBSet for Type: {typeof(T)} could not initialize");
         }
 
+        
         public async Task<IEnumerable<T>> GetAllAsync()
         {
             if (_context == null || _dbSet == null)
@@ -21,6 +22,7 @@ namespace OnlineExam.DATA.Infrastructures
 
             return await _dbSet.ToListAsync();
         }
+        
 
         public async Task<T> GetByIdAsync(int id)
         {
@@ -30,6 +32,7 @@ namespace OnlineExam.DATA.Infrastructures
             return await _dbSet.FindAsync(id);
         }
 
+        
         public async Task AddAsync(T entity)
         {
             if (entity == null) throw new ArgumentNullException(nameof(entity) + "can not be null");
@@ -40,6 +43,7 @@ namespace OnlineExam.DATA.Infrastructures
             await _dbSet.AddAsync(entity);
             await _context.SaveChangesAsync();
         }
+        
 
         public async Task UpdateAsync(T entity)
         {
@@ -51,6 +55,7 @@ namespace OnlineExam.DATA.Infrastructures
             _dbSet.Update(entity);
             await _context.SaveChangesAsync();
         }
+        
 
         public async Task DeleteAsync(int id)
         {
@@ -61,5 +66,6 @@ namespace OnlineExam.DATA.Infrastructures
             _context.Remove(user);
             await _context.SaveChangesAsync();
         }
+        
     }
 }
