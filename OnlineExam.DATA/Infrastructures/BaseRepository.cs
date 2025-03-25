@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 
+
 namespace OnlineExam.DATA.Infrastructures
 {
 
