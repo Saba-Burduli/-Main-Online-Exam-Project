@@ -51,11 +51,11 @@ namespace OnlineExam.DATA.Infrastructures
         {
             if (entity == null) throw new ArgumentNullException(nameof(entity) + "can not be null");
 
-            if (_context == null || _dbSet == null)
-                throw new InvalidOperationException("Database context is not initilized");
+                if (_context == null || _dbSet == null)
+                    throw new InvalidOperationException("Database context is not initilized");
 
-            _dbSet.Update(entity);
-            await _context.SaveChangesAsync();
+                    _dbSet.Update(entity);
+                    await _context.SaveChangesAsync();
         }
         
 
