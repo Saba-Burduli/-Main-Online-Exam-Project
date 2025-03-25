@@ -11,7 +11,44 @@ using Microsoft.EntityFrameworkCore;
 namespace OnlineExam.DAL.Repositories
 {
 
-//We need Question Repo with Implementation and also methods in there...
-//Also I need Question IService and Service (Implementation)
+    public interface IQuestionRepository
+    {
+        Task<Question> AddQuestion(Question question);
+        Task<Question> GetAllQuestions(int questionId);
+        Task<Question> GetQuestionById(int questionId);
+        Task<Question> UpdateQuestion(Question question);
+        Task<Question> DeleteQuestion(int questionId);
+    }
 
+    public class QuestionRepository : BaseRepository<Question>, IQuestionRepository
+    {
+        public QuestionRepository(OnlineExamDbContext context) : base(context)
+        {
+        }
+
+        public Task<Question> AddQuestion(Question question)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<Question> GetAllQuestions(int questionId)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<Question> GetQuestionById(int questionId)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<Question> UpdateQuestion(Question question)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<Question> DeleteQuestion(int questionId)
+        {
+            throw new NotImplementedException();
+        }
+    }
 }

@@ -3,16 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{396A2FA6-9CF3-477D-B65B-F4453A357277}|OnlineExam.SERVICE\\OnlineExam.SERVICE.csproj|c:\\users\\user\\desktop\\online-exam-asp.net-web-api-project-using-ef-main\\onlineexam.service\\questionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{396A2FA6-9CF3-477D-B65B-F4453A357277}|OnlineExam.SERVICE\\OnlineExam.SERVICE.csproj|solutionrelative:onlineexam.service\\questionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{396A2FA6-9CF3-477D-B65B-F4453A357277}|OnlineExam.SERVICE\\OnlineExam.SERVICE.csproj|c:\\users\\user\\desktop\\online-exam-asp.net-web-api-project-using-ef-main\\onlineexam.service\\interfaces\\iquestionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{396A2FA6-9CF3-477D-B65B-F4453A357277}|OnlineExam.SERVICE\\OnlineExam.SERVICE.csproj|solutionrelative:onlineexam.service\\interfaces\\iquestionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{396A2FA6-9CF3-477D-B65B-F4453A357277}|OnlineExam.SERVICE\\OnlineExam.SERVICE.csproj|c:\\users\\user\\desktop\\online-exam-asp.net-web-api-project-using-ef-main\\onlineexam.service\\interfaces\\iexamservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{396A2FA6-9CF3-477D-B65B-F4453A357277}|OnlineExam.SERVICE\\OnlineExam.SERVICE.csproj|solutionrelative:onlineexam.service\\interfaces\\iexamservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{97A52A89-B2AA-4D09-9058-77F7D6263A94}|OnlineExam.DAL\\OnlineExam.DAL.csproj|c:\\users\\user\\desktop\\online-exam-asp.net-web-api-project-using-ef-main\\onlineexam.dal\\repositories\\iquestionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97A52A89-B2AA-4D09-9058-77F7D6263A94}|OnlineExam.DAL\\OnlineExam.DAL.csproj|solutionrelative:onlineexam.dal\\repositories\\iquestionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97A52A89-B2AA-4D09-9058-77F7D6263A94}|OnlineExam.DAL\\OnlineExam.DAL.csproj|c:\\users\\user\\desktop\\online-exam-asp.net-web-api-project-using-ef-main\\onlineexam.dal\\repositories\\ipersonrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97A52A89-B2AA-4D09-9058-77F7D6263A94}|OnlineExam.DAL\\OnlineExam.DAL.csproj|solutionrelative:onlineexam.dal\\repositories\\ipersonrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9AE27EBE-BDF1-4948-AD86-6214C185EAAD}|OnlineExam.DATA\\OnlineExam.DATA.csproj|c:\\users\\user\\desktop\\online-exam-asp.net-web-api-project-using-ef-main\\onlineexam.data\\configurations\\questionconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9AE27EBE-BDF1-4948-AD86-6214C185EAAD}|OnlineExam.DATA\\OnlineExam.DATA.csproj|solutionrelative:onlineexam.data\\configurations\\questionconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{396A2FA6-9CF3-477D-B65B-F4453A357277}|OnlineExam.SERVICE\\OnlineExam.SERVICE.csproj|c:\\users\\user\\desktop\\online-exam-asp.net-web-api-project-using-ef-main\\onlineexam.service\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{396A2FA6-9CF3-477D-B65B-F4453A357277}|OnlineExam.SERVICE\\OnlineExam.SERVICE.csproj|solutionrelative:onlineexam.service\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32825716-6BC4-44E2-B7B3-4E5A243E1C85}|OnlineExam.API\\OnlineExam.API.csproj|c:\\users\\user\\desktop\\online-exam-asp.net-web-api-project-using-ef-main\\onlineexam.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32825716-6BC4-44E2-B7B3-4E5A243E1C85}|OnlineExam.API\\OnlineExam.API.csproj|solutionrelative:onlineexam.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{396A2FA6-9CF3-477D-B65B-F4453A357277}|OnlineExam.SERVICE\\OnlineExam.SERVICE.csproj|c:\\users\\user\\desktop\\online-exam-asp.net-web-api-project-using-ef-main\\onlineexam.service\\interfaces\\iexamservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{396A2FA6-9CF3-477D-B65B-F4453A357277}|OnlineExam.SERVICE\\OnlineExam.SERVICE.csproj|solutionrelative:onlineexam.service\\interfaces\\iexamservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{32825716-6BC4-44E2-B7B3-4E5A243E1C85}|OnlineExam.API\\OnlineExam.API.csproj|c:\\users\\user\\desktop\\online-exam-asp.net-web-api-project-using-ef-main\\onlineexam.api\\controllers\\resultcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -41,14 +61,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{396A2FA6-9CF3-477D-B65B-F4453A357277}|OnlineExam.SERVICE\\OnlineExam.SERVICE.csproj|c:\\users\\user\\desktop\\online-exam-asp.net-web-api-project-using-ef-main\\onlineexam.service\\dtos\\questionmodels\\questionmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{396A2FA6-9CF3-477D-B65B-F4453A357277}|OnlineExam.SERVICE\\OnlineExam.SERVICE.csproj|solutionrelative:onlineexam.service\\dtos\\questionmodels\\questionmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{396A2FA6-9CF3-477D-B65B-F4453A357277}|OnlineExam.SERVICE\\OnlineExam.SERVICE.csproj|c:\\users\\user\\desktop\\online-exam-asp.net-web-api-project-using-ef-main\\onlineexam.service\\questionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{396A2FA6-9CF3-477D-B65B-F4453A357277}|OnlineExam.SERVICE\\OnlineExam.SERVICE.csproj|solutionrelative:onlineexam.service\\questionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{97A52A89-B2AA-4D09-9058-77F7D6263A94}|OnlineExam.DAL\\OnlineExam.DAL.csproj|c:\\users\\user\\desktop\\online-exam-asp.net-web-api-project-using-ef-main\\onlineexam.dal\\repositories\\iquestionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{97A52A89-B2AA-4D09-9058-77F7D6263A94}|OnlineExam.DAL\\OnlineExam.DAL.csproj|solutionrelative:onlineexam.dal\\repositories\\iquestionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{97A52A89-B2AA-4D09-9058-77F7D6263A94}|OnlineExam.DAL\\OnlineExam.DAL.csproj|c:\\users\\user\\desktop\\online-exam-asp.net-web-api-project-using-ef-main\\onlineexam.dal\\repositories\\iresultrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -85,14 +97,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{32825716-6BC4-44E2-B7B3-4E5A243E1C85}|OnlineExam.API\\OnlineExam.API.csproj|c:\\users\\user\\desktop\\online-exam-asp.net-web-api-project-using-ef-main\\onlineexam.api\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{32825716-6BC4-44E2-B7B3-4E5A243E1C85}|OnlineExam.API\\OnlineExam.API.csproj|solutionrelative:onlineexam.api\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{32825716-6BC4-44E2-B7B3-4E5A243E1C85}|OnlineExam.API\\OnlineExam.API.csproj|c:\\users\\user\\desktop\\online-exam-asp.net-web-api-project-using-ef-main\\onlineexam.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{32825716-6BC4-44E2-B7B3-4E5A243E1C85}|OnlineExam.API\\OnlineExam.API.csproj|solutionrelative:onlineexam.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{97A52A89-B2AA-4D09-9058-77F7D6263A94}|OnlineExam.DAL\\OnlineExam.DAL.csproj|c:\\users\\user\\desktop\\online-exam-asp.net-web-api-project-using-ef-main\\onlineexam.dal\\repositories\\ipersonrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{97A52A89-B2AA-4D09-9058-77F7D6263A94}|OnlineExam.DAL\\OnlineExam.DAL.csproj|solutionrelative:onlineexam.dal\\repositories\\ipersonrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{396A2FA6-9CF3-477D-B65B-F4453A357277}|OnlineExam.SERVICE\\OnlineExam.SERVICE.csproj|c:\\users\\user\\desktop\\online-exam-asp.net-web-api-project-using-ef-main\\onlineexam.service\\adminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -155,10 +159,6 @@
       "RelativeMoniker": "D:0:0:{396A2FA6-9CF3-477D-B65B-F4453A357277}|OnlineExam.SERVICE\\OnlineExam.SERVICE.csproj|solutionrelative:onlineexam.service\\dtos\\usermodels\\userregistermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9AE27EBE-BDF1-4948-AD86-6214C185EAAD}|OnlineExam.DATA\\OnlineExam.DATA.csproj|c:\\users\\user\\desktop\\online-exam-asp.net-web-api-project-using-ef-main\\onlineexam.data\\configurations\\questionconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9AE27EBE-BDF1-4948-AD86-6214C185EAAD}|OnlineExam.DATA\\OnlineExam.DATA.csproj|solutionrelative:onlineexam.data\\configurations\\questionconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9AE27EBE-BDF1-4948-AD86-6214C185EAAD}|OnlineExam.DATA\\OnlineExam.DATA.csproj|c:\\users\\user\\desktop\\online-exam-asp.net-web-api-project-using-ef-main\\onlineexam.data\\configurations\\optionconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9AE27EBE-BDF1-4948-AD86-6214C185EAAD}|OnlineExam.DATA\\OnlineExam.DATA.csproj|solutionrelative:onlineexam.data\\configurations\\optionconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -205,7 +205,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 35,
+          "SelectedChildIndex": 23,
           "Children": [
             {
               "$type": "Bookmark",
@@ -289,118 +289,70 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "AdminService.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.SERVICE\\AdminService.cs",
-              "RelativeDocumentMoniker": "OnlineExam.SERVICE\\AdminService.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.SERVICE\\AdminService.cs",
-              "RelativeToolTip": "OnlineExam.SERVICE\\AdminService.cs",
-              "ViewState": "AgIAADIAAAAAAAAAAAAIwB0AAAAIAAAAAAAAAA==",
+              "DocumentIndex": 10,
+              "Title": "Option.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.DATA\\Entites\\Option.cs",
+              "RelativeDocumentMoniker": "OnlineExam.DATA\\Entites\\Option.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.DATA\\Entites\\Option.cs",
+              "RelativeToolTip": "OnlineExam.DATA\\Entites\\Option.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T12:28:56.753Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "IResultService.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.SERVICE\\InterFaces\\IResultService.cs",
-              "RelativeDocumentMoniker": "OnlineExam.SERVICE\\InterFaces\\IResultService.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.SERVICE\\InterFaces\\IResultService.cs",
-              "RelativeToolTip": "OnlineExam.SERVICE\\InterFaces\\IResultService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T13:12:35.625Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "ExamController.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.API\\Controllers\\ExamController.cs",
-              "RelativeDocumentMoniker": "OnlineExam.API\\Controllers\\ExamController.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.API\\Controllers\\ExamController.cs",
-              "RelativeToolTip": "OnlineExam.API\\Controllers\\ExamController.cs",
-              "ViewState": "AgIAADIAAAAAAAAAAAAwwD0AAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-12T20:11:13.003Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.SERVICE\\UserService.cs",
-              "RelativeDocumentMoniker": "OnlineExam.SERVICE\\UserService.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.SERVICE\\UserService.cs",
-              "RelativeToolTip": "OnlineExam.SERVICE\\UserService.cs",
-              "ViewState": "AgIAAGkAAAAAAAAAAAAmwIMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T12:33:45.883Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "PersonModel.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.SERVICE\\DTOs\\PersonModels\\PersonModel.cs",
-              "RelativeDocumentMoniker": "OnlineExam.SERVICE\\DTOs\\PersonModels\\PersonModel.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.SERVICE\\DTOs\\PersonModels\\PersonModel.cs",
-              "RelativeToolTip": "OnlineExam.SERVICE\\DTOs\\PersonModels\\PersonModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T19:45:05.056Z"
+              "WhenOpened": "2025-03-20T14:34:26.088Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 16,
-              "Title": "ExamService.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.SERVICE\\ExamService.cs",
-              "RelativeDocumentMoniker": "OnlineExam.SERVICE\\ExamService.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.SERVICE\\ExamService.cs",
-              "RelativeToolTip": "OnlineExam.SERVICE\\ExamService.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAADwvzMAAAAzAAAAAAAAAA==",
+              "Title": "BaseRepository.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.DATA\\Infrastructures\\BaseRepository.cs",
+              "RelativeDocumentMoniker": "OnlineExam.DATA\\Infrastructures\\BaseRepository.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.DATA\\Infrastructures\\BaseRepository.cs",
+              "RelativeToolTip": "OnlineExam.DATA\\Infrastructures\\BaseRepository.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwBcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T11:50:27.689Z",
+              "WhenOpened": "2025-03-13T14:06:48.655Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IQuestionRepository.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.DAL\\Repositories\\IQuestionRepository.cs",
+              "RelativeDocumentMoniker": "OnlineExam.DAL\\Repositories\\IQuestionRepository.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.DAL\\Repositories\\IQuestionRepository.cs",
+              "RelativeToolTip": "OnlineExam.DAL\\Repositories\\IQuestionRepository.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwDQAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T13:25:16.734Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "ExamConfiguration.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.DATA\\Configurations\\ExamConfiguration.cs",
-              "RelativeDocumentMoniker": "OnlineExam.DATA\\Configurations\\ExamConfiguration.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.DATA\\Configurations\\ExamConfiguration.cs",
-              "RelativeToolTip": "OnlineExam.DATA\\Configurations\\ExamConfiguration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA1AAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "QuestionService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.SERVICE\\QuestionService.cs",
+              "RelativeDocumentMoniker": "OnlineExam.SERVICE\\QuestionService.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.SERVICE\\QuestionService.cs",
+              "RelativeToolTip": "OnlineExam.SERVICE\\QuestionService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T19:44:17.488Z"
+              "WhenOpened": "2025-03-23T18:19:06.575Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Question.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.DATA\\Entites\\Question.cs",
-              "RelativeDocumentMoniker": "OnlineExam.DATA\\Entites\\Question.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.DATA\\Entites\\Question.cs",
-              "RelativeToolTip": "OnlineExam.DATA\\Entites\\Question.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAARAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "IQuestionService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.SERVICE\\InterFaces\\IQuestionService.cs",
+              "RelativeDocumentMoniker": "OnlineExam.SERVICE\\InterFaces\\IQuestionService.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.SERVICE\\InterFaces\\IQuestionService.cs",
+              "RelativeToolTip": "OnlineExam.SERVICE\\InterFaces\\IQuestionService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-20T14:26:21.427Z"
+              "WhenOpened": "2025-03-23T18:17:08.746Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Result.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.DATA\\Entites\\Result.cs",
-              "RelativeDocumentMoniker": "OnlineExam.DATA\\Entites\\Result.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.DATA\\Entites\\Result.cs",
-              "RelativeToolTip": "OnlineExam.DATA\\Entites\\Result.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T13:18:05.147Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 11,
               "Title": "IUserRepository.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.DAL\\Repositories\\IUserRepository.cs",
               "RelativeDocumentMoniker": "OnlineExam.DAL\\Repositories\\IUserRepository.cs",
@@ -413,30 +365,42 @@
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "Option.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.DATA\\Entites\\Option.cs",
-              "RelativeDocumentMoniker": "OnlineExam.DATA\\Entites\\Option.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.DATA\\Entites\\Option.cs",
-              "RelativeToolTip": "OnlineExam.DATA\\Entites\\Option.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAARAAAAAAAAAA==",
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.SERVICE\\UserService.cs",
+              "RelativeDocumentMoniker": "OnlineExam.SERVICE\\UserService.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.SERVICE\\UserService.cs",
+              "RelativeToolTip": "OnlineExam.SERVICE\\UserService.cs",
+              "ViewState": "AgIAAG8AAAAAAAAAAAAmwIMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-20T14:34:26.088Z"
+              "WhenOpened": "2025-03-13T12:33:45.883Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 13,
-              "Title": "BaseRepository.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.DATA\\Infrastructures\\BaseRepository.cs",
-              "RelativeDocumentMoniker": "OnlineExam.DATA\\Infrastructures\\BaseRepository.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.DATA\\Infrastructures\\BaseRepository.cs",
-              "RelativeToolTip": "OnlineExam.DATA\\Infrastructures\\BaseRepository.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAQwBcAAAAAAAAAAAAAAA==",
+              "Title": "Result.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.DATA\\Entites\\Result.cs",
+              "RelativeDocumentMoniker": "OnlineExam.DATA\\Entites\\Result.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.DATA\\Entites\\Result.cs",
+              "RelativeToolTip": "OnlineExam.DATA\\Entites\\Result.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T14:06:48.655Z"
+              "WhenOpened": "2025-03-13T13:18:05.147Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
+              "Title": "Question.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.DATA\\Entites\\Question.cs",
+              "RelativeDocumentMoniker": "OnlineExam.DATA\\Entites\\Question.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.DATA\\Entites\\Question.cs",
+              "RelativeToolTip": "OnlineExam.DATA\\Entites\\Question.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T14:26:21.427Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "QuestionModel.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.SERVICE\\DTOs\\QuestionModels\\QuestionModel.cs",
               "RelativeDocumentMoniker": "OnlineExam.SERVICE\\DTOs\\QuestionModels\\QuestionModel.cs",
@@ -448,7 +412,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
               "Title": "ResultController.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.API\\Controllers\\ResultController.cs",
               "RelativeDocumentMoniker": "OnlineExam.API\\Controllers\\ResultController.cs",
@@ -456,12 +420,11 @@
               "RelativeToolTip": "OnlineExam.API\\Controllers\\ResultController.cs",
               "ViewState": "AgIAAE0AAAAAAAAAAAAIwC4AAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-12T18:32:36.285Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-12T18:32:36.285Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "IExamService.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.SERVICE\\InterFaces\\IExamService.cs",
               "RelativeDocumentMoniker": "OnlineExam.SERVICE\\InterFaces\\IExamService.cs",
@@ -469,50 +432,35 @@
               "RelativeToolTip": "OnlineExam.SERVICE\\InterFaces\\IExamService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T12:31:11.23Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-13T12:31:11.23Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "IQuestionService.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.SERVICE\\InterFaces\\IQuestionService.cs",
-              "RelativeDocumentMoniker": "OnlineExam.SERVICE\\InterFaces\\IQuestionService.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.SERVICE\\InterFaces\\IQuestionService.cs",
-              "RelativeToolTip": "OnlineExam.SERVICE\\InterFaces\\IQuestionService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAJAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.API\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "OnlineExam.API\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.API\\Controllers\\UserController.cs",
+              "RelativeToolTip": "OnlineExam.API\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAIEAAAAAAAAAAAAmwCMAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-23T18:17:08.746Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-12T18:32:35.691Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "OnlineExamDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.DATA\\OnlineExamDbContext.cs",
-              "RelativeDocumentMoniker": "OnlineExam.DATA\\OnlineExamDbContext.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.DATA\\OnlineExamDbContext.cs",
-              "RelativeToolTip": "OnlineExam.DATA\\OnlineExamDbContext.cs",
-              "ViewState": "AgIAADUAAAAAAAAAAADwv1sAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T17:26:11.928Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "ExamUpdateModel.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.SERVICE\\DTOs\\ExamModels\\ExamUpdateModel.cs",
-              "RelativeDocumentMoniker": "OnlineExam.SERVICE\\DTOs\\ExamModels\\ExamUpdateModel.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.SERVICE\\DTOs\\ExamModels\\ExamUpdateModel.cs",
-              "RelativeToolTip": "OnlineExam.SERVICE\\DTOs\\ExamModels\\ExamUpdateModel.cs",
+              "Title": "QuestionConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.DATA\\Configurations\\QuestionConfiguration.cs",
+              "RelativeDocumentMoniker": "OnlineExam.DATA\\Configurations\\QuestionConfiguration.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.DATA\\Configurations\\QuestionConfiguration.cs",
+              "RelativeToolTip": "OnlineExam.DATA\\Configurations\\QuestionConfiguration.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-20T12:38:26.846Z"
+              "WhenOpened": "2025-03-19T19:44:19.42Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 3,
               "Title": "IPersonRepository.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.DAL\\Repositories\\IPersonRepository.cs",
               "RelativeDocumentMoniker": "OnlineExam.DAL\\Repositories\\IPersonRepository.cs",
@@ -524,19 +472,103 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "QuestionService.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.SERVICE\\QuestionService.cs",
-              "RelativeDocumentMoniker": "OnlineExam.SERVICE\\QuestionService.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.SERVICE\\QuestionService.cs",
-              "RelativeToolTip": "OnlineExam.SERVICE\\QuestionService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
+              "DocumentIndex": 18,
+              "Title": "ExamConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.DATA\\Configurations\\ExamConfiguration.cs",
+              "RelativeDocumentMoniker": "OnlineExam.DATA\\Configurations\\ExamConfiguration.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.DATA\\Configurations\\ExamConfiguration.cs",
+              "RelativeToolTip": "OnlineExam.DATA\\Configurations\\ExamConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-23T18:19:06.575Z"
+              "WhenOpened": "2025-03-19T19:44:17.488Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 19,
+              "Title": "ExamService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.SERVICE\\ExamService.cs",
+              "RelativeDocumentMoniker": "OnlineExam.SERVICE\\ExamService.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.SERVICE\\ExamService.cs",
+              "RelativeToolTip": "OnlineExam.SERVICE\\ExamService.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAADwvzMAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-13T11:50:27.689Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "PersonModel.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.SERVICE\\DTOs\\PersonModels\\PersonModel.cs",
+              "RelativeDocumentMoniker": "OnlineExam.SERVICE\\DTOs\\PersonModels\\PersonModel.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.SERVICE\\DTOs\\PersonModels\\PersonModel.cs",
+              "RelativeToolTip": "OnlineExam.SERVICE\\DTOs\\PersonModels\\PersonModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T19:45:05.056Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ExamController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.API\\Controllers\\ExamController.cs",
+              "RelativeDocumentMoniker": "OnlineExam.API\\Controllers\\ExamController.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.API\\Controllers\\ExamController.cs",
+              "RelativeToolTip": "OnlineExam.API\\Controllers\\ExamController.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAwwD0AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T20:11:13.003Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "IResultService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.SERVICE\\InterFaces\\IResultService.cs",
+              "RelativeDocumentMoniker": "OnlineExam.SERVICE\\InterFaces\\IResultService.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.SERVICE\\InterFaces\\IResultService.cs",
+              "RelativeToolTip": "OnlineExam.SERVICE\\InterFaces\\IResultService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-13T13:12:35.625Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "AdminService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.SERVICE\\AdminService.cs",
+              "RelativeDocumentMoniker": "OnlineExam.SERVICE\\AdminService.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.SERVICE\\AdminService.cs",
+              "RelativeToolTip": "OnlineExam.SERVICE\\AdminService.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAIwB0AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-13T12:28:56.753Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "OnlineExamDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.DATA\\OnlineExamDbContext.cs",
+              "RelativeDocumentMoniker": "OnlineExam.DATA\\OnlineExamDbContext.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.DATA\\OnlineExamDbContext.cs",
+              "RelativeToolTip": "OnlineExam.DATA\\OnlineExamDbContext.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAADwv1sAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T17:26:11.928Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "ExamUpdateModel.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.SERVICE\\DTOs\\ExamModels\\ExamUpdateModel.cs",
+              "RelativeDocumentMoniker": "OnlineExam.SERVICE\\DTOs\\ExamModels\\ExamUpdateModel.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.SERVICE\\DTOs\\ExamModels\\ExamUpdateModel.cs",
+              "RelativeToolTip": "OnlineExam.SERVICE\\DTOs\\ExamModels\\ExamUpdateModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T12:38:26.846Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
               "Title": "IResultRepository.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.DAL\\Repositories\\IResultRepository.cs",
               "RelativeDocumentMoniker": "OnlineExam.DAL\\Repositories\\IResultRepository.cs",
@@ -548,19 +580,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "IQuestionRepository.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.DAL\\Repositories\\IQuestionRepository.cs",
-              "RelativeDocumentMoniker": "OnlineExam.DAL\\Repositories\\IQuestionRepository.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.DAL\\Repositories\\IQuestionRepository.cs",
-              "RelativeToolTip": "OnlineExam.DAL\\Repositories\\IQuestionRepository.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAA8AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-20T13:25:16.734Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 27,
               "Title": "LoginModel.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.SERVICE\\DTOs\\UserModels\\LoginModel.cs",
               "RelativeDocumentMoniker": "OnlineExam.SERVICE\\DTOs\\UserModels\\LoginModel.cs",
@@ -572,7 +592,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 26,
               "Title": "IAdminService.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.SERVICE\\InterFaces\\IAdminService.cs",
               "RelativeDocumentMoniker": "OnlineExam.SERVICE\\InterFaces\\IAdminService.cs",
@@ -584,7 +604,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 17,
               "Title": "IBaseRepository.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.DATA\\Infrastructures\\IBaseRepository.cs",
               "RelativeDocumentMoniker": "OnlineExam.DATA\\Infrastructures\\IBaseRepository.cs",
@@ -597,18 +617,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 21,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.API\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "OnlineExam.API\\Controllers\\UserController.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.API\\Controllers\\UserController.cs",
-              "RelativeToolTip": "OnlineExam.API\\Controllers\\UserController.cs",
-              "ViewState": "AgIAAIEAAAAAAAAAAAAmwCMAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-12T18:32:35.691Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
               "Title": "ResultService.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.SERVICE\\ResultService.cs",
               "RelativeDocumentMoniker": "OnlineExam.SERVICE\\ResultService.cs",
@@ -620,7 +628,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 23,
               "Title": "AdminController.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.API\\Controllers\\AdminController.cs",
               "RelativeDocumentMoniker": "OnlineExam.API\\Controllers\\AdminController.cs",
@@ -632,7 +640,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 30,
               "Title": "CreateExamModel.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.SERVICE\\DTOs\\ExamModels\\CreateExamModel.cs",
               "RelativeDocumentMoniker": "OnlineExam.SERVICE\\DTOs\\ExamModels\\CreateExamModel.cs",
@@ -644,7 +652,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "IUserService.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.SERVICE\\InterFaces\\IUserService.cs",
               "RelativeDocumentMoniker": "OnlineExam.SERVICE\\InterFaces\\IUserService.cs",
@@ -656,7 +664,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 31,
               "Title": "Exam.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.DATA\\Entites\\Exam.cs",
               "RelativeDocumentMoniker": "OnlineExam.DATA\\Entites\\Exam.cs",
@@ -668,7 +676,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 32,
               "Title": "IRoleRepository.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.DAL\\Repositories\\IRoleRepository.cs",
               "RelativeDocumentMoniker": "OnlineExam.DAL\\Repositories\\IRoleRepository.cs",
@@ -680,7 +688,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 33,
               "Title": "IPasswordHasher.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.DAL\\Repositories\\IPasswordHasher.cs",
               "RelativeDocumentMoniker": "OnlineExam.DAL\\Repositories\\IPasswordHasher.cs",
@@ -692,7 +700,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 34,
               "Title": "IExamRepository.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.DAL\\Repositories\\IExamRepository.cs",
               "RelativeDocumentMoniker": "OnlineExam.DAL\\Repositories\\IExamRepository.cs",
@@ -704,7 +712,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 35,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.API\\Program.cs",
               "RelativeDocumentMoniker": "OnlineExam.API\\Program.cs",
@@ -716,7 +724,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 36,
               "Title": "MappingProfile.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.SERVICE\\Mapping\\MappingProfile.cs",
               "RelativeDocumentMoniker": "OnlineExam.SERVICE\\Mapping\\MappingProfile.cs",
@@ -740,7 +748,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 38,
               "Title": "UserRegisterModel.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.SERVICE\\DTOs\\UserModels\\UserRegisterModel.cs",
               "RelativeDocumentMoniker": "OnlineExam.SERVICE\\DTOs\\UserModels\\UserRegisterModel.cs",
@@ -752,19 +760,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
-              "Title": "QuestionConfiguration.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.DATA\\Configurations\\QuestionConfiguration.cs",
-              "RelativeDocumentMoniker": "OnlineExam.DATA\\Configurations\\QuestionConfiguration.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.DATA\\Configurations\\QuestionConfiguration.cs",
-              "RelativeToolTip": "OnlineExam.DATA\\Configurations\\QuestionConfiguration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T19:44:19.42Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 37,
               "Title": "Person.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\Online-Exam-ASP.NET-WEB-API-Project-using-EF-main\\OnlineExam.DATA\\Entites\\Person.cs",
               "RelativeDocumentMoniker": "OnlineExam.DATA\\Entites\\Person.cs",
