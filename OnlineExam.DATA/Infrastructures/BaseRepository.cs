@@ -8,6 +8,7 @@ namespace OnlineExam.DATA.Infrastructures
         private readonly OnlineExamDbContext _context;
         private readonly DbSet<T> _dbSet;
 
+        
         public BaseRepository(OnlineExamDbContext context)
         {
             _context = context ?? throw new ArgumentNullException(nameof(context));
