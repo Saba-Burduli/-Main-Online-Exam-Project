@@ -1,4 +1,4 @@
-a﻿using OnlineExam.DATA.Entites;
+﻿using OnlineExam.DATA.Entites;
 using OnlineExam.DATA.Infrastructures;
 using OnlineExam.DATA;
 using System;
@@ -10,7 +10,6 @@ using Microsoft.EntityFrameworkCore;
 
 namespace OnlineExam.DAL.Repositories
 {
-<<<<<<< HEAD
 
     public interface IQuestionRepository
     {
@@ -20,10 +19,6 @@ namespace OnlineExam.DAL.Repositories
         Task<Question> UpdateQuestion(Question question);
         Task<Question> DeleteQuestion(int questionId);
     }
-=======
-//We need Question Repo with Implementation and also methods in there..
-//Also I need Question IService and Service (Implementation)add main methods in there
->>>>>>> 8397086dc6e35f612c0a8430e968b86ff609b531
 
     public class QuestionRepository : BaseRepository<Question>, IQuestionRepository
     {
