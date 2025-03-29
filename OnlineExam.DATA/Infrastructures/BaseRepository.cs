@@ -4,7 +4,6 @@ using Microsoft.EntityFrameworkCore;
 
 namespace OnlineExam.DATA.Infrastructures
 {
-
     public class BaseRepository<T> : IBaseRepository<T> where T : class
     {
         private readonly OnlineExamDbContext _context;
