@@ -69,6 +69,7 @@ namespace OnlineExam.DATA.Infrastructures
             var user = await _dbSet.FindAsync(id);
             _context.Remove(user);
             await _context.SaveChangesAsync();
+
         }
         
     }
