@@ -3,7 +3,7 @@
 <h1>👂 Hello My Name is Saba Burduli(Comic Solvency).... </h1>
 	<h4>..and this is my first Time ever doing Online Exam ASP.NET Web API </h4>
 <br>
-Whats Cool in this project is Im gonna create 3 type of role ...
+Whats Cool in this project is I'm gonna create 3 type of role ...
 <br>
 
 and they have different tokens (accses). We dont have actually many Entity classes manually but we actually creating meny join tables using configuration querys .<br>
